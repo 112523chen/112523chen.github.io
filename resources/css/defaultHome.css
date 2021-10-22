@@ -1,0 +1,50 @@
+body{
+    background-color: #ffffff;
+    margin: 0 auto;
+    
+}
+
+header{
+    background-color: grey;
+    border: 1px solid #4d4748;
+}
+
+/*
+header nav{
+}*/
+
+header nav ul{
+    height: 55px;
+}
+
+header nav ul li{
+
+    display: inline;
+    margin-right: 10px;
+    font-size: 24px;
+}
+header nav ul li img{
+    height: 50px;
+    width: 50px;
+    vertical-align: top;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: top;
+}
+header nav ul li a.link{
+    line-height: 50px;
+    vertical-align: top;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+header nav ul li input{
+    vertical-align:sub;
+}
+header nav ul li a.link:hover{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+}
