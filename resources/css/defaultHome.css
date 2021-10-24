@@ -1,50 +1,57 @@
 body{
-    background-color: #ffffff;
-    margin: 0 auto;
-    
+    background-color: lightblue;
 }
 
 header{
-    background-color: grey;
-    border: 1px solid #4d4748;
+    background-color: aliceblue;
 }
-
-/*
 header nav{
-}*/
-
-header nav ul{
-    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul li{
+header nav div#brand img{
+    height: 3.9rem;
+    width: 3.9rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0.2rem;
 
-    display: inline;
-    margin-right: 10px;
+}
+header nav div#brand{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+header nav div#nav a{
+    margin-right: 3rem;
     font-size: 24px;
+    color: black;
 }
-header nav ul li img{
-    height: 50px;
-    width: 50px;
-    vertical-align: top;
+header nav div#nav a:hover{
+    color:darkcyan;
 }
 
-header nav ul li a{
-    color: #ffffff;
-    text-decoration: none;
-    vertical-align: top;
+main{
+    height: 30rem;
 }
-header nav ul li a.link{
-    line-height: 50px;
-    vertical-align: top;
-    padding-right: 10px;
-    margin-right: 10px;
+main div#sell{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    line-height: 0.5rem;
+    color: white;
+    padding-top: 5rem;
 }
-header nav ul li input{
-    vertical-align:sub;
+main div#title h1{
+    font-size: 5rem;
 }
-header nav ul li a.link:hover{
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 10px;
+main div#title h2{ 
+    font-size: 2.5rem;
+}
+main div#sum p{
+    font-size: 1.3rem;
+    max-width: 30rem;
+    line-height: 1.2rem;
 }

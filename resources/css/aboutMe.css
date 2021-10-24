@@ -1,0 +1,49 @@
+
+
+body{
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+main{
+    margin-left: 10rem;
+}
+
+main h3{
+    font-style: italic;
+}
+main h4{
+    font-weight: bolder;
+}
+
+main ul li{
+    margin: 1rem;
+}
+
+main table{
+    border: 0.2rem solid grey;
+    width: 14rem;
+    background-color: black;
+}
+
+main table thead tr th{
+    color: white;
+}
+main table thead tr th#col1{
+    width: 2rem;
+}
+main table thead tr th#col2{
+    width: 5rem;
+}
+
+main table tbody tr td{
+    color: white;
+}
+main table tbody tr td.filled{
+    background-color:white;
+    height: 0.1rem;
+    width: 0.1rem;
+}
+main h2 a{
+    text-decoration: none;
+    color: black;
+}
