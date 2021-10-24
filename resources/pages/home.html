@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home V.0.2</title>
     <link rel="stylesheet" href="/resources/css/defaultHome.css">
-    <title>Version 1.0</title>
 </head>
 <body>
-    <header>
+    <header> 
         <nav>
-            <ul>
-                <li><a href="/index.html" id="home"><img src="/resources/img/AC.png" alt="AC"></a></li>
-                <li><a href="https://github.com/112523chen" target="_blank" class="link" type="button">Github</a></li>
-                <li><a href="#" class="link" type="button">Bio</a></li>
-                <li><input type="text" id="secret"></li>
-            </ul>
+            <div id="brand">
+                <div id="logo">
+                    <a href="/"><img src="/resources/img/AC.png" alt=""></a>
+                </div>
+                <div id="id"> 
+                    <h1> &lt/112523chen&gt </h1>
+                </div>
+            </div>
+            <div id="nav">
+                <a href="#"><span>Home</span></a>
+                <a href="/resources/pages/aboutMe.html"><span>About</span></a>
+                <a href="#"><span>Projects</span></a>
+                <a href="#"><span>Connect</span></a>
+            </div>
         </nav>
     </header>
+    <main>
+        <div> <!---Break into two for id-sell and id-message -->
+            <div id="sell">
+                <div id="title">
+                    <h1>Alex Chen</h1>
+                    <h2>Data Analyst</h2>
+                </div>
+                <div id="sum">
+                    <p>Aspiring Data Scientist studying at CUNY New York City College of Technology eager to tell stories from data</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
