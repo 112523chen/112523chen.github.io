@@ -29,7 +29,7 @@ header nav div#nav a{
     margin-right: 3rem;
     font-size: 24px;
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 header nav div#nav a:hover{
     color:darkcyan;
