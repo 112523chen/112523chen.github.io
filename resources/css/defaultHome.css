@@ -1,5 +1,6 @@
 body{
     background-color: lightblue;
+    margin: 0 auto;
 }
 
 header{
@@ -33,6 +34,15 @@ header nav div#nav a{
 }
 header nav div#nav a:hover{
     color:darkcyan;
+}
+header nav div#nav a#connect{
+    transition: border 300ms ease-out 0.1s,
+    color 300ms ease-in 0.1s;
+}
+header nav div#nav a#connect:hover {
+    color: green;
+    border: black solid 0.1rem;
+    border-radius: 0.5rem;
 }
 
 main{
