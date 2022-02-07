@@ -15,8 +15,8 @@ header nav{
 header nav div#brand img{
     height: 3.9rem;
     width: 3.9rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 0.2rem;
 
 }
@@ -47,7 +47,6 @@ header nav div#nav a#connect:hover {
 
 main{
     height: 49rem;
-    
 }
 main div#sell{
     margin-top: 10rem;
