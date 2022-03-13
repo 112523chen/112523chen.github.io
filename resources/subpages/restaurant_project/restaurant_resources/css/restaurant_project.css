@@ -23,6 +23,9 @@ nav #logo{
     width: 12%;
     height: 100%;
 }
+nav a:active{
+    color: #c4c4c4;
+}
 .nav_structure{
     display: flex;
     list-style: none;
