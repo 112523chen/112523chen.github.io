@@ -1,0 +1,47 @@
+*{
+    text-align: center;
+}
+body{
+    background-color: #939fb8;
+}
+header{
+    padding-top: 5%;
+    color: #E6E8ED;
+}
+header img{
+    border-radius: 100%;
+    width: 10%;
+    height: 10%;
+}
+header h1{
+    font-size: 3rem;
+}
+header h3{
+    font-size: 2rem;
+}
+main div.button{
+    margin: 5% 0;
+}
+main div.button a{
+    color: #E6E8ED;
+    background-color: #223152;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1% 5%;
+    font-size: 3rem;
+}
+main div.button a:hover{
+    background-color: skyblue;
+    color: white;
+}
+main div.button a:active{
+    background-color: skyblue;
+    color: #5481C4;
+}
+/* #linkedin{
+    padding: 1% 6.5%;
+} */
+main div#special_button img{
+    width: 7%;
+    height: 7%;
+}
