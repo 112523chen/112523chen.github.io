@@ -38,7 +38,7 @@ main div.button a:active{
     background-color: skyblue;
     color: #5481C4;
 }
-/* main div.button button#change{
+main div.button button#change{
     background-color: #223152;
     border-radius: 1rem;
     font-size: 3rem;
@@ -54,4 +54,4 @@ main div.button button#change:hover{
 main div.button button#change:active{
     background-color: skyblue;
     color:#5481C4;
-} */
+}
