@@ -9,7 +9,7 @@ item.addEventListener('click',ele =>{
 })
 item2.addEventListener('click',ele =>{
     if(item2.innerHTML == '&lt;/112523chen&gt;'){
-        item2.style.color = 'lightblue';
+        item2.style.color = '#d9f7f7';
         item2.innerHTML = 'Kit Kat &hearts;';
         item2.style.paddingTop = '10%'
     } else if (item2.innerHTML == 'Kit Kat ♥'){
