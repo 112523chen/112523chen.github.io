@@ -38,10 +38,20 @@ main div.button a:active{
     background-color: skyblue;
     color: #5481C4;
 }
-/* #linkedin{
-    padding: 1% 6.5%;
-} */
-main div#special_button img{
-    width: 7%;
-    height: 7%;
+main div.button button{
+    background-color: #223152;
+    border-radius: 1rem;
+    font-size: 3rem;
+    padding: 1% 5.1%;
+    color: #E6E8ED;
+    border: none;
+    margin-top: none;
+}
+main div.button button:hover{
+    background-color: skyblue;
+    color: white;
+}
+main div.button button:active{
+    background-color: skyblue;
+    color:#5481C4;
 }
