@@ -12,11 +12,11 @@
         <ul class="nav_structure">
             
             <li><a id="logo" href="/link.html"><img id="logo" src="./resources/images/logo/AC.png" alt="logo"></a></li>
-            <li><p id="branding">&lt/112523chen&gt</p></li>
-            <li id="breaker_start"><a class="link" href=".">Home</a></li>
-            <li class="link"><a class="link" href="./about.html">About</a></li>
-            <li class="link"><a class="link" href="./project.html">Project</a></li>
-            <li class="link"><a class="link" href="mailto:112623chen@gmail.com">Contact</a></li>
+            <li><p id="branding" class="nav_text">&lt/112523chen&gt</p></li>
+            <li id="breaker_start"><a class="link nav_text" href=".">Home</a></li>
+            <li class="link"><a class="link nav_text" href="./about.html">About</a></li>
+            <li class="link"><a class="link nav_text" href="./project.html">Project</a></li>
+            <li class="link"><a class="link nav_text" href="mailto:112623chen@gmail.com">Contact</a></li>
         </ul>
     </nav>
     <main>
@@ -27,9 +27,11 @@
                 <script src="/resources/js/branding.js" type="text/javascript"></script>
             </div>
             <div id="sum">
-                <p>Aspiring Data Scientist studying at New York City College of Technology eager to tell stories from data</p>
+                <p>Aspiring Data Scientist studying at New York City College of Technology eager to tell stories from <span onclick="changeMode()">data</span></p>
+                <script src="./resources/js/dark.js" type="text/javascript"></script>
             </div>
         </div>
     </main>
+
 </body>
 </html>

@@ -1,10 +1,13 @@
 const item = document.getElementById('title');
 const item2 = document.getElementById('branding')
+var darkMode = sessionStorage.getItem("darkMode");
 
 item.addEventListener('click',ele =>{
-    if(item.style.color == ''){
-        item.children[0].style.color = '#bb6069';
-        item.children[1].style.color = '#bb6069';
+    if(darkMode == true){
+        if(item.style.color == ''){
+            item.children[0].style.color = '#bb6069';
+            item.children[1].style.color = '#bb6069';
+        } 
     }
 })
 item2.addEventListener('click',ele =>{
