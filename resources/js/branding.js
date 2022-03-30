@@ -1,23 +1,32 @@
-const item = document.getElementById('title');
-const item2 = document.getElementById('branding')
+const branding = document.getElementById('title');
+const message = document.getElementById('branding');
+const titles = document.getElementById('identity');
 var darkMode = sessionStorage.getItem("darkMode");
 
-item.addEventListener('click',ele =>{
+branding.addEventListener('click',ele =>{
     if(darkMode == true){
-        if(item.style.color == ''){
-            item.children[0].style.color = '#bb6069';
-            item.children[1].style.color = '#bb6069';
+        if(branding.style.color == ''){
+            branding.children[0].style.color = '#bb6069';
+            branding.children[1].style.color = '#bb6069';
         } 
     }
 })
-item2.addEventListener('click',ele =>{
-    if(item2.innerHTML == '&lt;/112523chen&gt;'){
-        item2.style.color = '#d9f7f7';
-        item2.innerHTML = 'Kit Kat &hearts;';
-        item2.style.paddingTop = '10%'
-    } else if (item2.innerHTML == 'Kit Kat ♥'){
-        item2.innerHTML = '&lt;/112523chen&gt;';
-        item2.style.color = '';
-        item2.style.paddingTop = '';
+message.addEventListener('click',ele =>{
+    if(message.innerHTML == '&lt;/112523chen&gt;'){
+        message.style.color = '#d9f7f7';
+        message.innerHTML = 'Kit Kat &hearts;';
+        message.style.paddingTop = '10%'
+    } else if (message.innerHTML == 'Kit Kat ♥'){
+        message.innerHTML = '&lt;/112523chen&gt;';
+        message.style.color = '';
+        message.style.paddingTop = '';
     }
+})
+
+titles.addEventListener('mouseover',ele => {
+    titles.innerHTML = 'Traveler | Lifelong Learner';
+    titles.style.wordSpacing = '0.1 rem';
+})
+titles.addEventListener('mouseout',ele => {
+    titles.innerHTML = 'Data Scientist';
 })
