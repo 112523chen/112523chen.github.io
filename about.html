@@ -13,15 +13,16 @@
             
             <li><a id="logo" href="/link.html"><img id="logo" src="./resources/images/logo/AC.png" alt="logo"></a></li>
             <li><p>&lt/112523chen&gt</p></li>
-            <li id="breaker_start"><a class="link" href=".">Home</a></li>
-            <li class="link"><a class="link" href="./about.html">About</a></li>
-            <li class="link"><a class="link" href="./project.html">Project</a></li>
-            <li class="link"><a class="link" href="mailto:112623chen@gmail.com">Contact</a></li>
+            <li id="breaker_start" class="nav_text"><a class="link nav_text" href=".">Home</a></li>
+            <li class="link"><a class="link nav_text" href="./about.html">About</a></li>
+            <li class="link"><a class="link nav_text" href="./project.html">Project</a></li>
+            <li class="link"><a class="link nav_text" href="mailto:112623chen@gmail.com">Contact</a></li>
         </ul>
     </nav>
     <main>
         <div id="bio">
-            <h1>About</h1>
+            <h1><span onclick="changeMode()">About</span></h1>
+            <script src="./resources/js/DarkMode/dark_about.js" type="text/javascript"></script>
             <p>Alex Chen is a second year student at New York City College College of Technology (City Tech, CUNY) majoring in data science. He is fueled by his passion for understanding our world through different lenses. Alex deems himself to be a life long learner, ambitious about the numbers that appear in our everyday lives.</p>
         </div>
         <div id="details">
@@ -37,8 +38,8 @@
                 </ul>
             </div>
             <div id="skillset">
-                <h2>Skillset</h2>
-                <table>
+                <h2>Skill Set</h2>
+                <table id="skillset">
                     <thead>
                         <tr>
                             <th id="un" colspan="2">Technical Skills</th>
