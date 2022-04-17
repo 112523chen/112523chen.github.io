@@ -111,3 +111,24 @@ main div#reference a:hover{
 main div#reference a:active{
     color: #4f5e57;
 }
+footer{
+    background-color: #c4c4c4;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+#out_breaker_start{
+    margin-left: auto;
+}
+footer li{
+    margin: 1rem 1.5rem;
+}
+footer li,a{
+    color: white;
+}
+footer a:hover{
+    color: darkgray;
+}

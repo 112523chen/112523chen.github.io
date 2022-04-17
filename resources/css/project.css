@@ -52,6 +52,7 @@ nav a:active{
 
 main{
     margin-left: 5%;
+    min-height: 100vh;
 }
 main h1{
     font-size: 3rem;
@@ -96,4 +97,19 @@ div#info p{
     font-size: 1.5rem;
     margin-top: 3%;
     margin-bottom: 2%;
+}
+footer{
+    background-color: #c4c4c4;
+}
+#out_breaker_start{
+    margin-left: auto;
+}
+footer li{
+    margin: 1rem 1.5rem;
+}
+footer li,a{
+    color: white;
+}
+footer a:hover{
+    color: darkgray;
 }

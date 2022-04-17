@@ -43,6 +43,7 @@ nav a.link{
     color: white;
 }
 nav a:hover{
+    color: darkgrey;
     text-decoration: underline;
 }
 nav a:active{
@@ -67,4 +68,25 @@ main div#sum p{
     font-size: 1.9rem;
     max-width: 30rem;
     line-height: 2rem;
+}
+footer{
+    background-color: #c4c4c4;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+#out_breaker_start{
+    margin-left: auto;
+}
+footer li{
+    margin: 1rem 1.5rem;
+}
+footer li,a{
+    color: white;
+}
+footer a:hover{
+    color: darkgray;
 }
