@@ -1,5 +1,3 @@
-var darkMode = false;
-
 var b = document.body 
 var nav = document.getElementsByClassName('nav_structure');
 var links = document.getElementsByClassName('nav_text');
@@ -75,3 +73,12 @@ light_button.addEventListener('mouseleave',ele =>{
 light_button.addEventListener('click',ele =>{
     changeMode();
 });
+
+//
+var theme = localStorage.getItem("theme");
+if(theme == 'dark'){
+    changeToDark();
+    var darkMode = true;
+} else{
+    var darkMode = false;
+}

@@ -1,5 +1,3 @@
-var darkMode = false;
-
 var b = document.body 
 var nav = document.getElementsByClassName('nav_structure');
 var links = document.getElementsByClassName('nav_text');
@@ -23,7 +21,6 @@ function changeToDark(){
     Object.values(out_links).forEach(element => {
         element.style.color = '#d8dee9';
     });
-
 }
 
 function changeToLight(){
@@ -43,15 +40,19 @@ function changeToLight(){
 
 
 function changeMode(){
-    count++;
-    sessionStorage.setItem('darkMode',String(count));
-    console.log(count);
     if(darkMode == false){
         changeToDark();
         darkMode = true;
+        localStorage.removeItem('theme');
+        localStorage.setItem('theme','dark');
+        console.log(localStorage.getItem('theme'));
     } else {
         changeToLight();
         darkMode = false;
+        localStorage.removeItem('theme');
+        localStorage.setItem('theme','light');
+        console.log(localStorage.getItem('theme'));
+
     }
 }
 
@@ -74,3 +75,11 @@ light_button.addEventListener('mouseleave',ele =>{
 light_button.addEventListener('click',ele =>{
     changeMode();
 });
+
+var theme = localStorage.getItem("theme");
+if(theme == 'dark'){
+    changeToDark();
+    var darkMode = true;
+} else{
+    var darkMode = false;
+}
