@@ -43,16 +43,13 @@ function changeMode(){
     if(darkMode == false){
         changeToDark();
         darkMode = true;
-        localStorage.removeItem('theme');
-        localStorage.setItem('theme','dark');
-        console.log(localStorage.getItem('theme'));
+        sessionStorage.removeItem('theme');
+        sessionStorage.setItem('theme','dark');
     } else {
         changeToLight();
         darkMode = false;
-        localStorage.removeItem('theme');
-        localStorage.setItem('theme','light');
-        console.log(localStorage.getItem('theme'));
-
+        sessionStorage.removeItem('theme');
+        sessionStorage.setItem('theme','light');
     }
 }
 
@@ -76,7 +73,7 @@ light_button.addEventListener('click',ele =>{
     changeMode();
 });
 
-var theme = localStorage.getItem("theme");
+var theme = sessionStorage.getItem("theme");
 if(theme == 'dark'){
     changeToDark();
     var darkMode = true;

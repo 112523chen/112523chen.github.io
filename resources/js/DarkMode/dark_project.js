@@ -47,9 +47,13 @@ function changeToLight(){
 function changeMode(){
     if(darkMode == false){
         changeToDark();
+        sessionStorage.removeItem('theme');
+        sessionStorage.setItem('theme','dark');
         darkMode = true;
     } else {
         changeToLight();
+        sessionStorage.removeItem('theme');
+        sessionStorage.setItem('theme','light');
         darkMode = false;
     }
 }
@@ -75,7 +79,7 @@ light_button.addEventListener('click',ele =>{
 });
 
 //
-var theme = localStorage.getItem("theme");
+var theme = sessionStorage.getItem("theme");
 if(theme == 'dark'){
     changeToDark();
     var darkMode = true;
