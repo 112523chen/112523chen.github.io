@@ -1,4 +1,4 @@
-var b = document.body 
+var b = document.body;
 var nav = document.getElementsByClassName('nav_structure');
 var links = document.getElementsByClassName('nav_text');
 

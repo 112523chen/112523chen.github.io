@@ -2,6 +2,7 @@ var b = document.body
 var nav = document.getElementsByClassName('nav_structure');
 var links = document.getElementsByClassName('nav_text');
 var table_element = document.getElementsByTagName("table");
+var resume_link = document.getElementById('resume');
 
 var foot = document.getElementsByTagName('footer');
 var out_links = document.getElementsByClassName("out_links");
@@ -15,6 +16,8 @@ function changeToDark(){
     foot[0].style.backgroundColor = '#787e89';
     nav[0].style.background = '#787e89';
     table_element[0].style.background = '#4d6075';
+    resume_link.style.color= '#d8dee9';
+    resume_link.style.backgroundColor= '#787e89';
     dark_button.parentElement.hidden = true;
     light_button.parentElement.hidden = false;
     Object.values(links).forEach(element => {
@@ -33,6 +36,10 @@ function changeToLight(){
     dark_button.parentElement.hidden = false;
     light_button.parentElement.hidden = true;
     table_element[0].style.background = '';
+    resume_link.style.color= '';
+    resume_link.style.backgroundColor= '';
+    dark_button.parentElement.hidden = false;
+    light_button.parentElement.hidden = true;
     Object.values(links).forEach(element => {
         element.style.color = '';
     });

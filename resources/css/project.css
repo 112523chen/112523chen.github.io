@@ -66,34 +66,38 @@ div.project{
     display: flex;
     padding-bottom: 10%;
 }
-div#title_img{
+div.title_img{
     margin-left: 3%;
     min-width: 45%;
 }
-div#title_img h2{
+div.title_img div{
+    background-color: white;
+}
+div.title_img h2{
     font-size: 2.5rem;
     margin-bottom: 2%;
+    margin-left: 0.1rem;
 }
-div#title_img img{
+div.title_img img{
     width: 100%;
 }
-div#info{
+div.info{
     margin-left: 10%;
     margin-right: 20%;
 }
-div#info h3{
+div.info h3{
     font-size: 2rem;
 }
-div#info h3 a{
+div.info h3 a{
     color: black;
 }
-div#info h3 a:hover{
+div.info h3 a:hover{
     text-decoration: none;
 }
-div#info h3 a:hover{
+div.info h3 a:hover{
     color:#d2d7c6
 }
-div#info p{
+div.info p{
     font-size: 1.5rem;
     margin-top: 3%;
     margin-bottom: 2%;
