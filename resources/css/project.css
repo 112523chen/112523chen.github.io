@@ -81,6 +81,13 @@ div.title_img h2{
 div.title_img img{
     width: 100%;
 }
+
+div.title_img img#national_park{
+    padding-left: 22%;
+    width: 40%;
+    height: 60%;
+}
+
 div.info{
     margin-left: 10%;
     margin-right: 20%;
