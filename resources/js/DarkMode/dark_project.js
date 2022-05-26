@@ -35,8 +35,8 @@ function changeToLight(){
     nav[0].style.background = '';
     foot[0].style.backgroundColor = '';
     special_pic.style.backgroundColor = '';
-    dark_button.parentElement.hidden = true;
-    light_button.parentElement.hidden = false;
+    dark_button.parentElement.hidden = false;
+    light_button.parentElement.hidden = true;
     Object.values(links).forEach(element => {
         element.style.color = '';
     });
