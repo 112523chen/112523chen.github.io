@@ -2,7 +2,7 @@ var b = document.body
 var nav = document.getElementsByClassName('nav_structure');
 var links = document.getElementsByClassName('nav_text');
 var project_links = document.getElementsByClassName("project_link");
-var special_pic = document.getElementById('graph');
+var graph_images = document.getElementsByClassName('graph_images');
 
 var foot = document.getElementsByTagName('footer');
 var out_links = document.getElementsByClassName("out_links");
@@ -15,11 +15,13 @@ function changeToDark(){
     b.style.color = '#d8dee9';
     nav[0].style.background = '#787e89';
     foot[0].style.backgroundColor = '#787e89';
-    special_pic.style.backgroundColor = 'gray';
     dark_button.parentElement.hidden = true;
     light_button.parentElement.hidden = false;
     Object.values(links).forEach(element => {
         element.style.color = '#d8dee9';
+    });
+    Object.values(graph_images).forEach(element => {
+        element.style.backgroundColor = 'white';
     });
     Object.values(project_links).forEach(ele => {
         ele.style.color = '#d8dee9';
@@ -34,11 +36,13 @@ function changeToLight(){
     b.style.color = '';
     nav[0].style.background = '';
     foot[0].style.backgroundColor = '';
-    special_pic.style.backgroundColor = '';
     dark_button.parentElement.hidden = false;
     light_button.parentElement.hidden = true;
     Object.values(links).forEach(element => {
         element.style.color = '';
+    });
+    Object.values(graph_images).forEach(element => {
+        element.style.backgroundColor = '';
     });
     Object.values(project_links).forEach(element => {
         element.style.color = '';

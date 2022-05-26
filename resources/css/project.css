@@ -70,9 +70,6 @@ div.title_img{
     margin-left: 3%;
     min-width: 45%;
 }
-div.title_img div{
-    background-color: white;
-}
 div.title_img h2{
     font-size: 2.5rem;
     margin-bottom: 2%;
