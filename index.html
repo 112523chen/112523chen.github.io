@@ -1,43 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="" hreflang="en-us">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <title>Alex Chen</title>
-    <link rel="stylesheet" href="/resources/css/index.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
-    <nav>
-        <ul class="nav_structure">
-            <li><a id="logo" href="/link.html"><img id="logo" src="./resources/images/logo/AC.png" alt="logo"></a></li>
-            <li><p id="branding" class="nav_text">&lt/112523chen&gt</p></li>
-            <li id="breaker_start"><a class="link nav_text" href=".">Home</a></li>
-            <li class="link"><a class="link nav_text" href="./about.html">About</a></li>
-            <li class="link"><a class="link nav_text" href="./project.html">Project</a></li>
-            <li class="link"><a class="link nav_text" href="mailto:112623chen@gmail.com">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div id="info">
-            <div id="title">
-                <h1 id="name">Alex Chen</h1>
-                <h2 id="identity">Data Scientist</h2>
-                <script src="/resources/js/branding.js" type="text/javascript"></script>
+    <div class="mode">
+        <span id="dark_button"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" d="M19.524 14.721h.008c.644 0 1.275-.059 1.886-.172l-.063.01c-1.146 4.122-4.866 7.098-9.281 7.098h-.058h.003c-5.343-.006-9.673-4.336-9.678-9.679v-.001A9.76 9.76 0 0 1 9.37 2.665l.069-.017a10.013 10.013 0 0 0-.162 1.819v.007c.005 5.658 4.59 10.243 10.247 10.248h.001zM12.006.47a1.162 1.162 0 0 0-1.043-.465h.005C4.813.596.034 5.724 0 11.976v.003C.008 18.614 5.385 23.991 12.019 24h.061c6.243 0 11.367-4.786 11.905-10.889l.003-.045a1.168 1.168 0 0 0-.423-1.009l-.002-.002a1.164 1.164 0 0 0-1.084-.213l.008-.002l-.524.156a7.735 7.735 0 0 1-2.435.385h-.007a7.912 7.912 0 0 1-7.903-7.903V4.46c0-1.03.198-2.014.558-2.915l-.019.053a1.169 1.169 0 0 0-.155-1.134l.002.003z"></path></svg></span>
+        <span id="light_button" hidden><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path d="M12 3V2m0 20v-1m9-9h1M2 12h1m15.5-6.5L20 4M4 20l1.5-1.5M4 4l1.5 1.5m13 13L20 20"/><circle cx="12" cy="12" r="4"/></g></svg></span>
+    </div>
+    <div id="main">
+        <div id="display">
+            <h1>Alex Chen</h1>
+            <div id="headline">
+                <p>Aspiring Data Scientist | Incoming Data Science Fellow @ CUNY Tech Prep</p>
             </div>
-            <div id="sum">
-                <p>Aspiring Data Scientist studying at New York City College of Technology eager to tell stories from data</span></p>
+            <div id="story">
+                <p>I am a data science student studying at New York City College of Technology while also studying full stack development in free time who is eager to tell stories from data. </p>
             </div>
         </div>
-    </main>
-    <footer id="bottom">
-        <ul class="nav_structure">
-            <li class="out_links" id="out_breaker_start" ><svg id='dark'width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19.524 14.721h.008c.644 0 1.275-.059 1.886-.172l-.063.01c-1.146 4.122-4.866 7.098-9.281 7.098h-.058h.003c-5.343-.006-9.673-4.336-9.678-9.679v-.001A9.76 9.76 0 0 1 9.37 2.665l.069-.017a10.013 10.013 0 0 0-.162 1.819v.007c.005 5.658 4.59 10.243 10.247 10.248h.001zM12.006.47a1.162 1.162 0 0 0-1.043-.465h.005C4.813.596.034 5.724 0 11.976v.003C.008 18.614 5.385 23.991 12.019 24h.061c6.243 0 11.367-4.786 11.905-10.889l.003-.045a1.168 1.168 0 0 0-.423-1.009l-.002-.002a1.164 1.164 0 0 0-1.084-.213l.008-.002l-.524.156a7.735 7.735 0 0 1-2.435.385h-.007a7.912 7.912 0 0 1-7.903-7.903V4.46c0-1.03.198-2.014.558-2.915l-.019.053a1.169 1.169 0 0 0-.155-1.134l.002.003z"/></svg></li>
-            <li class="out_links" id="out_breaker_start" hidden><svg id='light' width="24" height="24" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6ZM5.394 6.813L6.81 5.399l3.505 3.506L8.9 10.319zM2 15.005h5v2H2zm3.394 10.193L8.9 21.692l1.414 1.414l-3.505 3.506zM15 25.005h2v5h-2zm6.687-1.9l1.414-1.414l3.506 3.506l-1.414 1.414zm3.313-8.1h5v2h-5zm-3.313-6.101l3.506-3.506l1.414 1.414l-3.506 3.506zM15 2.005h2v5h-2z"/></svg></li>
-            <li class="out_links"><a target="_blank" href="https://www.linkedin.com/in/alex-chen-112523chen/"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" fill-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.54ZM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0Z" clip-rule="evenodd"/></svg></a></li>
-            <li class="out_links"><a target="_blank" href="https://github.com/112523chen"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" clip-rule="evenodd"/></svg></a></li>
-        </ul>
+        <div id="about">
+            <div class="headings">
+                <h2>About Me</h2><hr>
+            </div>
+            <div id="bio">
+                <p>I am a third year student at New York City College of Technology, CUNY and majoring in data science. I am part of the 8th cohort of CUNY Tech Prep. I am passionate about learning more about this world through different lenses especially through data.</p>
+                <p>My goal is to discover, analyze and harness — the power of 'data'. Data is undoubtedly the new gold of the era we live in.</p>
+                <p>When I am not in front of a screen. I’m most likely enjoying the local food and wonderful weather while reading or listening to music </p>
+            </div>
+        </div>
+        <div id="skills">
+            <div class="headings">
+                <h2>Skills</h2><hr>
+            </div>
+            <div id="frame">
+                <div class="skillset" id="programming">
+                    <p><span>Languages:</span> Python, SQL, Java, HTML, CSS, JavaScript, R</p>
+                </div>
+                <div class="skillset" id="tools">
+                    <p><span>Tools:</span> Jupyter Notebooks, Git, Bash, Excel</p>
+                </div>
+                <div class="skillset" id="framework">
+                    <p><span>Frameworks:</span> Streamlit</p>
+                </div>
+                <div class="skillset" id="design">
+                    <p><span>Design:</span> Figma</p>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="headings">
+                <h2>Project</h2><hr>
+            </div>
+            <div id="frame">
+                <div class="project" id="nationalParks">
+                    <div class="project_title">
+                        <h3>Biodiversity in National Parks Analysis</h3>
+                    </div>
+                    <div class="project_details">
+                        <p>Analyzed 2 datasets about species present across 4 national parks and find out more about the endangered species within the parks</p>
+                    </div>
+                    <div class="project_skills">
+                        <ul>
+                            <li class="project_skill">Pandas</li>
+                            <li class="project_skill">Numpy</li>
+                            <li class="project_skill">Scipy</li>
+                            <li class="project_skill">Seaborn</li>
+                            <li class="project_skill">Matplotlib</li>
+                            <li class="github"><a title="Repository" target="_blank" href="https://github.com/112523chen/Biodiversity-in-National-Parks-Analysis"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path  d="M5.883 18.653c-.3-.2-.558-.455-.86-.816a50.32 50.32 0 0 1-.466-.579c-.463-.575-.755-.84-1.057-.949a1 1 0 0 1 .676-1.883c.752.27 1.261.735 1.947 1.588c-.094-.117.34.427.433.539c.19.227.33.365.44.438c.204.137.587.196 1.15.14c.023-.382.094-.753.202-1.095C5.38 15.31 3.7 13.396 3.7 9.64c0-1.24.37-2.356 1.058-3.292c-.218-.894-.185-1.975.302-3.192a1 1 0 0 1 .63-.582c.081-.024.127-.035.208-.047c.803-.123 1.937.17 3.415 1.096A11.731 11.731 0 0 1 12 3.315c.912 0 1.818.104 2.684.308c1.477-.933 2.613-1.226 3.422-1.096c.085.013.157.03.218.05a1 1 0 0 1 .616.58c.487 1.216.52 2.297.302 3.19c.691.936 1.058 2.045 1.058 3.293c0 3.757-1.674 5.665-4.642 6.392c.125.415.19.879.19 1.38a300.492 300.492 0 0 1-.012 2.716a1 1 0 0 1-.019 1.958c-1.139.228-1.983-.532-1.983-1.525l.002-.446l.005-.705c.005-.708.007-1.338.007-1.998c0-.697-.183-1.152-.425-1.36c-.661-.57-.326-1.655.54-1.752c2.967-.333 4.337-1.482 4.337-4.66c0-.955-.312-1.744-.913-2.404a1 1 0 0 1-.19-1.045c.166-.414.237-.957.096-1.614l-.01.003c-.491.139-1.11.44-1.858.949a1 1 0 0 1-.833.135A9.626 9.626 0 0 0 12 5.315c-.89 0-1.772.119-2.592.35a1 1 0 0 1-.83-.134c-.752-.507-1.374-.807-1.868-.947c-.144.653-.073 1.194.092 1.607a1 1 0 0 1-.189 1.045C6.016 7.89 5.7 8.694 5.7 9.64c0 3.172 1.371 4.328 4.322 4.66c.865.097 1.201 1.177.544 1.748c-.192.168-.429.732-.429 1.364v3.15c0 .986-.835 1.725-1.96 1.528a1 1 0 0 1-.04-1.962v-.99c-.91.061-1.662-.088-2.254-.485z"/></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project" id="manhattanSchoolAnalysis">
+                    <div class="project_title">
+                        <h3>Manhattan School Districts Standardized Testing Analysis</h3>
+                    </div>
+                    <div class="project_details">
+                        <p>Analyzed 2 datasets from NYC Open Data about the scoring of the math and english standardized test and create tools to summarize the data</p>
+                    </div>
+                    <div class="project_skills">
+                        <ul>
+                            <li class="project_skill">Python</li>
+                            <li class="project_skill">Pandas</li>
+                            <li class="project_skill">Seaborn</li>
+                            <li class="project_skill">Matplotlib</li>
+                            <li class="project_skill">Sodapy</li>
+                            <li class="github"><a title="Repository" target="_blank" href="https://github.com/112523chen/School-Districts-Standardized-Test-Analysis"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M5.883 18.653c-.3-.2-.558-.455-.86-.816a50.32 50.32 0 0 1-.466-.579c-.463-.575-.755-.84-1.057-.949a1 1 0 0 1 .676-1.883c.752.27 1.261.735 1.947 1.588c-.094-.117.34.427.433.539c.19.227.33.365.44.438c.204.137.587.196 1.15.14c.023-.382.094-.753.202-1.095C5.38 15.31 3.7 13.396 3.7 9.64c0-1.24.37-2.356 1.058-3.292c-.218-.894-.185-1.975.302-3.192a1 1 0 0 1 .63-.582c.081-.024.127-.035.208-.047c.803-.123 1.937.17 3.415 1.096A11.731 11.731 0 0 1 12 3.315c.912 0 1.818.104 2.684.308c1.477-.933 2.613-1.226 3.422-1.096c.085.013.157.03.218.05a1 1 0 0 1 .616.58c.487 1.216.52 2.297.302 3.19c.691.936 1.058 2.045 1.058 3.293c0 3.757-1.674 5.665-4.642 6.392c.125.415.19.879.19 1.38a300.492 300.492 0 0 1-.012 2.716a1 1 0 0 1-.019 1.958c-1.139.228-1.983-.532-1.983-1.525l.002-.446l.005-.705c.005-.708.007-1.338.007-1.998c0-.697-.183-1.152-.425-1.36c-.661-.57-.326-1.655.54-1.752c2.967-.333 4.337-1.482 4.337-4.66c0-.955-.312-1.744-.913-2.404a1 1 0 0 1-.19-1.045c.166-.414.237-.957.096-1.614l-.01.003c-.491.139-1.11.44-1.858.949a1 1 0 0 1-.833.135A9.626 9.626 0 0 0 12 5.315c-.89 0-1.772.119-2.592.35a1 1 0 0 1-.83-.134c-.752-.507-1.374-.807-1.868-.947c-.144.653-.073 1.194.092 1.607a1 1 0 0 1-.189 1.045C6.016 7.89 5.7 8.694 5.7 9.64c0 3.172 1.371 4.328 4.322 4.66c.865.097 1.201 1.177.544 1.748c-.192.168-.429.732-.429 1.364v3.15c0 .986-.835 1.725-1.96 1.528a1 1 0 0 1-.04-1.962v-.99c-.91.061-1.662-.088-2.254-.485z"/></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project" id="gymWebsite">
+                    <div class="project_title">
+                        <h3>Gym Website</h3>
+                    </div>
+                    <div class="project_details">
+                        <p>Created an interactive website for a gym brand to illustrate and deepen  HTML, CSS, and JavaScript skills, along with the concept of box models within CSS</p>
+                    </div>
+                    <div class="project_skills">
+                        <ul>
+                            <li class="project_skill">HTML</li>
+                            <li class="project_skill">CSS</li>
+                            <li class="project_skill">JavaScript</li>
+                            <li class="website"><a title="Website" target="_blank" href=""><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h5v-2H4V7h16v12h-5v2h5c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"/><path fill="currentColor" d="M13 21v-5h3l-4-5l-4 5h3v5z"/></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project" id="restaurantWebsite">
+                    <div class="project_title">
+                        <h3>Restaurant Website</h3>
+                    </div>
+                    <div class="project_details">
+                        <p>Created a website for a fine dining restaurant to illustrate and deepen HTML and CSS knowledge, along with the concept of box models within CSS</p>
+                    </div>
+                    <div class="project_skills">
+                        <ul>
+                            <li class="project_skill">HTML</li>
+                            <li class="project_skill">CSS</li>
+                            <li class="website"><a title="Website" target="_blank" href=""><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h5v-2H4V7h16v12h-5v2h5c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"/><path fill="currentColor" d="M13 21v-5h3l-4-5l-4 5h3v5z"/></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project" id="GDPAnalysis">
+                    <div class="project_title">
+                        <h3>Life Expectancy and GDP Analysis</h3>
+                    </div>
+                    <div class="project_details">
+                        <p>Analyzed a dataset containing life expectancy and GDP of 6 countries across the world with different circumstances</p>
+                    </div>
+                    <div class="project_skills">
+                        <ul>
+                            <li class="project_skill">Python</li>
+                            <li class="project_skill">Pandas</li>
+                            <li class="project_skill">Numpy</li>
+                            <li class="project_skill">Seaborn</li>
+                            <li class="project_skill">Matplotlib</li>
+                            <li class="github"><a title="Repository" target="_blank" href="https://github.com/112523chen/Life-Expectancy-and-GDP-Analysis"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.883 18.653c-.3-.2-.558-.455-.86-.816a50.32 50.32 0 0 1-.466-.579c-.463-.575-.755-.84-1.057-.949a1 1 0 0 1 .676-1.883c.752.27 1.261.735 1.947 1.588c-.094-.117.34.427.433.539c.19.227.33.365.44.438c.204.137.587.196 1.15.14c.023-.382.094-.753.202-1.095C5.38 15.31 3.7 13.396 3.7 9.64c0-1.24.37-2.356 1.058-3.292c-.218-.894-.185-1.975.302-3.192a1 1 0 0 1 .63-.582c.081-.024.127-.035.208-.047c.803-.123 1.937.17 3.415 1.096A11.731 11.731 0 0 1 12 3.315c.912 0 1.818.104 2.684.308c1.477-.933 2.613-1.226 3.422-1.096c.085.013.157.03.218.05a1 1 0 0 1 .616.58c.487 1.216.52 2.297.302 3.19c.691.936 1.058 2.045 1.058 3.293c0 3.757-1.674 5.665-4.642 6.392c.125.415.19.879.19 1.38a300.492 300.492 0 0 1-.012 2.716a1 1 0 0 1-.019 1.958c-1.139.228-1.983-.532-1.983-1.525l.002-.446l.005-.705c.005-.708.007-1.338.007-1.998c0-.697-.183-1.152-.425-1.36c-.661-.57-.326-1.655.54-1.752c2.967-.333 4.337-1.482 4.337-4.66c0-.955-.312-1.744-.913-2.404a1 1 0 0 1-.19-1.045c.166-.414.237-.957.096-1.614l-.01.003c-.491.139-1.11.44-1.858.949a1 1 0 0 1-.833.135A9.626 9.626 0 0 0 12 5.315c-.89 0-1.772.119-2.592.35a1 1 0 0 1-.83-.134c-.752-.507-1.374-.807-1.868-.947c-.144.653-.073 1.194.092 1.607a1 1 0 0 1-.189 1.045C6.016 7.89 5.7 8.694 5.7 9.64c0 3.172 1.371 4.328 4.322 4.66c.865.097 1.201 1.177.544 1.748c-.192.168-.429.732-.429 1.364v3.15c0 .986-.835 1.725-1.96 1.528a1 1 0 0 1-.04-1.962v-.99c-.91.061-1.662-.088-2.254-.485z"/></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="s">
+
+        </div>
+        <div id="o">
+            <p>Design & Built by Alex Chen</p>
+        </div>
+        <div id="l">
+            <ul>
+                <li class="links"><a target="_blank" href="mailto:112623chen@gmail.com">Email</a></li>
+                <li class="links"><a target="_blank" href="https://github.com/112523chen">GitHub</a></li>
+                <li class="links"><a target="_blank" href="https://www.linkedin.com/in/alex-chen-112523chen/">LinkedIn</a></li>
+                <li class="links"><a target="_blank" href="./resources/docs/AlexChen_RESUME_Summer22.pdf">Resume</a></li>
+            </ul>
+        </div>
+        </div>
     </footer>
-    <script src="./resources/js/DarkMode/dark_index.js" type="text/javascript"></script>
 </body>
+<script src="./resources/js/night.js"></script>
 </html>

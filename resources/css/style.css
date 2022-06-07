@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    font-family: 'Inter';
+    background-color: #fff;
+}
+body.dark-mode{
+    margin: 0;
+    font-family: 'Inter';
+    background-color: #111827;
+    color: #e7e7e7;
+}
+div#main{
+    padding: 0 24.09375rem;
+}
+
+
+/* Dark Mode Feature*/
+div.mode{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+div.mode svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+/* Display Section */
+div#display{
+    width: 645px;
+    margin-top: 40%;
+}
+
+div#display {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 150%;
+      width: 300%;
+    }  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+div#display h1{
+    height: 45px;
+    width: 250px;
+    left: 359px;
+    top: 379px;
+
+
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 0;
+}
+
+div#display div#headline p{
+    height: 22px;
+    width: 700px;
+    left: 356px;
+    top: 439px;
+
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin: 1rem 0;
+}
+
+div#display div#story p{
+    height: 75px;
+    width: 680px;
+    left: 359px;
+    top: 476px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+/* Classes Across Section */
+
+div.headings h2{
+    height: 37px;
+    width: 166px;
+    left: 358px;
+    top: 77px;
+
+
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 5px;
+}
+
+
+
+
+/* About Section */
+div#about{
+    margin-top: 620px;
+}
+
+div#about div#bio p:nth-child(1){
+    height: 88px;
+    width: 556px;
+    left: 358px;
+    top: 139px;
+
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+div#about div#bio p:nth-child(2){
+    height: 46px;
+    width: 556px;
+    left: 358px;
+    top: 252px;
+
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+div#about div#bio p:nth-child(3){
+    height: 70px;
+    width: 558px;
+    left: 358px;
+    top: 323px;
+
+    
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+/* Skills Section */
+div#skills{
+    margin-top: 300px;
+}
+
+
+div#skills div#frame div.skillset p{
+    height: 19px;
+    width: 500px;
+    left: 358px;
+    top: 691px;
+
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+div#skills div#frame div.skillset p span{
+    height: 19px;
+    width: 450px;
+    left: 358px;
+    top: 691px;
+
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+/* Project Sections */
+div#projects{
+    margin-top: 300px;
+    margin-bottom: 532px;
+}
+
+div#projects div#frame div.project{
+    margin: 0 0 4rem 0;
+}
+
+div#projects div#frame div.project .project_title h3{
+    height: 23px;
+    width: 700px;
+    left: 355px;
+    top: 174px;
+
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+div#projects div#frame div.project .project_details p{
+    height: 35px;
+    width: 544px;
+    left: 355px;
+    top: 213px;
+
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+div#projects div#frame div.project .project_skills{
+    padding-top: 0.2rem;
+}
+div#projects div#frame div.project .project_skills ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+div#projects div#frame div.project .project_skills ul li.project_skill{
+    height: 22px;
+    left: 355px;
+    top: 267px;
+    border-radius: 0px;
+
+    margin-right: 2rem;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    color: #007bff;
+    font-size: 0.8rem;
+    padding: 3px 7px 1px 7px;
+}
+
+div#projects div#frame div.project .project_skills ul li.github a{
+    color: black;
+}
+div#projects div#frame div.project .project_skills ul li.github a:hover{
+    color: #4d4d4d;
+    
+}
+div#projects div#frame div.project .project_skills ul li.github a:active{
+    color: #999999;
+}
+div#projects div#frame div.project .project_skills ul li.github a.dark-mode{
+    color: #E5E7EB;
+}
+div#projects div#frame div.project .project_skills ul li.github a:hover.dark-mode{
+    color: #999999;
+}
+div#projects div#frame div.project .project_skills ul li.github a:active.dark-mode{
+    color: #333333;
+}
+div#projects div#frame div.project .project_skills ul li.website a{
+    color: black;
+}
+div#projects div#frame div.project .project_skills ul li.website a:hover{
+    color: #4d4d4d;
+}
+div#projects div#frame div.project .project_skills ul li.website a:active{
+    color: #999999;
+}
+div#projects div#frame div.project .project_skills ul li.website a.dark-mode{
+    color: #E5E7EB;
+}
+div#projects div#frame div.project .project_skills ul li.website a:hover.dark-mode{
+    color: #999999;
+
+}
+div#projects div#frame div.project .project_skills ul li.website a:active.dark-mode{
+    color: #333333;
+
+}
+
+
+/* Bottom Section */
+footer{
+    display: flex;
+    padding-bottom: 1rem;
+}
+footer div#s{
+    width: 27%;
+}
+footer div#o{
+    width: 50%;
+}
+
+footer p{
+    text-align: center;
+}
+footer ul{
+    display: flex;
+    list-style-type: none;
+}
+footer ul li{
+    margin-right: 2rem;
+}
+footer  ul li a{
+    color: black;
+    text-decoration: none;
+}
+footer  ul li a:hover{
+    color: #4d4d4d;
+}
+footer  ul li a:active{
+    color: #999999;
+}
+footer  ul li a.dark-mode{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer  ul li a:hover.dark-mode{
+    color: #999999;
+}
+footer  ul li a:active.dark-mode{
+    color: #333333;
+}
