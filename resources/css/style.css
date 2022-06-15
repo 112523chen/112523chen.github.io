@@ -120,7 +120,7 @@ div#display{
 }
 div#display h1{
     font-size: 4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
 }
 div#display #headline{
     font-family: var(--secondary-font);
