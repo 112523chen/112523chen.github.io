@@ -5,12 +5,19 @@
     --primary-light-color: #fff;
     --secondary-light-color: none;
     --accent-light-color:#007bff;
+    --hover-light-color:#4d4d4d;
+    --active-light-color: #999999;
 
     --primary-dark-color:#111827;
     --secondary-dark-color: #e7e7e7;
     --accent-dark-color: #4da3ff;
+    --hover-dark-color: #999999;
+    --active-dark-color:#333333;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -74,6 +81,12 @@ div.project{
     padding: 0.2rem;
     border-radius: 7px;
 }
+.project_link a:hover{
+    color: var(--hover-light-color);
+}
+.project_link a:active{
+    border: 3px solid var(--accent-light-color);
+}
 .project_link a.dark-mode{
     color: #E5E7EB;
     border: 2px solid var(--accent-dark-color);
@@ -82,6 +95,12 @@ div.project{
     text-decoration: none;
     padding: 0.2rem;
     border-radius: 7px;
+}
+.project_link a:hover.dark-mode{
+    color: var(--secondary-dark-color);
+}
+.project_link a:active.dark-mode{
+    border: 3px solid var(--accent-dark-color);
 }
 
 /* Dark Mode Features */
@@ -202,10 +221,26 @@ footer ul li a{
     color: black;
     border-bottom: 1px solid black;
 }
+footer ul li a:hover{
+    color: var(--hover-light-color);
+    border: none;
+}
+footer  ul li a:active{
+    color: var(--active-light-color);
+}
 footer ul li  a.dark-mode{
     text-decoration: none;
     color: var(--secondary-dark-color);
     border-bottom: 1px solid var(--secondary-dark-color);
+}
+footer  ul li a:hover.dark-mode{
+    color: var(--hover-dark-color);
+    border: none;
+    
+
+}
+footer  ul li a:active.dark-mode{
+    color: var(--active-dark-color);
 }
 
 @media only screen and (max-width: 24rem) {
