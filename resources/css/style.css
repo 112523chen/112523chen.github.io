@@ -115,11 +115,11 @@ div.mode{
 div#display{
     min-width: 21rem;
     padding: 0 20% 0 20%;
-    margin-block-start: 20rem;
+    margin-block-start: 15%;
     margin-block-end: 35rem;
 }
 div#display h1{
-    font-size: 3rem
+    font-size: 4rem
 }
 div#display #headline{
     font-family: var(--secondary-font);
@@ -127,15 +127,18 @@ div#display #headline{
     margin: 1rem 0;
 }
 div#display #headline p{
-    max-width: 31rem;
+    max-width: 41rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 div#display #story{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.125rem;
     margin: 1rem 0;
+    
 }
 div#display #story p{
-    max-width: 30rem;
+    max-width: 37rem;
 }
 
 /* classes */
@@ -349,7 +352,7 @@ footer  ul li a:active.dark-mode{
         font-size: 1rem;
     }
     footer div#l{
-        margin: 0 12%;
+        margin: 0 11%;
     }
     footer ul{
         display: flex;
