@@ -5,6 +5,8 @@ var switch_light_button = document.getElementById('light_button');
 var github_links = document.getElementsByClassName("github");
 var website_links = document.getElementsByClassName("website");
 let brand_links = document.getElementsByClassName('links');
+var important = document.getElementsByClassName('highlight');
+var project_skills = document.getElementsByClassName('project_skill');
 
 
 //Light to Dark Hover
@@ -28,16 +30,23 @@ switch_light_button.addEventListener('mouseleave',()=>{
 updateWebpage = () => {
     document.body.classList.toggle('dark-mode');
 
-    Object.values(github_links).forEach(ele => {
-        ele.children[0].classList.toggle('dark-mode')
+    Object.values(important).forEach(ele => {
+        ele.classList.toggle('dark-mode');
     });
 
+    Object.values(project_skills).forEach(ele => {
+        ele.classList.toggle('dark-mode');
+    })
+
+    Object.values(github_links).forEach(ele => {
+        ele.children[0].classList.toggle('dark-mode');
+    });
     Object.values(website_links).forEach(ele => {
-        ele.children[0].classList.toggle('dark-mode')
+        ele.children[0].classList.toggle('dark-mode');
     });
 
     Object.values(brand_links).forEach(ele => {
-        ele.children[0].classList.toggle('dark-mode')
+        ele.children[0].classList.toggle('dark-mode');
     });
 
     if(switch_light_button.hidden == true){

@@ -5,12 +5,13 @@
     --primary-light-color: #fff;
     --secondary-light-color: none;
     --accent-light-color:#007bff;
+    
     --hover-light-color:#4d4d4d;
     --active-light-color: #999999;
 
     --primary-dark-color:#111827;
     --secondary-dark-color: #e7e7e7;
-    --accent-dark-color: #4da3ff;
+    --accent-dark-color: #00c896;
     --hover-dark-color: #999999;
     --active-dark-color:#333333;
 }
@@ -73,6 +74,17 @@ div.project{
     font-size: 0.8rem;
     padding: 3px 7px 1px 7px;
 }
+.project_skill.dark-mode{
+    margin-right: 1rem;
+    margin-block-end: 0.5rem;
+    /* width: 4rem;
+    text-align: center; */
+    border: 1px solid var(--accent-dark-color);
+    border-radius: 3px;
+    color:  var(--accent-dark-color);
+    font-size: 0.8rem;
+    padding: 3px 7px 1px 7px;
+}
 .project_link a{
     border: 2px solid var(--accent-light-color);
     background-color: #3395ff;
@@ -90,7 +102,7 @@ div.project{
 .project_link a.dark-mode{
     color: #E5E7EB;
     border: 2px solid var(--accent-dark-color);
-    background-color: #3395ff;
+    background-color: #00b487;
     color: white;
     text-decoration: none;
     padding: 0.2rem;
