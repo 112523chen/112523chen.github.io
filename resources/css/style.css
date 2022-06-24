@@ -305,7 +305,7 @@ footer  ul li a:active.dark-mode{
     .project_link a.dark-mode{
         color: #E5E7EB;
         border: 2px solid var(--accent-dark-color);
-        background-color: #3395ff;
+        background-color: #00b487;
         color: white;
         text-decoration: none;
         padding: 0.2rem;
