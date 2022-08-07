@@ -7,6 +7,7 @@ var website_links = document.getElementsByClassName("website");
 let brand_links = document.getElementsByClassName('links');
 var important = document.getElementsByClassName('highlight');
 var project_skills = document.getElementsByClassName('project_skill');
+var project_links = document.getElementsByClassName('project_link');
 
 
 //Light to Dark Hover
@@ -35,6 +36,10 @@ updateWebpage = () => {
     });
 
     Object.values(project_skills).forEach(ele => {
+        ele.classList.toggle('dark-mode');
+    })
+
+    Object.values(project_links).forEach(ele => {
         ele.classList.toggle('dark-mode');
     })
 
