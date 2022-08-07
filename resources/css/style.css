@@ -125,6 +125,11 @@ div.mode{
     right: 5%;
     top: 5%;
 }
+div.mode .btn{
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
 
 /* sub main  */
 /* Display Section  */

@@ -12,19 +12,22 @@ var project_links = document.getElementsByClassName('project_link');
 
 //Light to Dark Hover
 switch_dark_button.addEventListener("mouseenter",()=>{
-    switch_dark_button.style.color = '#4d4d4d';
-    // #e6e6e6
+    // switch_dark_button.style.color = '#4d4d4d';
+    switch_dark_button.style.backgroundColor = 'rgba(0,0,0,.06)';
 });
 switch_dark_button.addEventListener('mouseleave',()=>{
-    switch_dark_button.style.color = '';
+    // switch_dark_button.style.color = '';
+    switch_dark_button.style.backgroundColor = '';
 });
 
 //Dark to Light Hover
 switch_light_button.addEventListener("mouseenter",()=>{
-    switch_light_button.style.color = '#ffffff';
+    // switch_light_button.style.color = '#ffffff';
+    switch_light_button.style.backgroundColor = '#b3b3b3';
 });
 switch_light_button.addEventListener('mouseleave',()=>{
-    switch_light_button.style.color = '';
+    // switch_light_button.style.color = '';
+    switch_light_button.style.backgroundColor = '';
 });
 
 
