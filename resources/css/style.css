@@ -242,26 +242,30 @@ footer ul li{
 }
 footer ul li a{
     text-decoration: none;
+    padding: 0.2rem 0.2rem 0;
     color: black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--accent-light-color);
+    box-shadow: inset 0 0 0 0 var(--accent-light-color);
+    transition: color 0.3s linear, box-shadow 2s linear;
 }
 footer ul li a:hover{
-    color: var(--hover-light-color);
-    border: none;
+    color: var(--primary-light-color);
+    box-shadow: inset 0 -200px 0 0 var(--accent-light-color);
 }
 footer  ul li a:active{
     color: var(--active-light-color);
 }
 footer ul li  a.dark-mode{
     text-decoration: none;
+    padding: 0.2rem 0.2rem 0;
     color: var(--secondary-dark-color);
     border-bottom: 1px solid var(--secondary-dark-color);
+    box-shadow: inset 0 0 0 0 var(--accent-dark-color);
+    transition: color 0.3s linear, box-shadow 2s linear;
 }
 footer  ul li a:hover.dark-mode{
-    color: var(--hover-dark-color);
-    border: none;
-    
-
+    color: #fff;
+    box-shadow: inset 0 -200px 0 0 var(--accent-dark-color);
 }
 footer  ul li a:active.dark-mode{
     color: var(--active-dark-color);
