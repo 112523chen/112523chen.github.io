@@ -17,7 +17,7 @@ const dt = deviceType();
 const scrollFunc = () => {
     let y = window.scrollY;
     if(dt == 'desktop'){
-        if (y < 1000) {
+        if (y < 3000) {
             up.hidden = true;
         } else {
             up.hidden = false;
