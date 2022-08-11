@@ -116,7 +116,6 @@ div.project{
     transform: translateY(5px);
 }
 .project_link a{
-    /* color: #374151; */
     color:#ffffff;
     display: flex;
     justify-content: center;
@@ -140,6 +139,42 @@ div.mode .btn{
     background: none;
     border: none;
     border-radius: 5px;
+}
+
+/* Back to Top Feature */
+#up{
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    width: 32px;
+    height: 32px;
+}
+
+#back-to-top_btn{
+    background: none;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    background-color: var(--accent-light-color);
+    padding: 0;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #3395ff;
+    box-shadow: 0 5px 0 #2468b3;
+    border-radius: 5px;
+}
+#back-to-top_btn:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+#back-to-top_btn.dark-mode{
+    background-color: var(--accent-dark-color);
+    box-shadow: 0 5px 0 #008c69;
+}
+#back-to-top_btn.dark-mode:active{
+    box-shadow: none;
+    transform: translateY(5px);
 }
 
 /* sub main  */
@@ -310,8 +345,6 @@ footer  ul li a:active.dark-mode{
     .project_skill{
         margin-right: 1rem;
         margin-block-end: 0.5rem;
-        /* width: 4rem;
-        text-align: center; */
         border: 1px solid var(--accent-light-color);
         border-radius: 3px;
         color:  var(--accent-light-color);
@@ -382,7 +415,7 @@ footer  ul li a:active.dark-mode{
     footer{
         min-width: 21rem;
         padding: 0 min(5rem, 1rem);
-        display: block;
+        display: inline-block;
     }
     footer div#o{
         font-size: 1rem;
@@ -394,6 +427,7 @@ footer  ul li a:active.dark-mode{
         display: flex;
         list-style-type: none;
         padding-left: 0;
+        justify-content: center;
     }
     footer ul li{
         margin-bottom: 1.5rem;

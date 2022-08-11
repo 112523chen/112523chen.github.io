@@ -1,5 +1,9 @@
+// Dark Mode elements
 var switch_dark_button = document.getElementById('dark_button');
 var switch_light_button = document.getElementById('light_button');
+
+// Back To Top elements 
+var top_btn = document.getElementById('back-to-top_btn');
 
 // Websites elements
 var github_links = document.getElementsByClassName("github");
@@ -56,6 +60,8 @@ updateWebpage = () => {
     Object.values(brand_links).forEach(ele => {
         ele.children[0].classList.toggle('dark-mode');
     });
+
+    top_btn.classList.toggle('dark-mode');
 
     if(switch_light_button.hidden == true){
         switch_light_button.hidden = false;
