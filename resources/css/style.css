@@ -386,8 +386,12 @@ footer  ul li a:active.dark-mode{
     div#display h1{
         font-size: 2rem;
     }
+    div#display div#headline p{
+        max-width: 88%;
+    }
     div#display #story p{
         letter-spacing: 0.794px;
+        max-width: 90%;
     }
 
     /* about section  */
