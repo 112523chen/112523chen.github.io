@@ -14,10 +14,12 @@ const deviceType = () => {
 
 const dt = deviceType();
 
+const totalHeight = document.documentElement.scrollHeight;
+
 const scrollFunc = () => {
     let y = window.scrollY;
     if(dt == 'desktop'){
-        if (y < 4000) {
+        if (y < (totalHeight - 1100)) {
             up.hidden = true;
         } else {
             up.hidden = false;
