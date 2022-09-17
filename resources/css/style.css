@@ -128,6 +128,12 @@ div.project{
 .project_link a.dark-mode:hover{
     color: #E5E7EB;
 }
+.highlight{
+    color: var(--accent-light-color);
+}
+.highlight.dark-mode{
+    color: var(--accent-dark-color);
+}
 
 /* Dark Mode Features */
 div.mode{
@@ -187,7 +193,7 @@ div#display{
     margin-block-end: 35rem;
 }
 div#display h1{
-    font-size: 4rem;
+    font-size: 6rem;
     margin-bottom: 0rem;
 }
 div#display #headline{
@@ -196,8 +202,9 @@ div#display #headline{
     margin: 1rem 0;
 }
 div#display #headline p{
-    max-width: 35rem;
-    font-size: 1.5rem;
+    max-width: 45rem;
+    min-width: 25rem;
+    font-size: 2rem;
 }
 div#display #story{
     font-family: 'Times New Roman', Times, serif;
@@ -207,6 +214,7 @@ div#display #story{
 }
 div#display #story p{
     max-width: 37rem;
+    font-size: 1.15rem;
 }
 
 /* classes */
@@ -384,10 +392,12 @@ footer  ul li a:active.dark-mode{
         margin-block: 10rem;
     }
     div#display h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     div#display div#headline p{
         max-width: 88%;
+        min-width: 80%;
+        font-size: 1.5rem;
     }
     div#display #story p{
         letter-spacing: 0.794px;
