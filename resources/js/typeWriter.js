@@ -2,7 +2,7 @@ const sleep = (ms) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const phrases = ['Data Scientist'];
+const phrases = ['Data Scientist','Web Developer','Data Science Fellow @ CUNY Tech Prep'];
 const ele = document.getElementById('typewriter');
 let sleepTime = 100;
 let curPhrasesIndex = 0;
