@@ -206,6 +206,31 @@ div#display #headline p{
     min-width: 25rem;
     font-size: 2rem;
 }
+div#display #headline p#typewriter-container #typewriter{
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--accent-light-color);
+}
+div#display #headline p#typewriter-container #typewriter.dark-mode{
+    color: var(--accent-dark-color);
+}
+#cursor {
+    color: var(--accent-light-color);
+    font-size: 3rem;
+    animation: blink 1s linear infinite;
+}
+#cursor.dark-mode {
+    color: var(--accent-dark-color);
+}
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+}
 div#display #story{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.125rem;
