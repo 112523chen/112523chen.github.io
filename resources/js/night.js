@@ -13,6 +13,9 @@ var important = document.getElementsByClassName('highlight');
 var project_skills = document.getElementsByClassName('project_skill');
 var project_links = document.getElementsByClassName('project_link');
 
+// Typewriter elements
+let cursor = document.getElementById('cursor');
+let typewriter = document.getElementById('typewriter');
 
 //Light to Dark Hover
 switch_dark_button.addEventListener("mouseenter",()=>{
@@ -62,6 +65,8 @@ updateWebpage = () => {
     });
 
     top_btn.classList.toggle('dark-mode');
+    cursor.classList.toggle('dark-mode');
+    typewriter.classList.toggle('dark-mode');
 
     if(switch_light_button.hidden == true){
         switch_light_button.hidden = false;
