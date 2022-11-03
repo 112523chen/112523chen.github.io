@@ -207,6 +207,7 @@ div#display #headline p{
     font-size: 2rem;
 }
 div#display #headline p#typewriter-container #typewriter{
+    font-family: sans-serif;
     font-weight: bold;
     font-size: 3rem;
     color: var(--accent-light-color);
