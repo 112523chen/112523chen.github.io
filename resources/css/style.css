@@ -429,11 +429,6 @@ footer  ul li a:active.dark-mode{
         letter-spacing: 0.794px;
         max-width: 90%;
     }
-    #cursor {
-        color: var(--accent-light-color);
-        font-size: 3rem;
-        animation: blink 1s linear;
-    }
 
     /* about section  */
     div#about{

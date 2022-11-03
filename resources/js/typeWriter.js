@@ -2,7 +2,7 @@ const sleep = (ms) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const phrases = ['Data Scientist', 'Web Developer','Data Science Fellow @ CUNY Tech Prep'];
+const phrases = ['Data Scientist'];
 const ele = document.getElementById('typewriter');
 let sleepTime = 100;
 let curPhrasesIndex = 0;
@@ -33,4 +33,12 @@ const writeLoop = async () => {
     }
 };
 
-writeLoop();
+let details = navigator.userAgent;
+let regexp = /android|iphone|kindle|ipad/i;
+let isMobileDevice = regexp.test(details);
+if (isMobileDevice){
+    document.getElementById('typewriter-container').hidden = true;
+    document.getElementById('mobile-head').hidden = false;
+} else{
+    writeLoop(); 
+}
