@@ -24,8 +24,6 @@ const scrollFunc = () => {
         } else {
             up.hidden = false;
         }
-    } else {
-        console.log(dt)
     }
 };
 
