@@ -6,6 +6,7 @@ var switch_light_button = document.getElementById('light_button');
 var top_btn = document.getElementById('back-to-top_btn');
 
 // Websites elements
+var course_heads = document.getElementsByClassName("course-head");
 var github_links = document.getElementsByClassName("github");
 var website_links = document.getElementsByClassName("website");
 let brand_links = document.getElementsByClassName('links');
@@ -37,6 +38,7 @@ switch_light_button.addEventListener('mouseleave',()=>{
     switch_light_button.style.backgroundColor = '';
 });
 
+console.log(course_heads)
 
 updateWebpage = () => {
     document.body.classList.toggle('dark-mode');
@@ -63,6 +65,10 @@ updateWebpage = () => {
     Object.values(brand_links).forEach(ele => {
         ele.children[0].classList.toggle('dark-mode');
     });
+
+    Object.values(course_heads).forEach(ele => {
+        ele.classList.toggle('dark-mode');
+    })
 
     top_btn.classList.toggle('dark-mode');
     cursor.classList.toggle('dark-mode');

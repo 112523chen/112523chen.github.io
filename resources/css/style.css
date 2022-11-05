@@ -267,6 +267,27 @@ div#about p:nth-child(2).dark-mode{
     color: var(--accent-dark-color);
 }
 
+/* Coursework Section */
+div#coursework{
+    min-width: 21rem;
+    padding: 0 20% 0 20%;
+    margin-block-end: 15rem;
+}
+#course h3{
+    font-size: 2rem;
+    color: var(--accent-light-color);
+}
+#course h3.dark-mode{
+    font-size: 2rem;
+    color: var(--accent-dark-color);
+}
+#cs-course{
+    margin-bottom: 3rem;
+}
+.class{
+    font-size: 1.1rem;
+}
+
 /* Skill Section  */
 div#skills{
     min-width: 21rem;
