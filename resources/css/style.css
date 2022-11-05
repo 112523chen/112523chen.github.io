@@ -458,6 +458,13 @@ footer  ul li a:active.dark-mode{
         margin-block: 10rem;
     }
 
+    /* course section  */
+    div#coursework{
+        min-width: 21rem;
+        padding: 0 min(5rem, 1rem);
+        margin-block: 10rem;
+    }
+
     /* skill section  */
     div#skills{
         min-width: 21rem;

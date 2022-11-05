@@ -38,8 +38,6 @@ switch_light_button.addEventListener('mouseleave',()=>{
     switch_light_button.style.backgroundColor = '';
 });
 
-console.log(course_heads)
-
 updateWebpage = () => {
     document.body.classList.toggle('dark-mode');
 
