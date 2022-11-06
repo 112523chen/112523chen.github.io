@@ -273,6 +273,11 @@ div#coursework{
     padding: 0 20% 0 20%;
     margin-block-end: 15rem;
 }
+#course{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
 #course h3{
     font-size: 2rem;
     color: var(--accent-light-color);
@@ -281,11 +286,14 @@ div#coursework{
     font-size: 2rem;
     color: var(--accent-dark-color);
 }
-#cs-course{
-    margin-bottom: 3rem;
-}
 .class{
     font-size: 1.1rem;
+}
+#cs-course{
+    margin-right: 1rem;
+}
+#ds-course{
+    margin-left: 1rem;
 }
 
 /* Skill Section  */
