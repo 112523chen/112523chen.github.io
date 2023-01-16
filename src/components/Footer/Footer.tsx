@@ -1,5 +1,5 @@
 import React from "react";
-import { getClass } from "../model";
+import { getClass } from "../../helpers/functions";
 
 interface Props {
   mode: string;

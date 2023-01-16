@@ -1,5 +1,6 @@
 import React from "react";
-import { ProjectType, getClass } from "../model";
+import { ProjectType } from "../model";
+import { getClass } from "../../helpers/functions";
 
 interface Props {
   project: ProjectType;

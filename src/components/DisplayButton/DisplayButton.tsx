@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
-
+import React, { useEffect, useState } from "react";
 interface Props {
   mode: string;
   setMode: React.Dispatch<React.SetStateAction<string>>;

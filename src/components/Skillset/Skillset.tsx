@@ -1,6 +1,5 @@
 import React from "react";
-import { getClass } from "../model";
-import { SkillSet } from "../../assets/data/skillset.json";
+import { getClass } from "../../helpers/functions";
 
 type Props = {
   mode: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import { getClass } from "../model";
+import { getClass } from "../../helpers/functions";
 import { CS_Coursework, DS_Coursework } from "../../assets/data/courswork.json";
 
 interface Props {

@@ -1,7 +1,7 @@
 import React from "react";
 import { phrases } from "../../assets/data/phrases.json";
 import { Typewriter } from "react-simple-typewriter";
-import { getClass } from "../model";
+import { getClass } from "../../helpers/functions";
 
 interface Props {
   mode: string;
