@@ -1,9 +1,10 @@
-import DisplayButton from "./components/DisplayButton/DisplayButton";
-import Main from "./components/Main/Main";
-import "./styles/main.css";
 import { projectData } from "./assets/data/projectData.json";
 import { useEffect, useState } from "react";
+import { Provider } from "react-redux";
+import DisplayButton from "./components/DisplayButton/DisplayButton";
+import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
+import "./styles/main.css";
 
 const App: React.FC = () => {
   let details = navigator.userAgent;
