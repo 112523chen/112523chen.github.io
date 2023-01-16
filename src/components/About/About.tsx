@@ -15,10 +15,12 @@ const About: React.FC<Props> = ({ mode }) => {
         </div>
         <div id="bio">
           <p>
-            I am a third year student at New York City College of Technology,
-            CUNY and majoring in data science. I am part of the 8th cohort of
-            CUNY Tech Prep. I am passionate about learning more about this world
-            through different lenses especially through data.
+            I am a third-year student at New York City College of Technology,
+            CUNY and majoring in data science and interned at 2 companies in
+            backend development and data analysis roles. I also am part of the
+            8th cohort of CUNY Tech Prep as a fellow and also an ambassador for
+            CTP. I am passionate about learning more about this world through
+            different lenses especially through data.
           </p>
           <p className={getClass(mode, "highlight")}>
             My goal is to discover, analyze and harness — the power of 'data'.

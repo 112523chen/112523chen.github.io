@@ -1,6 +1,15 @@
 {
   "projectData": [
     {
+      "id": 12,
+      "title": "Portfolio Website",
+      "details": "Created a web application/page to highlight projects and person brand with React, TypeScript, and Sass",
+      "skills": ["React", "TypeScript", "Sass", "Jest"],
+      "isRepo": false,
+      "isWebApp": true,
+      "link": "https://112523chen.github.io/PortfolioWebsiteV3/"
+    },
+    {
       "id": 11,
       "title": "Finding Features About New Galaxies with Machine Learning",
       "details": "Trained and tested 4 supervised machine learning models to predict 4 features of galaxy from a spectra of the same galaxy: the total amount of mass in stars with a galaxy, the amount of cosmic dust in a galaxy, how long ago did the galaxy form its first stars, and the speed of the process of star formation",
