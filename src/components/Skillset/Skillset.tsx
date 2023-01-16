@@ -1,5 +1,6 @@
 import React from "react";
 import { getClass } from "../model";
+import { SkillSet } from "../../assets/data/skillset.json";
 
 type Props = {
   mode: string;
@@ -21,8 +22,8 @@ const Skillset: React.FC<Props> = ({ mode }) => {
               R
             </p>
           </div>
-          <div className="skillset" id="libary">
-            <p id="libary">
+          <div className="skillset" id="library">
+            <p id="library">
               <span className={getClass(mode, "highlight")}>Libraries:</span>{" "}
               Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, NLTK, Redux,
               SciPy
