@@ -1,0 +1,600 @@
+//sass main.scss main.css
+
+//variables
+$primary-font: "Inter";
+$secondary-font: "Inconsolata";
+
+$primary-light-color: #fff;
+$secondary-light-color: none;
+$accent-light-color: #007bff;
+
+$hover-light-color: #4d4d4d;
+$active-light-color: #999999;
+
+$primary-dark-color: #111827;
+$secondary-dark-color: #e7e7e7;
+$accent-dark-color: #00c896;
+$hover-dark-color: #999999;
+$active-dark-color: #333333;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font : {
+    family: $primary-font;
+  }
+  background: {
+    color: $primary-light-color;
+  }
+  &.dark-mode {
+    background: {
+      color: $primary-dark-color;
+    }
+    color: $secondary-dark-color;
+  }
+}
+
+.headings {
+  h2 {
+    font: {
+      size: 3rem;
+    }
+    padding: 0;
+    margin: 0;
+  }
+  hr {
+    margin: 0;
+    margin: {
+      right: 20%;
+    }
+  }
+}
+
+.project {
+  padding-block-end: 5rem;
+}
+
+.project_title {
+  font: {
+    weight: bolder;
+    style: italic;
+    size: 1.2rem;
+  }
+}
+
+.project_details {
+  max: {
+    width: 80%;
+  }
+}
+
+.project_skills {
+  margin: {
+    bottom: 1.5rem;
+  }
+  ul {
+    display: flex;
+    flex: {
+      wrap: wrap;
+    }
+    padding: {
+      left: 0;
+    }
+    list-style-type: none;
+  }
+}
+
+.project_skill {
+  margin: {
+    right: 1rem;
+  }
+  border: 1px solid $accent-light-color;
+  border-radius: 3px;
+  color: $accent-light-color;
+  font: {
+    size: 0.8rem;
+  }
+  padding: {
+    top: 3px;
+    right: 7px;
+    bottom: 1px;
+    left: 7px;
+  }
+  box-shadow: inset 0 0 0 0 $accent-light-color;
+  transition: color 0.2s linear, box-shadow 0.5s linear;
+  margin-block-end: 0.5rem;
+  &:hover {
+    box-shadow: inset 200px 0 0 0 $accent-light-color;
+    color: #fff;
+  }
+  &.dark-mode {
+    border: {
+      color: $accent-dark-color;
+    }
+    color: $accent-dark-color;
+    box-shadow: inset 0 0 0 0 $accent-dark-color;
+    &:hover {
+      box-shadow: inset 200px 0 0 0 $accent-dark-color;
+      color: #fff;
+    }
+  }
+}
+
+.project_link {
+  flex: 50%;
+  background: {
+    color: #3395ff;
+  }
+  width: fit-content;
+  height: 10%;
+  padding: 0.5rem;
+  border: {
+    radius: 5px;
+  }
+  box-shadow: 0 5px 0 #2468b3;
+  &.dark-mode {
+    background: {
+      color: $accent-dark-color;
+    }
+    box-shadow: 0 5px 0 #008c69;
+  }
+  &:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+  a {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &:hover {
+      color: $hover-light-color;
+    }
+    &.dark-mode {
+      &:hover {
+        color: #e5e7eb;
+      }
+    }
+  }
+}
+
+.highlight {
+  color: $accent-light-color;
+  &.dark-mode {
+    color: $accent-dark-color;
+  }
+}
+
+.mode {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  .btn {
+    background: none;
+    border: none;
+    border: {
+      radius: 5px;
+    }
+  }
+}
+
+#up {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  right: 50%;
+  width: 32px;
+  height: 32px;
+}
+#back-to-top_btn {
+  background: none;
+  background: {
+    color: $accent-light-color;
+  }
+  border: none;
+  border: {
+    radius: 5px;
+  }
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 5px 0 #2468b3;
+  &:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+  &.dark-mode {
+    background-color: $accent-dark-color;
+    box-shadow: 0 5px 0 #008c69;
+    &:active {
+      box-shadow: none;
+      transform: translateY(5px);
+    }
+  }
+}
+
+#display {
+  min-width: 21rem;
+  padding: {
+    top: 0;
+    right: 20%;
+    bottom: 9;
+    left: 20%;
+  }
+  margin-block-start: 15%;
+  margin-block-end: 35rem;
+  h1 {
+    font: {
+      size: 6rem;
+    }
+    margin: {
+      bottom: 0rem;
+    }
+  }
+  #headline {
+    font: {
+      family: $secondary-font;
+      size: 1.125rem;
+    }
+    margin: 1rem 0;
+    p {
+      max: {
+        width: 45rem;
+      }
+      min: {
+        width: 25rem;
+      }
+      font: {
+        size: 2rem;
+      }
+    }
+  }
+  #story {
+    font: {
+      family: "Times New Roman", Times, serif;
+      size: 1.125rem;
+    }
+    margin: 1rem 0;
+    p {
+      max: {
+        width: 37rem;
+      }
+      font: {
+        size: 1.15rem;
+      }
+    }
+    span {
+      margin: 0 0.2rem;
+    }
+  }
+}
+
+.typewriter-container {
+  height: 3rem;
+  color: $accent-light-color;
+  font: {
+    size: 3rem;
+    family: sans-serif;
+    weight: bold;
+  }
+  &.dark-mode {
+    color: $accent-dark-color;
+  }
+}
+
+#about {
+  min: {
+    width: 21rem;
+  }
+  padding: {
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+  }
+  margin-block-end: 15rem;
+  p {
+    line: {
+      height: 2;
+    }
+    max: {
+      width: 80%;
+    }
+    &:nth-child(2) {
+      color: $accent-light-color;
+      &.dark-mode {
+        color: $accent-dark-color;
+      }
+    }
+  }
+}
+
+#coursework {
+  min: {
+    width: 21rem;
+  }
+  padding: {
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+  }
+  margin-block-end: 15rem;
+}
+#course {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+
+  h3 {
+    font: {
+      size: 2rem;
+    }
+    color: $accent-light-color;
+
+    &.dark-mode {
+      color: $accent-dark-color;
+    }
+  }
+}
+.class {
+  font: {
+    size: 1.1rem;
+  }
+}
+#cs-course {
+  margin: {
+    right: 1rem;
+  }
+}
+#ds-course {
+  margin: {
+    left: 1rem;
+  }
+}
+
+#skills {
+  min: {
+    width: 21rem;
+  }
+  padding: {
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+  }
+  margin-block-end: 15rem;
+  &#frame {
+    p {
+      line-height: 1.6rem;
+      max-width: 80%;
+    }
+    span {
+      font: {
+        weight: 900;
+        size: 1.1rem;
+      }
+      color: $accent-light-color;
+      &.dark-mode {
+        color: $accent-dark-color;
+      }
+    }
+  }
+}
+
+#projects {
+  min: {
+    width: 21rem;
+  }
+  padding: {
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+  }
+  margin-block-end: 15rem;
+}
+
+footer {
+  min-width: 21rem;
+  padding: 0 min(5rem, 1rem);
+  display: flex;
+  margin-bottom: 0.5rem;
+
+  #s {
+    width: 0;
+  }
+
+  #o {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #l {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      padding-right: 1rem;
+      .links {
+        text-decoration: none;
+        padding: 0.2rem 0.2rem 0;
+        color: black;
+        border-bottom: 1px solid $accent-light-color;
+        box-shadow: inset 0 0 0 0 $accent-light-color;
+        transition: color 0.3s linear, box-shadow 2s linear;
+        &:hover {
+          color: $primary-light-color;
+          box-shadow: inset 0 -200px 0 0 $accent-light-color;
+        }
+        &:active {
+          color: $active-light-color;
+        }
+        &.dark-mode {
+          color: $secondary-dark-color;
+          border-bottom: 1px solid $secondary-dark-color;
+          box-shadow: inset 0 0 0 0 $accent-dark-color;
+          &:hover {
+            color: #fff;
+            box-shadow: inset 0 -200px 0 0 $accent-dark-color;
+          }
+          &:active {
+            color: $active-dark-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 24rem) {
+  /* classes */
+  div.headings h2 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+  div.headings hr {
+    margin: 0;
+    margin-right: 20%;
+  }
+  div.project {
+    padding-block-end: 5rem;
+  }
+  .project_title {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  .project_skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .project_skill {
+    margin-right: 1rem;
+    margin-block-end: 0.5rem;
+    border: 1px solid $accent-light-color;
+    border-radius: 3px;
+    color: $accent-light-color;
+    font-size: 0.8rem;
+    padding: 3px 7px 1px 7px;
+  }
+  .project_link a {
+    border: 2px solid $accent-light-color;
+    background-color: #3395ff;
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem;
+    border-radius: 7px;
+  }
+  .project_link a.dark-mode {
+    color: #e5e7eb;
+    border: 2px solid $accent-dark-color;
+    background-color: #00b487;
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem;
+    border-radius: 7px;
+  }
+
+  /* dark mode  */
+  div.mode {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+  }
+
+  /* display section  */
+  div#display {
+    min-width: 21rem;
+    padding: 0 min(5rem, 1rem);
+    margin-block: 10rem;
+  }
+  div#display h1 {
+    font-size: 3rem;
+  }
+  div#display div#headline p {
+    max-width: 88%;
+    min-width: 80%;
+    font-size: 1.5rem;
+  }
+  div#display #story p {
+    letter-spacing: 0.794px;
+    max-width: 90%;
+  }
+
+  /* about section  */
+  div#about {
+    min-width: 21rem;
+    padding: 0 min(5rem, 1rem);
+    margin-block: 10rem;
+  }
+
+  /* course section  */
+  div#coursework {
+    min-width: 21rem;
+    padding: 0 min(5rem, 1rem);
+    margin-block: 10rem;
+  }
+
+  /* skill section  */
+  div#skills {
+    min-width: 21rem;
+    padding: 0 min(5rem, 1rem);
+    margin-block: 10rem;
+  }
+
+  /* project section  */
+  div#projects {
+    min-width: 21rem;
+    padding: 0 min(5rem, 1rem);
+    margin-block-start: 10rem;
+    margin-block-end: 3rem;
+  }
+
+  /* footer  */
+  footer {
+    min-width: 21rem;
+    padding: 0 min(5rem, 1rem);
+    display: inline-block;
+  }
+  footer div#o {
+    font-size: 1rem;
+  }
+  footer div#l {
+    margin: 0 11%;
+  }
+  footer ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: center;
+  }
+  footer ul li {
+    margin-bottom: 1.5rem;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  footer ul li a.dark-mode {
+    text-decoration: none;
+    color: $secondary-dark-color;
+    border-bottom: 1px solid $secondary-dark-color;
+  }
+}
