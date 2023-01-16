@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectType } from "../model";
+import { ProjectType, getClass } from "../model";
 
 interface Props {
   project: ProjectType;
@@ -19,12 +19,7 @@ const Project: React.FC<Props> = ({ project, mode }) => {
         <div className="project_skills">
           <ul>
             {project.skills.map((skill, index) => (
-              <li
-                className={
-                  mode === "light" ? "project_skill" : "project_skill dark-mode"
-                }
-                key={index}
-              >
+              <li className={getClass(mode, "project_skill")} key={index}>
                 {skill}
               </li>
             ))}

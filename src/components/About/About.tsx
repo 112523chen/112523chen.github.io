@@ -1,4 +1,5 @@
 import React from "react";
+import { getClass } from "../model";
 
 type Props = {
   mode: string;
@@ -19,7 +20,7 @@ const About: React.FC<Props> = ({ mode }) => {
             CUNY Tech Prep. I am passionate about learning more about this world
             through different lenses especially through data.
           </p>
-          <p className={mode === "light" ? "highlight" : "highlight dark-mode"}>
+          <p className={getClass(mode, "highlight")}>
             My goal is to discover, analyze and harness — the power of 'data'.
             Data is undoubtedly the new gold of the era we live in.
           </p>

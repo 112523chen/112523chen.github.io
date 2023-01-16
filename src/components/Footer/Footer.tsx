@@ -1,4 +1,5 @@
 import React from "react";
+import { getClass } from "../model";
 
 interface Props {
   mode: string;
@@ -17,7 +18,7 @@ const Footer: React.FC<Props> = ({ mode }) => {
             <li>
               <a
                 target="_blank"
-                className={mode === "light" ? "links" : "links dark-mode"}
+                className={getClass(mode, "links")}
                 href="mailto:itsalexchen@gmail.com"
               >
                 Email
@@ -26,7 +27,7 @@ const Footer: React.FC<Props> = ({ mode }) => {
             <li>
               <a
                 target="_blank"
-                className={mode === "light" ? "links" : "links dark-mode"}
+                className={getClass(mode, "links")}
                 href="https://github.com/112523chen"
               >
                 GitHub
@@ -35,7 +36,7 @@ const Footer: React.FC<Props> = ({ mode }) => {
             <li>
               <a
                 target="_blank"
-                className={mode === "light" ? "links" : "links dark-mode"}
+                className={getClass(mode, "links")}
                 href="https://www.linkedin.com/in/alex-chen-112523chen/"
               >
                 LinkedIn
@@ -44,7 +45,7 @@ const Footer: React.FC<Props> = ({ mode }) => {
             <li>
               <a
                 target="_blank"
-                className={mode === "light" ? "links" : "links dark-mode"}
+                className={getClass(mode, "links")}
                 href="/AlexChenResume.pdf"
               >
                 Resume

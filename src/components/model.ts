@@ -7,3 +7,7 @@ export interface ProjectType {
   isWebApp: boolean;
   link: string;
 }
+
+export const getClass = (state: string, normalClass: string): string => {
+  return state === "light" ? normalClass : normalClass + " dark-mode";
+};

@@ -1,4 +1,5 @@
 import React from "react";
+import { getClass } from "../model";
 
 interface Props {
   mode: string;
@@ -14,13 +15,7 @@ const Coursework: React.FC<Props> = ({ mode }) => {
         </div>
         <div id="course">
           <div id="cs-course">
-            <h3
-              className={
-                mode === "light" ? "course-head" : "course-head dark-mode"
-              }
-            >
-              Computer Science
-            </h3>
+            <h3 className={getClass(mode, "course-head")}>Computer Science</h3>
             <p className="class">Data Structures</p>
             {/* <p className="class">Introduction to NoSQL Technologies</p> */}
             <p className="class">Object Oriented Programming in Java</p>
@@ -29,13 +24,7 @@ const Coursework: React.FC<Props> = ({ mode }) => {
             <p className="class">Discrete Structures and Algorithms</p>
           </div>
           <div id="ds-course">
-            <h3
-              className={
-                mode === "light" ? "course-head" : "course-head dark-mode"
-              }
-            >
-              Data Science
-            </h3>
+            <h3 className={getClass(mode, "course-head")}>Data Science</h3>
             <p className="class">Introduction to Artificial Intelligence</p>
             <p className="class">Machine Learning for Physics and Astronomy</p>
             {/* <p className="class">Machine Learning Fundamentals</p> */}
