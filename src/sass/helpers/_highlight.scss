@@ -1,13 +1,7 @@
 @import "../helpers/variables";
 
-.typewriter-container {
-  height: 3rem;
+.highlight {
   color: $accent-light-color;
-  font: {
-    size: 3rem;
-    family: sans-serif;
-    weight: bold;
-  }
   &.dark-mode {
     color: $accent-dark-color;
   }

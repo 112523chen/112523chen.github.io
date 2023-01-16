@@ -1,0 +1,57 @@
+@import "../helpers/variables";
+
+#display {
+  min-width: 21rem;
+  padding: {
+    top: 0;
+    right: 20%;
+    bottom: 9;
+    left: 20%;
+  }
+  margin-block-start: 15%;
+  margin-block-end: 35rem;
+  h1 {
+    font: {
+      size: 6rem;
+    }
+    margin: {
+      bottom: 0rem;
+    }
+  }
+  #headline {
+    font: {
+      family: $secondary-font;
+      size: 1.125rem;
+    }
+    margin: 1rem 0;
+    p {
+      max: {
+        width: 45rem;
+      }
+      min: {
+        width: 25rem;
+      }
+      font: {
+        size: 2rem;
+      }
+    }
+  }
+  #story {
+    font: {
+      family: "Times New Roman", Times, serif;
+      size: 1.125rem;
+    }
+    margin: 1rem 0;
+    p {
+      max: {
+        width: 37rem;
+      }
+      font: {
+        size: 1.15rem;
+      }
+    }
+    span {
+      margin: 0 0.2rem;
+    }
+  }
+}

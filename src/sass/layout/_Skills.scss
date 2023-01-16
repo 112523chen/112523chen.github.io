@@ -1,0 +1,29 @@
+@import "../helpers/variables";
+#skills {
+  min: {
+    width: 21rem;
+  }
+  padding: {
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+  }
+  margin-block-end: 15rem;
+  &#frame {
+    p {
+      line-height: 1.6rem;
+      max-width: 80%;
+    }
+    span {
+      font: {
+        weight: 900;
+        size: 1.1rem;
+      }
+      color: $accent-light-color;
+      &.dark-mode {
+        color: $accent-dark-color;
+      }
+    }
+  }
+}
