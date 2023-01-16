@@ -45,7 +45,7 @@ const Footer: React.FC<Props> = ({ mode }) => {
               <a
                 target="_blank"
                 className={mode === "light" ? "links" : "links dark-mode"}
-                href="../../../src/assets/docs/AlexChenResume.pdf"
+                href="public/AlexChenResume.pdf"
               >
                 Resume
               </a>
