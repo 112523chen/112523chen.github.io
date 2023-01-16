@@ -5,20 +5,24 @@ import { getClass } from "../../helpers/functions";
 
 interface Props {
   mode: string;
+  isMobileDevice: boolean;
 }
 
-const Display: React.FC<Props> = ({ mode }) => {
+const Display: React.FC<Props> = ({ mode, isMobileDevice }) => {
   return (
     <>
       <div id="display">
         <h1>Alex Chen</h1>
         <div id="headline">
-          <div className={getClass(mode, "typewriter-container")}>
-            <Typewriter words={phrases} loop={0} cursor={true} />
-          </div>
-          <p hidden id="mobile-head">
-            Aspiring Data Scientist | Data Science Fellow @ CUNY Tech Prep
-          </p>
+          {isMobileDevice ? (
+            <p id="mobile-head">
+              Aspiring Data Scientist | Data Science Fellow @ CUNY Tech Prep
+            </p>
+          ) : (
+            <div className={getClass(mode, "typewriter-container")}>
+              <Typewriter words={phrases} loop={0} cursor={true} />
+            </div>
+          )}
         </div>
         <div id="story">
           <p>

@@ -9,14 +9,15 @@ import { ProjectType } from "../model";
 interface Props {
   projectData: ProjectType[];
   mode: string;
+  isMobileDevice: boolean;
 }
 
-const Main: React.FC<Props> = ({ projectData, mode }) => {
+const Main: React.FC<Props> = ({ projectData, mode, isMobileDevice }) => {
   return (
     <>
-      <Display mode={mode} />
+      <Display mode={mode} isMobileDevice={isMobileDevice} />
       <About mode={mode} />
-      <Coursework mode={mode} />
+      {isMobileDevice ? <></> : <Coursework mode={mode} />}
       <Skillset mode={mode} />
       <Projects projectData={projectData} mode={mode} />
     </>

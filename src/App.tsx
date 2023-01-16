@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 
 const App: React.FC = () => {
+  let details = navigator.userAgent;
+  let regexp = /android|iphone|kindle|ipad/i;
+  let isMobileDevice = regexp.test(details);
   const colorState = window.matchMedia("(prefers-color-scheme:dark)").matches
     ? "dark"
     : "light";
@@ -23,7 +26,11 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <DisplayButton mode={mode} setMode={setMode} />
-      <Main projectData={projectData} mode={mode} />
+      <Main
+        projectData={projectData}
+        mode={mode}
+        isMobileDevice={isMobileDevice}
+      />
       <Footer mode={mode} />
     </div>
   );
