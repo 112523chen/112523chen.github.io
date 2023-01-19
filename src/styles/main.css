@@ -293,6 +293,7 @@ body.dark-mode {
 
 .typewriter-container {
   height: 3rem;
+  width: 80%;
   color: #007bff;
   font-size: 3rem;
   font-family: sans-serif;
