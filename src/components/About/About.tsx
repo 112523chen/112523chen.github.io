@@ -11,7 +11,7 @@ interface pProps {
   mode?: LightState;
 }
 
-const AboutBase = styled.div`
+export const AboutBase = styled.div`
   min-width: 21rem;
   padding-top: 0;
   padding-right: 20%;
@@ -42,7 +42,7 @@ const AboutHr = styled.hr`
 
 const AboutBio = styled.div``;
 
-const AboutP = styled.p<pProps>`
+export const AboutP = styled.p<pProps>`
   line-height: 2;
   max-width: 80%;
   &:nth-child(2) {
@@ -55,12 +55,12 @@ const AboutP = styled.p<pProps>`
 
 const About: React.FC<Props> = ({ mode, className }) => {
   return (
-    <AboutBase>
-      <AboutHeading>
+    <AboutBase id="aboutSection" data-testid="aboutSection">
+      <AboutHeading className="heading">
         <AboutH2>About Me</AboutH2>
         <AboutHr />
       </AboutHeading>
-      <AboutBio>
+      <AboutBio id="aboutBio">
         <AboutP>
           I am a third-year student at New York City College of Technology, CUNY
           and majoring in data science and interned at 2 companies in backend
@@ -69,7 +69,7 @@ const About: React.FC<Props> = ({ mode, className }) => {
           passionate about learning more about this world through different
           lenses especially through data.
         </AboutP>
-        <AboutP mode={mode}>
+        <AboutP mode={mode} className="highlight" data-testid="highlightedText">
           My goal is to discover, analyze and harness — the power of 'data'.
           Data is undoubtedly the new gold of the era we live in.
         </AboutP>

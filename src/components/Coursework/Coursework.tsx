@@ -68,7 +68,7 @@ const Courseworkp = styled.p`
 
 const Coursework: React.FC<Props> = ({ mode }) => {
   return (
-    <CourseworkBase>
+    <CourseworkBase data-testid="courseworkSection">
       <CourseworkHeading>
         <CourseworkH2>Relevant Coursework</CourseworkH2>
         <CourseworkHr />
