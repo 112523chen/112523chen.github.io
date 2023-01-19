@@ -7,3 +7,5 @@ export interface ProjectType {
   isWebApp: boolean;
   link: string;
 }
+
+export type LightState = "light" | "dark";

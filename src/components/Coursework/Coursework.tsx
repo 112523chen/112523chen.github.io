@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { CS_Coursework, DS_Coursework } from "../../assets/data/courswork.json";
+import { LightState } from "../model";
 
 interface Props {
-  mode: string;
+  mode: LightState;
   className?: string;
 }
 
 interface SectionHeadingProps {
-  mode: string;
+  mode: LightState;
 }
 
 const CourseworkBase = styled.div`

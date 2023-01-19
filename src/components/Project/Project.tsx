@@ -1,14 +1,14 @@
 import React from "react";
-import { ProjectType } from "../model";
+import { LightState, ProjectType } from "../model";
 import styled from "styled-components";
 
 interface Props {
   project: ProjectType;
-  mode: string;
+  mode: LightState;
 }
 
 interface ProjectModeProps {
-  mode: string;
+  mode: LightState;
 }
 
 const ProjectBase = styled.div`

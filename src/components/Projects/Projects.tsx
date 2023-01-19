@@ -1,11 +1,11 @@
 import React from "react";
-import { ProjectType } from "../model";
+import { LightState, ProjectType } from "../model";
 import styled from "styled-components";
 import Project from "../Project/Project";
 
 interface Props {
   projectData: ProjectType[];
-  mode: string;
+  mode: LightState;
   className?: string;
 }
 

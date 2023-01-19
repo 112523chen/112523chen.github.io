@@ -4,11 +4,11 @@ import About from "../About/About";
 import Coursework from "../Coursework/Coursework";
 import Skillset from "../Skillset/Skillset";
 import Projects from "../Projects/Projects";
-import { ProjectType } from "../model";
+import { LightState, ProjectType } from "../model";
 
 interface Props {
   projectData: ProjectType[];
-  mode: string;
+  mode: LightState;
   isMobileDevice: boolean;
 }
 

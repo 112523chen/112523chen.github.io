@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { LightState } from "../model";
 
 interface Props {
-  mode: string;
-  setMode: React.Dispatch<React.SetStateAction<string>>;
+  mode: LightState;
+  setMode: React.Dispatch<React.SetStateAction<LightState>>;
 }
 
 const ModeDisplay = styled.div`

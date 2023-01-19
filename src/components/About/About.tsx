@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { LightState } from "../model";
 
 interface Props {
-  mode: string;
+  mode: LightState;
   className?: string;
 }
 
 interface pProps {
-  mode?: string;
+  mode?: LightState;
 }
 
 const AboutBase = styled.div`

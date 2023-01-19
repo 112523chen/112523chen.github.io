@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { LightState } from "../model";
 
 interface Props {
-  mode: string;
+  mode: LightState;
 }
 
 interface LinkModeProps {
-  mode: string;
+  mode: LightState;
 }
 
 const FooterBase = styled.footer`

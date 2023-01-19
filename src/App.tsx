@@ -5,16 +5,19 @@ import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import { projectData } from "./assets/data/projectData.json";
 import { theme } from "./styles/theme";
+import { LightState } from "./components/model";
 
 const App: React.FC = () => {
   let details = navigator.userAgent;
   let regexp = /android|iphone|kindle|ipad/i;
   let isMobileDevice = regexp.test(details);
-  const colorState = window.matchMedia("(prefers-color-scheme:dark)").matches
+  const colorState: LightState = window.matchMedia(
+    "(prefers-color-scheme:dark)"
+  ).matches
     ? "dark"
     : "light";
 
-  const [mode, setMode] = useState<string>(colorState);
+  const [mode, setMode] = useState<LightState>(colorState);
 
   useEffect(() => {
     if (mode === "dark") {

@@ -2,14 +2,15 @@ import React from "react";
 import { phrases } from "../../assets/data/phrases.json";
 import { Typewriter } from "react-simple-typewriter";
 import styled from "styled-components";
+import { LightState } from "../model";
 
 interface Props {
-  mode: string;
+  mode: LightState;
   isMobileDevice: boolean;
 }
 
 interface DisplayModeProps {
-  mode: string;
+  mode: LightState;
 }
 
 const DisplayBase = styled.div`

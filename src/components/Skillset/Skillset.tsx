@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { LightState } from "../model";
 
 type Props = {
-  mode: string;
+  mode: LightState;
   className?: string;
 };
 
 interface LegendProps {
-  mode: string;
+  mode: LightState;
 }
 
 const SkillsetBase = styled.div`
