@@ -1,8 +1,0 @@
-@import "../helpers/variables";
-
-.highlight {
-  color: $accent-light-color;
-  &.dark-mode {
-    color: $accent-dark-color;
-  }
-}

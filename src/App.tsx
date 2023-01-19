@@ -1,10 +1,10 @@
-import { projectData } from "./assets/data/projectData.json";
 import { useEffect, useState } from "react";
-import { Provider } from "react-redux";
+import { ThemeProvider } from "styled-components";
 import DisplayButton from "./components/DisplayButton/DisplayButton";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
-import "./styles/main.css";
+import { projectData } from "./assets/data/projectData.json";
+import { theme } from "./styles/theme";
 
 const App: React.FC = () => {
   let details = navigator.userAgent;
@@ -25,15 +25,17 @@ const App: React.FC = () => {
   }, [mode]);
 
   return (
-    <div className="App">
-      <DisplayButton mode={mode} setMode={setMode} />
-      <Main
-        projectData={projectData}
-        mode={mode}
-        isMobileDevice={isMobileDevice}
-      />
-      <Footer mode={mode} />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <DisplayButton mode={mode} setMode={setMode} />
+        <Main
+          projectData={projectData}
+          mode={mode}
+          isMobileDevice={isMobileDevice}
+        />
+        <Footer mode={mode} />
+      </div>
+    </ThemeProvider>
   );
 };
 
