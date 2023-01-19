@@ -27,14 +27,12 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        {/* <DisplayButton mode={mode} setMode={setMode} /> */}
         <DisplayButton mode={mode} setMode={setMode} />
         <Main
           projectData={projectData}
           mode={mode}
           isMobileDevice={isMobileDevice}
         />
-        {/* <Footer mode={mode} /> */}
         <Footer mode={mode} />
       </div>
     </ThemeProvider>
