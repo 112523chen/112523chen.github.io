@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { CS_Coursework, DS_Coursework } from "../../assets/data/courswork.json";
+import {
+  CS_Coursework,
+  DS_Coursework,
+} from "../../assets/data/coursework.json";
 import { LightState } from "../model";
 
 interface Props {
@@ -62,7 +65,7 @@ const CourseworkDS = styled.div`
   margin-left: 1rem;
 `;
 
-const Courseworkp = styled.p`
+export const Courseworkp = styled.p`
   font-size: 1.1rem;
 `;
 
