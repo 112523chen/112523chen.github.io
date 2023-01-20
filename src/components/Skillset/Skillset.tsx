@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { LightState } from "../model";
+import { SkillSet } from "../../assets/data/skillset.json";
 
 type Props = {
   mode: LightState;
@@ -68,30 +69,24 @@ const Skillset: React.FC<Props> = ({ mode }) => {
         <SkillsetHr />
       </SkillsetHeading>
       <Frame>
-        <SkillGroup>
-          <Skillsetp>
-            <SkillLegend mode={mode}>Languages:</SkillLegend>
-            Python, SQL, HTML, CSS, JavaScript, TypeScript, Java, Sass, Bash, R
-          </Skillsetp>
-        </SkillGroup>
-        <SkillGroup>
-          <Skillsetp>
-            <SkillLegend mode={mode}>Libraries:</SkillLegend>
-            Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, NLTK, Redux, SciPy
-          </Skillsetp>
-        </SkillGroup>
-        <SkillGroup>
-          <Skillsetp>
-            <SkillLegend mode={mode}>Frameworks:</SkillLegend>
-            Streamlit, React, Bootstrap, Node, Mocha, Jest, Express
-          </Skillsetp>
-        </SkillGroup>
-        <SkillGroup>
-          <Skillsetp>
-            <SkillLegend mode={mode}>Tools:</SkillLegend>
-            Git, GitHub, Jupyter Notebooks, Excel, Data Studio, Tableau, Figma
-          </Skillsetp>
-        </SkillGroup>
+        {SkillSet.map((group, index) => {
+          let text: string = "";
+          for (let index = 0; index < group.values.length; index++) {
+            if (index < group.values.length - 1) {
+              text += `${group.values[index]}, `;
+            } else {
+              text += group.values[index];
+            }
+          }
+          return (
+            <SkillGroup key={index}>
+              <Skillsetp>
+                <SkillLegend mode={mode}>{group.text}</SkillLegend>
+                {text}
+              </Skillsetp>
+            </SkillGroup>
+          );
+        })}
       </Frame>
     </SkillsetBase>
   );
