@@ -94,8 +94,8 @@ const Footer: React.FC<Props> = ({ mode }) => {
       <Right>
         <UL>
           {linkData.map((link) => (
-            <LI>
-              <Link target="_blank" key={link.id} href={link.link} mode={mode}>
+            <LI key={link.id}>
+              <Link target="_blank" href={link.link} mode={mode}>
                 {link.id}
               </Link>
             </LI>
