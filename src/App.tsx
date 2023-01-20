@@ -11,6 +11,11 @@ interface AppProps {
   mode: LightState;
 }
 
+const AppBase = styled.div<AppProps>`
+  background-color: ${(props) => (props.mode === "light" ? "#fff" : "#111827")};
+  color: ${(props) => (props.mode === "light" ? "" : "#e7e7e7")};
+`;
+
 const App: React.FC = () => {
   let details = navigator.userAgent;
   let regexp = /android|iphone|kindle|ipad/i;
@@ -23,12 +28,6 @@ const App: React.FC = () => {
     : "light";
 
   const [mode, setMode] = useState<LightState>(colorState);
-
-  const AppBase = styled.div<AppProps>`
-    background-color: ${(props) =>
-      props.mode === "light" ? "#fff" : "#111827"};
-    color: ${(props) => (props.mode === "light" ? "" : "#e7e7e7")};
-  `;
 
   return (
     <ThemeProvider theme={theme}>
