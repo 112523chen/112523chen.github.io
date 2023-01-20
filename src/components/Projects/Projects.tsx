@@ -12,10 +12,7 @@ interface Props {
 
 const ProjectsBase = styled.div`
   min-width: 21rem;
-  padding-top: 0;
-  padding-right: 20%;
-  padding-bottom: 0;
-  padding-left: 20%;
+  padding: 0 20%;
   -webkit-margin-after: 15rem;
   margin-block-end: 15rem;
   @media only screen and (max-width: 24rem) {

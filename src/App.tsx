@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import DisplayButton from "./components/DisplayButton/DisplayButton";
 import Main from "./components/Main/Main";

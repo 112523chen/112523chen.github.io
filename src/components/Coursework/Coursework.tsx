@@ -18,10 +18,7 @@ interface SectionHeadingProps {
 
 const CourseworkBase = styled.div`
   min-width: 21rem;
-  padding-top: 0;
-  padding-right: 20%;
-  padding-bottom: 0;
-  padding-left: 20%;
+  padding: 0 20%;
   -webkit-margin-after: 15rem;
   margin-block-end: 15rem;
 `;
@@ -34,8 +31,7 @@ const CourseworkCourse = styled.div`
 
 const CourseworkSectionHeading = styled.div<SectionHeadingProps>`
   font-size: 2rem;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block: 2rem;
   color: ${(props) =>
     props.mode === "light"
       ? props.theme.color.lightMode.accent

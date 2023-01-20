@@ -14,10 +14,7 @@ interface pProps {
 
 export const AboutBase = styled.div`
   min-width: 21rem;
-  padding-top: 0;
-  padding-right: 20%;
-  padding-bottom: 0;
-  padding-left: 20%;
+  padding: 0 20%;
   margin-block-end: 15rem;
   @media only screen and (max-width: 24rem) {
     padding: 0 min(5rem, 1rem);
