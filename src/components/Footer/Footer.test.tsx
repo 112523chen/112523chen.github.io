@@ -2,8 +2,12 @@ import { DefaultTheme, ThemeProvider } from "styled-components";
 import { LightState } from "../model";
 import { theme as normalTheme } from "../../styles/theme";
 import Footer from "./Footer";
-import { render, screen } from "@testing-library/react";
+import { render, screen, cleanup } from "@testing-library/react";
 import "jest-styled-components";
+
+afterEach(() => {
+  cleanup;
+});
 
 describe("Footer Component", () => {
   test("Component has Light Color Theme when `light` mode", () => {
