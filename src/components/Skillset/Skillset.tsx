@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { LightState } from "../model";
 import { SkillSet } from "../../assets/data/skillset.json";
+import Heading from "../Heading/Heading";
 
 type Props = {
   mode: LightState;
@@ -26,22 +27,6 @@ const SkillsetBase = styled.div`
   }
 `;
 
-const SkillsetHeading = styled.div``;
-
-const SkillsetH2 = styled.h2`
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-  @media only screen and (max-width: 24rem) {
-    font-size: 2rem;
-  }
-`;
-
-const SkillsetHr = styled.hr`
-  margin: 0;
-  margin-right: 20%;
-`;
-
 const Frame = styled.div``;
 
 const SkillGroup = styled.div``;
@@ -64,10 +49,7 @@ const SkillLegend = styled.span<LegendProps>`
 const Skillset: React.FC<Props> = ({ mode }) => {
   return (
     <SkillsetBase>
-      <SkillsetHeading>
-        <SkillsetH2>Skills</SkillsetH2>
-        <SkillsetHr />
-      </SkillsetHeading>
+      <Heading>Skills</Heading>
       <Frame>
         {SkillSet.map((group, index) => {
           let text: string = "";

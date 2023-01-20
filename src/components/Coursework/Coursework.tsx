@@ -5,6 +5,7 @@ import {
   DS_Coursework,
 } from "../../assets/data/coursework.json";
 import { LightState } from "../model";
+import Heading from "../Heading/Heading";
 
 interface Props {
   mode: LightState;
@@ -23,22 +24,6 @@ const CourseworkBase = styled.div`
   padding-left: 20%;
   -webkit-margin-after: 15rem;
   margin-block-end: 15rem;
-`;
-
-const CourseworkHeading = styled.div``;
-
-const CourseworkH2 = styled.h2`
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-  @media only screen and (max-width: 24rem) {
-    font-size: 2rem;
-  }
-`;
-
-const CourseworkHr = styled.hr`
-  margin: 0;
-  margin-right: 20%;
 `;
 
 const CourseworkCourse = styled.div`
@@ -72,10 +57,7 @@ export const Courseworkp = styled.p`
 const Coursework: React.FC<Props> = ({ mode }) => {
   return (
     <CourseworkBase data-testid="courseworkSection">
-      <CourseworkHeading>
-        <CourseworkH2>Relevant Coursework</CourseworkH2>
-        <CourseworkHr />
-      </CourseworkHeading>
+      <Heading>Relevant Coursework</Heading>
       <CourseworkCourse>
         <CourseworkCS>
           <CourseworkSectionHeading mode={mode}>
