@@ -15,18 +15,13 @@ interface DisplayModeProps {
 
 const DisplayBase = styled.div`
   min-width: 21rem;
-  padding-top: 0;
+  padding-top: 0px;
   padding-right: 20%;
-  padding-bottom: 9;
   padding-left: 20%;
-  -webkit-margin-before: 15%;
-  margin-block-start: 15%;
-  -webkit-margin-after: 35rem;
-  margin-block-end: 35rem;
+  padding-block: 15% 35rem;
   @media only screen and (max-width: 24rem) {
     padding: 0 min(5rem, 1rem);
-    margin-block-start: 5rem;
-    margin-block-end: 10rem;
+    padding-block: 5rem 10rem;
   }
 `;
 
