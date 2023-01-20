@@ -2,6 +2,7 @@ import React from "react";
 import { LightState, ProjectType } from "../model";
 import styled from "styled-components";
 import Project from "../Project/Project";
+import Heading from "../Heading/Heading";
 
 interface Props {
   projectData: ProjectType[];
@@ -11,10 +12,7 @@ interface Props {
 
 const ProjectsBase = styled.div`
   min-width: 21rem;
-  padding-top: 0;
-  padding-right: 20%;
-  padding-bottom: 0;
-  padding-left: 20%;
+  padding: 0 20%;
   -webkit-margin-after: 15rem;
   margin-block-end: 15rem;
   @media only screen and (max-width: 24rem) {
@@ -24,31 +22,12 @@ const ProjectsBase = styled.div`
   }
 `;
 
-const ProjectsHeading = styled.div``;
-
-const ProjectsH2 = styled.h2`
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-  @media only screen and (max-width: 24rem) {
-    font-size: 2rem;
-  }
-`;
-
-const ProjectsHr = styled.hr`
-  margin: 0;
-  margin-right: 20%;
-`;
-
 const Frame = styled.div``;
 
 const Projects: React.FC<Props> = ({ projectData, mode, className }) => {
   return (
     <ProjectsBase>
-      <ProjectsHeading>
-        <ProjectsH2>Projects</ProjectsH2>
-        <ProjectsHr />
-      </ProjectsHeading>
+      <Heading>Projects</Heading>
       <Frame>
         {projectData.map((project) => (
           <Project project={project} key={project.id} mode={mode} />

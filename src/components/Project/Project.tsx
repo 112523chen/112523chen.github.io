@@ -12,7 +12,6 @@ interface ProjectModeProps {
 }
 
 const ProjectBase = styled.div`
-  -webkit-padding-after: 5rem;
   padding-block-end: 5rem;
 `;
 
@@ -54,10 +53,7 @@ const ProjectLI = styled.li<ProjectModeProps>`
       ? props.theme.color.lightMode.accent
       : props.theme.color.darkMode.accent};
   font-size: 0.8rem;
-  padding-top: 3px;
-  padding-right: 7px;
-  padding-bottom: 1px;
-  padding-left: 7px;
+  padding: 3px 7px 1px 7px;
   box-shadow: inset 0 0 0 0
     ${(props) =>
       props.mode === "light"

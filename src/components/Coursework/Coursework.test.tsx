@@ -39,11 +39,9 @@ describe("Coursework Component", () => {
     const rightHeading = screen.getByText("Data Science");
 
     expect(leftHeading).toHaveStyleRule("font-size", "2rem");
-    expect(leftHeading).toHaveStyleRule("margin-block-start", "1em");
-    expect(leftHeading).toHaveStyleRule("margin-block-end", "1em");
+    expect(leftHeading).toHaveStyleRule("margin-block", "2rem");
     expect(rightHeading).toHaveStyleRule("font-size", "2rem");
-    expect(rightHeading).toHaveStyleRule("margin-block-start", "1em");
-    expect(rightHeading).toHaveStyleRule("margin-block-end", "1em");
+    expect(rightHeading).toHaveStyleRule("margin-block", "2rem");
 
     expect(leftHeading).toHaveStyleRule("color", lightAccentColor);
     expect(rightHeading).toHaveStyleRule("color", lightAccentColor);
@@ -64,11 +62,10 @@ describe("Coursework Component", () => {
     const rightHeading = screen.getByText("Data Science");
 
     expect(leftHeading).toHaveStyleRule("font-size", "2rem");
-    expect(leftHeading).toHaveStyleRule("margin-block-start", "1em");
-    expect(leftHeading).toHaveStyleRule("margin-block-end", "1em");
+    expect(leftHeading).toHaveStyleRule("margin-block", "2rem");
+
     expect(rightHeading).toHaveStyleRule("font-size", "2rem");
-    expect(rightHeading).toHaveStyleRule("margin-block-start", "1em");
-    expect(rightHeading).toHaveStyleRule("margin-block-end", "1em");
+    expect(rightHeading).toHaveStyleRule("margin-block", "2rem");
 
     expect(leftHeading).toHaveStyleRule("color", darkAccentColor);
     expect(rightHeading).toHaveStyleRule("color", darkAccentColor);

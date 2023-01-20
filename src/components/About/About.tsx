@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { LightState } from "../model";
+import Heading from "../Heading/Heading";
 
 interface Props {
   mode: LightState;
@@ -13,31 +14,11 @@ interface pProps {
 
 export const AboutBase = styled.div`
   min-width: 21rem;
-  padding-top: 0;
-  padding-right: 20%;
-  padding-bottom: 0;
-  padding-left: 20%;
+  padding: 0 20%;
   margin-block-end: 15rem;
   @media only screen and (max-width: 24rem) {
     padding: 0 min(5rem, 1rem);
-    /* margin-block: 10rem; */
   }
-`;
-
-const AboutHeading = styled.div``;
-
-const AboutH2 = styled.h2`
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-  @media only screen and (max-width: 24rem) {
-    font-size: 2rem;
-  }
-`;
-
-const AboutHr = styled.hr`
-  margin: 0;
-  margin-right: 20%;
 `;
 
 const AboutBio = styled.div``;
@@ -56,10 +37,7 @@ export const AboutP = styled.p<pProps>`
 const About: React.FC<Props> = ({ mode, className }) => {
   return (
     <AboutBase id="aboutSection" data-testid="aboutSection">
-      <AboutHeading className="heading">
-        <AboutH2>About Me</AboutH2>
-        <AboutHr />
-      </AboutHeading>
+      <Heading>About Me</Heading>
       <AboutBio id="aboutBio">
         <AboutP>
           I am a third-year student at New York City College of Technology, CUNY

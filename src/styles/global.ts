@@ -7,5 +7,6 @@ html {
 body {
   margin: 0;
   font-family: "Inter";
+  overscroll-behavior: none;
 }
 `;
