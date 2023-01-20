@@ -58,7 +58,7 @@ const DisplayMobileWord = styled.p`
 `;
 
 const TypeWriterContainer = styled.div<DisplayModeProps>`
-  height: 3rem;
+  height: fit-content;
   font-size: 3rem;
   font-family: sans-serif;
   font-weight: bold;
