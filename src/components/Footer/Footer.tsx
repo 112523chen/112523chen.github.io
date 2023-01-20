@@ -13,9 +13,8 @@ interface LinkModeProps {
 
 const FooterBase = styled.footer`
   min-width: 21rem;
-  padding: 0 1rem;
+  padding: 0 1rem 0.5rem 1rem;
   display: flex;
-  margin-bottom: 0.5rem;
   @media only screen and (max-width: 24rem) {
     padding: 0 min(5rem, 1rem);
     display: inline-block;
