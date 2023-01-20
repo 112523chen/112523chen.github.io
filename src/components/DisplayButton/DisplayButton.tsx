@@ -44,7 +44,7 @@ const Button = styled.button<ButtonProps>`
   }
 `;
 
-const DisplayButton2: React.FC<Props> = ({ mode, setMode }) => {
+const DisplayButton: React.FC<Props> = ({ mode, setMode }) => {
   const initialState = mode === "light" ? "rgba(0,0,0,.06)" : "#b3b3b3";
   const [hoverState, setHoverState] = useState(false);
   const [hoverColor, setHoverColor] = useState(initialState);
@@ -70,6 +70,7 @@ const DisplayButton2: React.FC<Props> = ({ mode, setMode }) => {
       {mode === "light" ? (
         <Button
           mode={mode}
+          data-testid="lightIcon"
           hoverColor={hoverColor}
           onClick={handleModeChange}
           onMouseEnter={() => {
@@ -94,6 +95,7 @@ const DisplayButton2: React.FC<Props> = ({ mode, setMode }) => {
       ) : (
         <Button
           mode={mode}
+          data-testid="darkIcon"
           hoverColor={hoverColor}
           onClick={handleModeChange}
           onMouseEnter={() => {
@@ -126,4 +128,4 @@ const DisplayButton2: React.FC<Props> = ({ mode, setMode }) => {
   );
 };
 
-export default DisplayButton2;
+export default DisplayButton;
