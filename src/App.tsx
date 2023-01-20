@@ -17,9 +17,8 @@ const AppBase = styled.div<AppProps>`
 `;
 
 const App: React.FC = () => {
-  let details = navigator.userAgent;
   let regexp = /android|iphone|kindle|ipad/i;
-  let isMobileDevice = regexp.test(details);
+  let isMobileDevice = regexp.test(navigator.userAgent);
 
   const colorState: LightState = window.matchMedia(
     "(prefers-color-scheme:dark)"
