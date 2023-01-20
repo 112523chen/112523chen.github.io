@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { LightState } from "../model";
+import { linkData } from "../../assets/data/linkData.json";
 
 interface Props {
   mode: LightState;
@@ -92,38 +93,13 @@ const Footer: React.FC<Props> = ({ mode }) => {
       </Middle>
       <Right>
         <UL>
-          <LI>
-            <Link
-              target="_blank"
-              mode={mode}
-              href="mailto:itsalexchen@gmail.com"
-            >
-              Email
-            </Link>
-          </LI>
-          <LI>
-            <Link
-              target="_blank"
-              mode={mode}
-              href="https://github.com/112523chen"
-            >
-              GitHub
-            </Link>
-          </LI>
-          <LI>
-            <Link
-              target="_blank"
-              mode={mode}
-              href="https://www.linkedin.com/in/alex-chen-112523chen/"
-            >
-              LinkedIn
-            </Link>
-          </LI>
-          <LI>
-            <Link target="_blank" mode={mode} href="/AlexChenResume.pdf">
-              Resume
-            </Link>
-          </LI>
+          {linkData.map((link) => (
+            <LI>
+              <Link target="_blank" key={link.id} href={link.link} mode={mode}>
+                {link.id}
+              </Link>
+            </LI>
+          ))}
         </UL>
       </Right>
     </FooterBase>
