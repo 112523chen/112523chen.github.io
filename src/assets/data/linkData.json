@@ -1,0 +1,20 @@
+{
+  "linkData": [
+    {
+      "id": "Email",
+      "link": "mailto:itsalexchen@gmail.com"
+    },
+    {
+      "id": "GitHub",
+      "link": "https://github.com/112523chen"
+    },
+    {
+      "id": "LinkedIn",
+      "link": "https://www.linkedin.com/in/alex-chen-112523chen/"
+    },
+    {
+      "id": "Resume",
+      "link": "/AlexChenResume.pdf"
+    }
+  ]
+}
