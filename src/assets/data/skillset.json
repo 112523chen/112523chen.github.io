@@ -6,11 +6,12 @@
       "values": [
         "Python",
         "SQL",
-        "HTML",
-        "CSS",
         "JavaScript",
         "TypeScript",
+        "HTML",
+        "CSS",
         "Sass",
+        "MQL",
         "Java",
         "Bash",
         "R"
@@ -22,9 +23,14 @@
       "values": [
         "Pandas",
         "NumPy",
+        "Scikit-learn",
         "Matplotlib",
         "Seaborn",
-        "Scikit-learn",
+        "TenserFlow",
+        "Styled-Components",
+        "PyMongo",
+        "PySpark",
+        "Sqlite3",
         "NLTK",
         "Redux",
         "SciPy"
@@ -50,10 +56,12 @@
         "GitHub",
         "Git",
         "Jupyter Notebooks",
+        "Postgres",
+        "MongoDB",
+        "Figma",
         "Excel",
         "Data Studio",
-        "Tableau",
-        "Figma"
+        "Tableau"
       ]
     }
   ]

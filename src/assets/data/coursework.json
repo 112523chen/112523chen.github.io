@@ -3,12 +3,14 @@
     "Data Structures",
     "Object Oriented Programming in Java",
     "Web Programming",
-    "Programming Fundamentals",
-    "Intro to NoSQL"
+    "Programming Fundamentals"
   ],
   "DS_Coursework": [
     "Introduction to Artificial Intelligence",
+    "Machine Learning Fundamentals",
     "Machine Learning for Physics and Astronomy",
+    "Introduction to Non-Relational (NoSQL) Technologies",
+    "Data Visualizations",
     "Information and Data Management",
     "Introduction to Data Science",
     "Database Systems Fundamentals",
