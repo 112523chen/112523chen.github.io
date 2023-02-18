@@ -40,12 +40,13 @@ const About: React.FC<Props> = ({ mode, className }) => {
       <Heading>About Me</Heading>
       <AboutBio id="aboutBio">
         <AboutP>
-          I am a third-year student at New York City College of Technology, CUNY
-          and majoring in data science and interned at 2 companies in backend
-          development and data analysis roles. I also am part of the 8th cohort
-          of CUNY Tech Prep as a fellow and also an ambassador for CTP. I am
-          passionate about learning more about this world through different
-          lenses especially through data.
+          I am a third-year data science student at New York City College of
+          Technology, CUNY and I have interned at 2 companies with the aim of
+          effectively managing data and creating visualizations from data to
+          support data-driven decisions and each company's mission I also am
+          part of the 8th cohort of CUNY Tech Prep as a fellow and also an
+          ambassador for CTP. I am passionate about learning more about this
+          world through different lenses especially through data.
         </AboutP>
         <AboutP mode={mode} className="highlight" data-testid="highlightedText">
           My goal is to discover, analyze and harness — the power of 'data'.
