@@ -39,11 +39,11 @@ const CourseworkSectionHeading = styled.div<SectionHeadingProps>`
 `;
 
 const CourseworkCS = styled.div`
-  margin-right: 1rem;
+  margin-left: 1rem;
 `;
 
 const CourseworkDS = styled.div`
-  margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 export const Courseworkp = styled.p`
@@ -55,14 +55,6 @@ const Coursework: React.FC<Props> = ({ mode }) => {
     <CourseworkBase data-testid="courseworkSection">
       <Heading>Relevant Coursework</Heading>
       <CourseworkCourse>
-        <CourseworkCS>
-          <CourseworkSectionHeading mode={mode}>
-            Computer Science
-          </CourseworkSectionHeading>
-          {CS_Coursework.map((course, index) => (
-            <Courseworkp key={index}>{course}</Courseworkp>
-          ))}
-        </CourseworkCS>
         <CourseworkDS>
           <CourseworkSectionHeading mode={mode}>
             Data Science
@@ -71,6 +63,14 @@ const Coursework: React.FC<Props> = ({ mode }) => {
             <Courseworkp key={index}>{course}</Courseworkp>
           ))}
         </CourseworkDS>
+        <CourseworkCS>
+          <CourseworkSectionHeading mode={mode}>
+            Computer Science
+          </CourseworkSectionHeading>
+          {CS_Coursework.map((course, index) => (
+            <Courseworkp key={index}>{course}</Courseworkp>
+          ))}
+        </CourseworkCS>
       </CourseworkCourse>
     </CourseworkBase>
   );
