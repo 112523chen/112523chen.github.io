@@ -1,6 +1,24 @@
 {
   "projectData": [
     {
+      "id": 13,
+      "title": "Job Application Tracker App",
+      "details": "Develop a full-stack web app using TypeScript React, Express, Node, and Postgres database that allows users to create, view, update, and delete items in their job tracker",
+      "skills": [
+        "Postgres",
+        "Express",
+        "React",
+        "Node",
+        "React Router",
+        "Styled-Components",
+        "TypeScript",
+        "SQL"
+      ],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/Job-Application-Tracker-Web-App"
+    },
+    {
       "id": 12,
       "title": "Portfolio Website",
       "details": "Created a web application/page to highlight projects and person brand with React, TypeScript, and Styled-Components",
