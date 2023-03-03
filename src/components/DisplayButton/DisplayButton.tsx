@@ -1,48 +1,11 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import { LightState } from "../model";
+import { ModeDisplay, Button } from "./DisplayButton.style";
 
 interface Props {
   mode: LightState;
   setMode: React.Dispatch<React.SetStateAction<LightState>>;
 }
-
-interface ButtonProps {
-  mode: LightState;
-  hoverColor: string;
-}
-
-const ModeDisplay = styled.div`
-  position: absolute;
-  right: 6%;
-  top: 6%;
-  @media only screen and (max-width: 24rem) {
-    right: 10%;
-  }
-`;
-
-const Button = styled.button<ButtonProps>`
-  background: none;
-  border: none;
-  border-radius: 5px;
-  padding: 6px 6px;
-  display: flex;
-  transition: color 0.3s linear, box-shadow 0.3s linear;
-  &:hover {
-    background-color: ${(props) => props.hoverColor};
-    border: #b3b3b3 solid 2px;
-    padding: 4px;
-    box-shadow: 0 5px #7d7d7d;
-    color: ${(props) =>
-      props.mode === "light"
-        ? props.theme.color.lightMode.hover
-        : props.theme.color.darkMode.hover};
-  }
-  &:active {
-    box-shadow: none;
-    transform: translateY(5px);
-  }
-`;
 
 const DisplayButton: React.FC<Props> = ({ mode, setMode }) => {
   const initialState = mode === "light" ? "rgba(0,0,0,.06)" : "#b3b3b3";
