@@ -12,6 +12,7 @@ import {
   ProjectLinkButton,
   ProjectLink,
 } from "./Project.style";
+import { getLinkTitle, getLinkText } from "../../functions/helper";
 
 interface Props {
   project: ProjectType;
@@ -39,21 +40,11 @@ const Project: React.FC<Props> = ({ project, mode }) => {
       <ProjectLinkButton mode={mode}>
         <ProjectLink
           mode={mode}
-          title={
-            project.isRepo === false && project.isWebApp === true
-              ? "Project Web App"
-              : project.isRepo === false && project.isWebApp === false
-              ? "Project Web Page"
-              : "Project Github Repo"
-          }
+          title={getLinkTitle(project.isRepo, project.isWebApp)}
           target="_blank"
           href={project.link}
         >
-          {project.isRepo === false && project.isWebApp === true
-            ? "Web App"
-            : project.isRepo === false && project.isWebApp === false
-            ? "Web Page"
-            : "Github Repo"}
+          {getLinkText(project.isRepo, project.isWebApp)}
         </ProjectLink>
       </ProjectLinkButton>
     </ProjectBase>
