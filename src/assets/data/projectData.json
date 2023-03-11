@@ -66,7 +66,7 @@
         "NTLK",
         "Streamlit"
       ],
-      "isRepo": true,
+      "isRepo": false,
       "isWebApp": true,
       "link": "https://112523chen-text-emotion-classification-ctp-dem0.streamlit.app/"
     },
