@@ -6,14 +6,18 @@
     "Programming Fundamentals"
   ],
   "DS_Coursework": [
+    // "Information Retrieval",
+    // "Natural Language Processing",
     "Introduction to Artificial Intelligence",
     "Machine Learning Fundamentals",
     "Machine Learning for Physics and Astronomy",
     "Introduction to Non-Relational (NoSQL) Technologies",
     "Data Visualizations",
+    // "Data Mining",
     "Information and Data Management",
     "Introduction to Data Science",
     "Database Systems Fundamentals",
+    //"Data Security, Privacy, and Ethics",
     "Introduction to Linear Algebra",
     "Probability and Mathematical Statistics"
   ]
