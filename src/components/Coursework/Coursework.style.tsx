@@ -22,7 +22,9 @@ export const CourseworkSectionHeading = styled.div<SectionHeadingProps>`
   font-size: 2rem;
   margin-block: 2rem;
   color: ${(props) =>
-    props.mode === "light" ? props.theme.color.lightMode.accent : "red"};
+    props.mode === "light"
+      ? props.theme.color.lightMode.accent
+      : props.theme.color.darkMode.accent};
 `;
 
 export const CourseworkCS = styled.div`
