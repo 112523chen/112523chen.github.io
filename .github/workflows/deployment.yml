@@ -23,8 +23,5 @@ jobs:
       - name: "Install Dependencies"
         run: npm ci
 
-      - name: "Construct Dist"
-        run: npm run build
-
-      - name: "Deploy Dist"
+      - name: "Deploy Build"
         run: npm run deploy
