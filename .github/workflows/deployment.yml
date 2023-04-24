@@ -26,12 +26,5 @@ jobs:
       - name: "Deploy Build"
         run: |
           npm run build
-
-      - name: "Deploy Build 2"
-        run: git add .
-
-      - name: "Deploy Build 3"
-        run: git commit -m 'deploy'
-
-      - name: "Deploy Build 5"
-        run: git push origin `git subtree split --prefix dist main`:gh-pages --force
+          git add . && git commit -m 'deploy'
+          git push origin `git subtree split --prefix dist main`:gh-pages --force

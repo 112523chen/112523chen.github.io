@@ -12,8 +12,7 @@
         "CSS",
         "Sass",
         "Java",
-        "Bash",
-        "R"
+        "Bash"
       ]
     },
     {
@@ -27,9 +26,11 @@
         "Seaborn",
         "TenserFlow",
         "Styled-Components",
+        "React Router",
         "PyMongo",
         "PySpark",
         "Sqlite3",
+        "Rechart",
         "NLTK",
         "Redux",
         "SciPy"
