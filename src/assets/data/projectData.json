@@ -9,9 +9,10 @@
         "Express",
         "React",
         "Node",
-        "React Router",
-        "Styled-Components",
         "TypeScript",
+        "Styled-Components",
+        "React Router",
+        "Recharts",
         "SQL"
       ],
       "isRepo": true,
