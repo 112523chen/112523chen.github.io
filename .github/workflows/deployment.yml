@@ -24,4 +24,14 @@ jobs:
         run: npm ci
 
       - name: "Deploy Build"
-        run: npm run deploy
+        run: |
+          npm run build
+
+      - name: "Deploy Build 2"
+        run: git add .
+
+      - name: "Deploy Build 2"
+        run: git commit -m 'deploy'
+
+      - name: "Deploy Build 2"
+        run: git subtree push --prefix dist origin gh-pages
