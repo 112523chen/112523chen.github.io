@@ -34,7 +34,4 @@ jobs:
         run: git commit -m 'deploy'
 
       - name: "Deploy Build 4"
-        run: git push origin --delete gh-pages
-
-      - name: "Deploy Build 5"
         run: git push origin --delete gh-pages && git subtree push --prefix dist origin gh-pages
