@@ -30,8 +30,11 @@ jobs:
       - name: "Deploy Build 2"
         run: git add .
 
-      - name: "Deploy Build 2"
+      - name: "Deploy Build 3"
         run: git commit -m 'deploy'
 
-      - name: "Deploy Build 2"
-        run: git subtree push --prefix dist origin gh-pages
+      - name: "Deploy Build 4"
+        run: git pull'
+
+      - name: "Deploy Build 5"
+        run: git push origin --delete gh-pages && git subtree push --prefix dist origin gh-pages
