@@ -1,8 +1,8 @@
 ---
-name: Add New Feature
-about: 'Document a new feature '
+name: Busy Work
+about: Checklist of tasks to do
 title: ''
-labels: 'type: enhancement'
+labels: ''
 assignees: 112523chen
 
 ---
