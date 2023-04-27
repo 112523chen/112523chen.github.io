@@ -63,13 +63,3 @@ export const getActiveColor = (props: any): string => {
     ? props.theme.color.lightMode.active
     : props.theme.color.darkMode.active;
 };
-
-//* get box shadow color
-export const getBoxShadowColor = (props: any): string => {
-  return props.mode === "light" ? "#2468b3" : "#008c69";
-};
-
-//* get background color
-export const getBackgroundColor = (props: any): string => {
-  return props.mode === "light" ? "#3395ff" : "#00c896";
-};
