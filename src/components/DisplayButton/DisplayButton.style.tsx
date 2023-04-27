@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LightState } from "../model";
+import { getHoverColor } from "../../functions/helper";
 
 interface ButtonProps {
   mode: LightState;
@@ -27,10 +28,7 @@ export const Button = styled.button<ButtonProps>`
     border: #b3b3b3 solid 2px;
     padding: 4px;
     box-shadow: 0 5px #7d7d7d;
-    color: ${(props) =>
-      props.mode === "light"
-        ? props.theme.color.lightMode.hover
-        : props.theme.color.darkMode.hover};
+    color: ${(props) => getHoverColor(props)};
   }
   &:active {
     box-shadow: none;

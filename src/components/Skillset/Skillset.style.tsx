@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LightState } from "../model";
+import { getAccentColor } from "../../functions/helper";
 
 interface LegendProps {
   mode: LightState;
@@ -29,8 +30,5 @@ export const SkillLegend = styled.span<LegendProps>`
   font-weight: 900;
   font-size: 1.1rem;
   margin-right: 0.2rem;
-  color: ${(props) =>
-    props.mode === "light"
-      ? props.theme.color.lightMode.accent
-      : props.theme.color.darkMode.accent};
+  color: ${(props) => getAccentColor(props)};
 `;

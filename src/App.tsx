@@ -6,6 +6,10 @@ import Footer from "./components/Footer/Footer";
 import { projectData } from "./assets/data/projectData.json";
 import { theme } from "./styles/theme";
 import { LightState } from "./components/model";
+import {
+  checkForMobileDevice,
+  getUserPreferredTheme,
+} from "./functions/helper";
 
 interface AppProps {
   mode: LightState;
@@ -17,15 +21,12 @@ const AppBase = styled.div<AppProps>`
 `;
 
 const App: React.FC = () => {
-  let regexp = /android|iphone|kindle|ipad/i;
-  let isMobileDevice = regexp.test(navigator.userAgent);
+  // Reference of user's device
+  const isMobileDevice: boolean = checkForMobileDevice();
+  // Reference of user's theme
+  const colorState: LightState = getUserPreferredTheme();
 
-  const colorState: LightState = window.matchMedia(
-    "(prefers-color-scheme:dark)"
-  ).matches
-    ? "dark"
-    : "light";
-
+  // State of application's theme
   const [mode, setMode] = useState<LightState>(colorState);
 
   return (
