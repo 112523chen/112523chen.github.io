@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LightState } from "../model";
+import { getAccentColor } from "../../functions/helper";
 
 interface pProps {
   mode?: LightState;
@@ -20,9 +21,6 @@ export const AboutP = styled.p<pProps>`
   line-height: 2;
   max-width: 80%;
   &:nth-child(2) {
-    color: ${(props) =>
-      props.mode === "light"
-        ? props.theme.color.lightMode.accent
-        : props.theme.color.darkMode.accent};
+    color: ${(props) => getAccentColor(props)};
   }
 `;

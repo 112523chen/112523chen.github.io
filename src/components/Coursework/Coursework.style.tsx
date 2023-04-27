@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LightState } from "../model";
+import { getAccentColor } from "../../functions/helper";
 
 interface SectionHeadingProps {
   mode: LightState;
@@ -21,10 +22,7 @@ export const CourseworkCourse = styled.div`
 export const CourseworkSectionHeading = styled.div<SectionHeadingProps>`
   font-size: 2rem;
   margin-block: 2rem;
-  color: ${(props) =>
-    props.mode === "light"
-      ? props.theme.color.lightMode.accent
-      : props.theme.color.darkMode.accent};
+  color: ${(props) => getAccentColor(props)};
 `;
 
 export const CourseworkCS = styled.div`

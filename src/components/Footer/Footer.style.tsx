@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LightState } from "../model";
+import { getAccentColor, getActiveColor } from "../../functions/helper";
 
 interface LinkModeProps {
   mode: LightState;
@@ -54,25 +55,14 @@ export const Link = styled.a<LinkModeProps>`
   text-decoration: none;
   padding: 0.2rem 0.2rem 0;
   color: ${(props) => (props.mode === "light" ? "black" : "#e7e7e7")};
-  border-bottom: 1px solid
-    ${(props) =>
-      props.mode === "light"
-        ? props.theme.color.lightMode.accent
-        : props.theme.color.darkMode.accent};
-  box-shadow: inset 0 0 0 0
-    ${(props) =>
-      props.mode === "light"
-        ? props.theme.color.lightMode.accent
-        : props.theme.color.darkMode.accent};
+  border-bottom: 1px solid ${(props) => getAccentColor(props)};
+  box-shadow: inset 0 0 0 0 ${(props) => getAccentColor(props)};
   transition: color 0.3s linear, box-shadow 2s linear;
   &:hover {
     color: #fff;
-    box-shadow: inset 0 -200px 0 0 ${(props) => (props.mode === "light" ? props.theme.color.lightMode.accent : props.theme.color.darkMode.accent)};
+    box-shadow: inset 0 -200px 0 0 ${(props) => getAccentColor(props)};
   }
   &:active {
-    color: ${(props) =>
-      props.mode === "light"
-        ? props.theme.color.lightMode.active
-        : props.theme.color.darkMode.active};
+    color: ${(props) => getActiveColor(props)};
   }
 `;

@@ -1,3 +1,4 @@
+//* Definition of a project object
 export interface ProjectType {
   id: number;
   title: string;
@@ -8,4 +9,5 @@ export interface ProjectType {
   link: string;
 }
 
+//* Definition of a theme state
 export type LightState = "light" | "dark";

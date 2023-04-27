@@ -9,7 +9,11 @@ interface Props {
 
 const DisplayButton: React.FC<Props> = ({ mode, setMode }) => {
   const initialState = mode === "light" ? "rgba(0,0,0,.06)" : "#b3b3b3";
+
+  // Reference to if user is hovering over button
   const [hoverState, setHoverState] = useState(false);
+
+  // Reference to to hovering color
   const [hoverColor, setHoverColor] = useState(initialState);
 
   const handleModeChange = (): void => {

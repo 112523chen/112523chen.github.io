@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LightState } from "../model";
+import { getAccentColor } from "../../functions/helper";
 
 interface DisplayModeProps {
   mode: LightState;
@@ -49,10 +50,7 @@ export const TypeWriterContainer = styled.div<DisplayModeProps>`
   font-size: 3rem;
   font-family: sans-serif;
   font-weight: bold;
-  color: ${(props) =>
-    props.mode === "light"
-      ? props.theme.color.lightMode.accent
-      : props.theme.color.darkMode.accent};
+  color: ${(props) => getAccentColor(props)};
 `;
 
 export const DisplayStory = styled.div`
@@ -62,18 +60,15 @@ export const DisplayStory = styled.div`
 `;
 
 export const Story = styled.p`
-      max-width: 36rem;
-    font-size: 1.15rem;
-    @media only screen and (max-width: 24rem) {
-      letter-spacing: 0.794px;
-      max-width: 90%;
-    }
-  }`;
+  max-width: 36rem;
+  font-size: 1.15rem;
+  @media only screen and (max-width: 24rem) {
+    letter-spacing: 0.794px;
+    max-width: 90%;
+  }
+`;
 
 export const Keywords = styled.span<DisplayModeProps>`
   margin: 0 0.2rem;
-  color: ${(props) =>
-    props.mode === "light"
-      ? props.theme.color.lightMode.accent
-      : props.theme.color.darkMode.accent};
+  color: ${(props) => getAccentColor(props)};
 `;
