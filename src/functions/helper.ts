@@ -23,10 +23,9 @@ export const getLinkTitle = (isRepo: boolean, isWebApp: boolean): string => {
     return "Project Github Repo";
   } else if (!isRepo && isWebApp) {
     return "Project Web App";
-  } else if (!isRepo && !isWebApp) {
+  } else {
     return "Project Web Page";
   }
-  return "";
 };
 
 //* Helper function to get text for the links for each project
@@ -35,10 +34,9 @@ export const getLinkText = (isRepo: boolean, isWebApp: boolean): string => {
     return "Github Repo";
   } else if (!isRepo && isWebApp) {
     return "Web App";
-  } else if (!isRepo && !isWebApp) {
+  } else {
     return "Web Page";
   }
-  return "";
 };
 
 // Style Helper Functions

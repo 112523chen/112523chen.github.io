@@ -42,6 +42,15 @@ describe("Link Hover Tests", () => {
 
     expect(getLinkTitle(isRepo, isWebApp)).toEqual(title);
   });
+
+  test("Create a link with a repo that isn't a web app", () => {
+    let isRepo: boolean = true;
+    let isWebApp: boolean = false;
+
+    let title: string = "Project Github Repo";
+
+    expect(getLinkTitle(isRepo, isWebApp)).toEqual(title);
+  });
 });
 
 describe("Link Text Tests", () => {
