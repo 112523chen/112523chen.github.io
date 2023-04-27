@@ -1,6 +1,6 @@
 ---
 name: Monthly Update
-about: Checklist of tasks to do Monthly
+about: Checklist of tasks to do monthly
 title: ''
 labels: 'type: maintenance'
 assignees: 112523chen
