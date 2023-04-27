@@ -51,7 +51,7 @@ describe("Link Text Tests", () => {
 
     let title: string = "Github Repo";
 
-    expect(getLinkTitle(isRepo, isWebApp)).toEqual(title);
+    expect(getLinkText(isRepo, isWebApp)).toEqual(title);
   });
 
   test("Create a link with a repo that is also a web app", () => {
