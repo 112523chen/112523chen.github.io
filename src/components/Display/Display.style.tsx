@@ -60,7 +60,7 @@ export const DisplayStory = styled.div`
 `;
 
 export const Story = styled.p`
-  max-width: 36rem;
+  max-width: 38.25rem;
   font-size: 1.15rem;
   @media only screen and (max-width: 24rem) {
     letter-spacing: 0.794px;
