@@ -19,7 +19,7 @@ describe("Main Component", () => {
     );
 
     expect(screen.getByText("Relevant Coursework")).toBeInTheDocument();
-    expect(container.childElementCount).toEqual(5);
+    expect(container.childElementCount).toEqual(6);
   });
 
   test("Coursework component is not rendered when device is mobile", () => {
@@ -33,6 +33,6 @@ describe("Main Component", () => {
       </ThemeProvider>
     );
 
-    expect(container.childElementCount).toEqual(4);
+    expect(container.childElementCount).toEqual(5);
   });
 });
