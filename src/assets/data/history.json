@@ -1,0 +1,22 @@
+{
+  "History": [
+    {
+      "id": 1,
+      "title": "Energy Technology Intern",
+      "employer": "The City University of New York",
+      "start": "Jul 2022",
+      "end": "Aug 2022",
+      "skills": ["Python", "Excel", "Jupyter"],
+      "summary": "Preformed quality assurance on applications and created automation tools with Python and its many libraries to connect the right people with data to support data-driven decisions"
+    },
+    {
+      "id": 0,
+      "title": "Operations & Data Intern",
+      "employer": "The Urban Assembly",
+      "start": "Mar 2022",
+      "end": "May 2022",
+      "skills": ["Excel", "Data Studio"],
+      "summary": "Created interactive data dashboards to connect 3 different non technical teams with data to support them in making data-driven decisions"
+    }
+  ]
+}
