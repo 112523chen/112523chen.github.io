@@ -5,6 +5,7 @@ import Coursework from "../Coursework/Coursework";
 import Skillset from "../Skillset/Skillset";
 import Projects from "../Projects/Projects";
 import { LightState, ProjectType } from "../model";
+import Professional from "../Professional/Professional";
 
 interface Props {
   projectData: ProjectType[];
@@ -19,6 +20,7 @@ const Main: React.FC<Props> = ({ projectData, mode, isMobileDevice }) => {
       <About mode={mode} />
       {isMobileDevice ? <></> : <Coursework mode={mode} />}
       <Skillset mode={mode} />
+      <Professional mode={mode} />
       <Projects projectData={projectData} mode={mode} />
     </>
   );
