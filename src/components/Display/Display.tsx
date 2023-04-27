@@ -43,7 +43,7 @@ const Display: React.FC<Props> = ({ mode, isMobileDevice }) => {
           <Keywords mode={mode}>New York City College of Technology</Keywords>
           while also studying
           <Keywords mode={mode}>full stack development</Keywords>
-          in my free time who is eager to tell stories from data.
+          in my free time with a mission of connecting people with data.
         </Story>
       </DisplayStory>
     </DisplayBase>
