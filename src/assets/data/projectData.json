@@ -13,7 +13,8 @@
         "Styled-Components",
         "React Router",
         "Recharts",
-        "SQL"
+        "SQL",
+        "Github Actions"
       ],
       "isRepo": true,
       "isWebApp": false,
@@ -23,7 +24,13 @@
       "id": 12,
       "title": "Portfolio Website",
       "details": "Created a web application/page to highlight projects and person brand with React, TypeScript, and Styled-Components",
-      "skills": ["React", "TypeScript", "Jest", "Styled-Components"],
+      "skills": [
+        "React",
+        "TypeScript",
+        "Jest",
+        "Styled-Components",
+        "Github Actions"
+      ],
       "isRepo": false,
       "isWebApp": true,
       "link": "https://112523chen.github.io/PortfolioWebsite3.1/"

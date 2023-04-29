@@ -14,8 +14,8 @@ const Professional: React.FC<Props> = ({ mode }) => {
     <ProfessionalBase>
       <Heading>Professional Experience</Heading>
       <Frame>
-        {History.map((role) => (
-          <Role roleData={role} mode={mode} />
+        {History.map((role, index) => (
+          <Role roleData={role} mode={mode} key={index} />
         ))}
       </Frame>
     </ProfessionalBase>
