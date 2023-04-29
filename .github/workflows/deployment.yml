@@ -3,7 +3,9 @@ name: "Vite Continuous Deployment"
 on:
   push:
     branches: [main]
-    paths-ignore: ["README.md", "~/.github"]
+    paths-ignore: 
+      - "README.md"
+      - ".github/**"
 
 jobs:
   deploy:
