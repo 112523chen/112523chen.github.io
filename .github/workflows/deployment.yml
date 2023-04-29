@@ -3,6 +3,8 @@ name: "Vite Continuous Deployment"
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '.github'
 
 jobs:
   deploy:
