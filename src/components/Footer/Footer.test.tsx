@@ -378,7 +378,7 @@ describe("Footer Component", () => {
 
     expect(links[2].textContent).toEqual("LinkedIn");
     expect(links[2].href).toEqual(
-      "https://www.linkedin.com/in/alex-chen-112523chen/"
+      "https://www.linkedin.com/in/alex-chen-2407251b4/"
     );
     expect(links[2].target).toEqual("_blank");
 
