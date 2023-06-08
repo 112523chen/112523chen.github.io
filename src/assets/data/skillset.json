@@ -32,6 +32,7 @@
         "Sqlite3",
         "Rechart",
         "NLTK",
+        "Supertest",
         "Redux",
         "SciPy"
       ]
@@ -63,7 +64,8 @@
         "Neo4j",
         "Excel",
         "Data Studio",
-        "Tableau"
+        "Tableau",
+        "Apache Spark"
       ]
     }
   ]
