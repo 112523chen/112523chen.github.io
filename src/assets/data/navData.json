@@ -1,0 +1,44 @@
+{
+  "navData": [
+    {
+      "id": 1,
+      "section": "home-section",
+      "text": "Home"
+    },
+    {
+      "id": 2,
+      "section": "about-section",
+      "text": "About Me"
+    },
+    {
+      "id": 3,
+      "section": "what-im-doing-now-section",
+      "text": "What I'm Doing Now"
+    },
+    {
+      "id": 4,
+      "section": "coursework",
+      "text": "Coursework"
+    },
+    {
+      "id": 5,
+      "section": "skills",
+      "text": "Skills"
+    },
+    {
+      "id": 6,
+      "section": "experiences",
+      "text": "Experiences"
+    },
+    {
+      "id": 7,
+      "section": "projects",
+      "text": "Projects"
+    },
+    {
+      "id": 8,
+      "section": "links",
+      "text": "Connect With Me"
+    }
+  ]
+}

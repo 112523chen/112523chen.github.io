@@ -14,7 +14,7 @@ interface NavigationLinkProps {
 export const NavigationBase = styled.div<NavigationModeProps>`
   position: fixed;
   right: 3%;
-  top: 20%;
+  top: 10%;
   width: 10%;
   padding: 0.5rem;
   border-radius: 10px;
@@ -38,4 +38,5 @@ export const NavigationLink = styled.a<NavigationLinkProps>`
   &:hover {
     color: ${(props) => getHoverColor(props)};
   }
+  transition: background-color 0.1s ease-in;
 `;

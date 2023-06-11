@@ -1,10 +1,31 @@
+import { LightState } from "../components/model";
 import {
   getAccentColor,
   getActiveColor,
   getHoverColor,
   getLinkText,
   getLinkTitle,
+  getUserPreferredTheme,
 } from "./helper";
+
+describe("User Preferred Theme Tests", () => {
+  test("Get user's preferred theme", () => {
+    let theme: LightState = "dark";
+    window.matchMedia = jest.fn().mockImplementation((query) => {
+      return {
+        matches: true,
+        media: query,
+        onchange: null,
+        addListener: jest.fn(),
+        removeListener: jest.fn(),
+        addEventListener: jest.fn(),
+        removeEventListener: jest.fn(),
+        dispatchEvent: jest.fn(),
+      };
+    });
+    expect(getUserPreferredTheme()).toEqual(theme);
+  });
+});
 
 describe("Link Hover Tests", () => {
   test("Create a link with a repo that isn't a web app", () => {

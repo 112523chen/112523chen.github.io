@@ -19,7 +19,7 @@ interface Props {
 const Footer: React.FC<Props> = ({ mode }) => {
   return (
     <FooterBase id="links" className="section">
-      <Left></Left>
+      <Left />
       <Middle>
         <P>Design & Built by Alex Chen</P>
       </Middle>
