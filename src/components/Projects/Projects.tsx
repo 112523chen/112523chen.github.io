@@ -12,7 +12,7 @@ interface Props {
 
 const Projects: React.FC<Props> = ({ projectData, mode, className }) => {
   return (
-    <ProjectsBase>
+    <ProjectsBase id="projects" className="section">
       <Heading>Projects</Heading>
       <Frame>
         {projectData.map((project) => (

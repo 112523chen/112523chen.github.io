@@ -14,7 +14,7 @@ interface Props {
 }
 
 const WIDNSection: React.FC<Props> = ({ mode }) => (
-  <WIDNBase>
+  <WIDNBase id="what-im-doing-now-section" className="section">
     <Heading>What I'm Doing Now</Heading>
     <WIDNP>
       I'm trying dive deeper into{" "}

@@ -17,7 +17,7 @@ type Props = {
 
 const Skillset: React.FC<Props> = ({ mode }) => {
   return (
-    <SkillsetBase>
+    <SkillsetBase id="skills" className="section">
       <Heading>Skills</Heading>
       <Frame>
         {SkillSet.map((group, index) => {

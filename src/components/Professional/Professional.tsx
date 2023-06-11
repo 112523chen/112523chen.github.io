@@ -11,7 +11,7 @@ type Props = {
 
 const Professional: React.FC<Props> = ({ mode }) => {
   return (
-    <ProfessionalBase>
+    <ProfessionalBase id="experiences" className="section">
       <Heading>Professional Experience</Heading>
       <Frame>
         {History.map((role, index) => (

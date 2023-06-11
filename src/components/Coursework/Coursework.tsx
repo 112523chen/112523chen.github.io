@@ -21,7 +21,11 @@ interface Props {
 
 const Coursework: React.FC<Props> = ({ mode }) => {
   return (
-    <CourseworkBase data-testid="courseworkSection">
+    <CourseworkBase
+      data-testid="courseworkSection"
+      id="coursework"
+      className="section"
+    >
       <Heading>Relevant Coursework</Heading>
       <CourseworkCourse>
         <CourseworkDS>

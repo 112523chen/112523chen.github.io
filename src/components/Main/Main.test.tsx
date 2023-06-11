@@ -19,7 +19,7 @@ describe("Main Component", () => {
     );
 
     expect(screen.getByText("Relevant Coursework")).toBeInTheDocument();
-    expect(container.childElementCount).toEqual(7);
+    expect(container.childElementCount).toEqual(8);
   });
 
   test("Coursework component is not rendered when device is mobile", () => {
