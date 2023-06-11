@@ -12,7 +12,6 @@ import {
 
 type Props = {
   mode: LightState;
-  className?: string;
 };
 
 const Skillset: React.FC<Props> = ({ mode }) => {

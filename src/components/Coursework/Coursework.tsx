@@ -16,7 +16,6 @@ import {
 
 interface Props {
   mode: LightState;
-  className?: string;
 }
 
 const Coursework: React.FC<Props> = ({ mode }) => {

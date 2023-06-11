@@ -33,6 +33,6 @@ describe("Main Component", () => {
       </ThemeProvider>
     );
 
-    expect(container.childElementCount).toEqual(6);
+    expect(container.childElementCount).toEqual(5);
   });
 });

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { LightState } from "../model";
-import { getHoverColor } from "../../functions/helper";
+import {
+  getBackgroundColor,
+  getBoxShadowColor,
+  getHoverColor,
+} from "../../functions/helper";
 
 interface NavigationModeProps {
   mode: LightState;
@@ -18,10 +22,8 @@ export const NavigationBase = styled.div<NavigationModeProps>`
   width: 10%;
   padding: 0.5rem;
   border-radius: 10px;
-  background-color: ${(props) =>
-    props.mode === "light" ? "#3395ff" : "#00c896"};
-  box-shadow: 0px 7px 0px
-    ${(props) => (props.mode === "light" ? "#2468b3" : "#008c69")};
+  background-color: ${(props) => getBackgroundColor(props)};
+  box-shadow: 0px 7px 0px ${(props) => getBoxShadowColor(props)};
 `;
 export const NavigationLink = styled.a<NavigationLinkProps>`
   display: block;
@@ -30,13 +32,10 @@ export const NavigationLink = styled.a<NavigationLinkProps>`
   padding: 1rem;
   text-decoration: none;
   background-color: ${(props) =>
-    props.active
-      ? props.mode === "light"
-        ? "#2468b3"
-        : "#008c69"
-      : "inherit"};
+    props.active ? getBoxShadowColor(props) : "inherit"};
   &:hover {
     color: ${(props) => getHoverColor(props)};
   }
   transition: background-color 0.1s ease-in;
+  overflow-wrap: break-word;
 `;

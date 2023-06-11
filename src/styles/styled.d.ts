@@ -13,6 +13,10 @@ declare module "styled-components" {
         accent: string;
         hover: string;
         active: string;
+        props: {
+          backgroundColor: string;
+          baxShadowColor: string;
+        };
       };
       darkMode: {
         primary: string;
@@ -20,6 +24,10 @@ declare module "styled-components" {
         accent: string;
         hover: string;
         active: string;
+        props: {
+          backgroundColor: string;
+          baxShadowColor: string;
+        };
       };
     };
   }
