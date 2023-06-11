@@ -1,6 +1,15 @@
 {
   "History": [
     {
+      "id": 2,
+      "title": "Software Engineer",
+      "employer": "Develop for Good",
+      "start": "April 2022",
+      "end": "Present",
+      "skills": ["Python", "SQL", "Apache Airflow", "Github Actions"],
+      "summary": "Spearheaded the design and implementation of an ELT pipeline alongside a team of 8 engineers, utilizing Python, SQL, and Apache Airflow, facilitating the movement of data to a centralized data warehouse and enabling holistic data views"
+    },
+    {
       "id": 1,
       "title": "Energy Technology Intern",
       "employer": "The City University of New York",
