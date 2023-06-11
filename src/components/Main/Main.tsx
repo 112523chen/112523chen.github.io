@@ -7,6 +7,7 @@ import Projects from "../Projects/Projects";
 import { LightState, ProjectType } from "../model";
 import Professional from "../Professional/Professional";
 import WIDNSection from "../WIDNSection/WIDNSection";
+import Navigation from "../Navigation/Navigation";
 
 interface Props {
   projectData: ProjectType[];
@@ -18,6 +19,7 @@ const Main: React.FC<Props> = ({ projectData, mode, isMobileDevice }) => {
   return (
     <>
       <Display mode={mode} isMobileDevice={isMobileDevice} />
+      {isMobileDevice ? <></> : <Navigation mode={mode} />}
       <About mode={mode} />
       <WIDNSection mode={mode} />
       {isMobileDevice ? <></> : <Coursework mode={mode} />}

@@ -15,6 +15,13 @@ export const getUserPreferredTheme = (): LightState => {
     : "light";
 };
 
+// Navgation Component Helper Functions
+
+//* Helper function to check if viewport is at bottom of page
+export const isBottomOfPage = (): boolean => {
+  return window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
+};
+
 // Project Component Helper Functions
 
 //* Helper function to get hover text for the links for each project

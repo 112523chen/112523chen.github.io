@@ -21,7 +21,7 @@ interface Props {
 
 const Display: React.FC<Props> = ({ mode, isMobileDevice }) => {
   return (
-    <DisplayBase>
+    <DisplayBase id="home-section" className="section">
       <Name>Alex Chen</Name>
       <DisplayHeadline>
         <DisplayMobileHeadline>

@@ -10,7 +10,11 @@ interface Props {
 
 const About: React.FC<Props> = ({ mode, className }) => {
   return (
-    <AboutBase id="aboutSection" data-testid="aboutSection">
+    <AboutBase
+      id="about-section"
+      className="section"
+      data-testid="aboutSection"
+    >
       <Heading>About Me</Heading>
       <AboutBio id="aboutBio">
         <AboutP>
