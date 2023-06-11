@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { LightState } from "../model";
-import { getAccentColor, getHoverColor } from "../../functions/helper";
+import {
+  getAccentColor,
+  getBackgroundColor,
+  getBoxShadowColor,
+  getHoverColor,
+} from "../../functions/helper";
 
 interface ProjectModeProps {
   mode: LightState;
@@ -54,16 +59,14 @@ export const ProjectLI = styled.li<ProjectModeProps>`
 
 export const ProjectLinkButton = styled.div<ProjectModeProps>`
   flex: 50%;
-  background-color: ${(props) =>
-    props.mode === "light" ? "#3395ff" : "#00c896"};
+  background-color: ${(props) => getBackgroundColor(props)};
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 10%;
   padding: 0.5rem;
   border-radius: 5px;
-  box-shadow: 0 5px 0
-    ${(props) => (props.mode === "light" ? "#2468b3" : "#008c69")};
+  box-shadow: 0 5px 0 ${(props) => getBoxShadowColor(props)};
   &:active {
     box-shadow: none;
     transform: translateY(5px);

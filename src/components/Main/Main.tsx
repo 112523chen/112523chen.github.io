@@ -21,7 +21,7 @@ const Main: React.FC<Props> = ({ projectData, mode, isMobileDevice }) => {
       <Display mode={mode} isMobileDevice={isMobileDevice} />
       {isMobileDevice ? <></> : <Navigation mode={mode} />}
       <About mode={mode} />
-      <WIDNSection mode={mode} />
+      {isMobileDevice ? <></> : <WIDNSection mode={mode} />}
       {isMobileDevice ? <></> : <Coursework mode={mode} />}
       <Skillset mode={mode} />
       <Professional mode={mode} />

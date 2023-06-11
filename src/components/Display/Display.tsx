@@ -27,7 +27,7 @@ const Display: React.FC<Props> = ({ mode, isMobileDevice }) => {
         <DisplayMobileHeadline>
           {isMobileDevice ? (
             <DisplayMobileWord>
-              Aspiring Data Scientist | Data Science Fellow @ CUNY Tech Prep
+              Aspiring Data Engineer | SWE @ Develop for Good
             </DisplayMobileWord>
           ) : (
             <TypeWriterContainer mode={mode}>

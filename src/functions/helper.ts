@@ -1,4 +1,5 @@
 import { LightState } from "../components/model";
+import { theme } from "../styles/theme";
 
 // App Component Helper Functions
 
@@ -67,4 +68,18 @@ export const getActiveColor = (props: any): string => {
   return props.mode === "light"
     ? props.theme.color.lightMode.active
     : props.theme.color.darkMode.active;
+};
+
+//* get background color
+export const getBackgroundColor = (props: any): string => {
+  return props.mode === "light"
+    ? props.theme.color.lightMode.props.backgroundColor
+    : props.theme.color.darkMode.props.backgroundColor;
+};
+
+//* get box shadow color
+export const getBoxShadowColor = (props: any): string => {
+  return props.mode === "light"
+    ? props.theme.color.lightMode.props.baxShadowColor
+    : props.theme.color.darkMode.props.baxShadowColor;
 };

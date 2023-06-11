@@ -5,10 +5,9 @@ import { AboutBase, AboutBio, AboutP } from "./About.style";
 
 interface Props {
   mode: LightState;
-  className?: string;
 }
 
-const About: React.FC<Props> = ({ mode, className }) => {
+const About: React.FC<Props> = ({ mode }) => {
   return (
     <AboutBase
       id="about-section"
