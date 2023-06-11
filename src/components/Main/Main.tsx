@@ -6,6 +6,7 @@ import Skillset from "../Skillset/Skillset";
 import Projects from "../Projects/Projects";
 import { LightState, ProjectType } from "../model";
 import Professional from "../Professional/Professional";
+import WIDNSection from "../WIDNSection/WIDNSection";
 
 interface Props {
   projectData: ProjectType[];
@@ -18,6 +19,7 @@ const Main: React.FC<Props> = ({ projectData, mode, isMobileDevice }) => {
     <>
       <Display mode={mode} isMobileDevice={isMobileDevice} />
       <About mode={mode} />
+      <WIDNSection mode={mode} />
       {isMobileDevice ? <></> : <Coursework mode={mode} />}
       <Skillset mode={mode} />
       <Professional mode={mode} />
