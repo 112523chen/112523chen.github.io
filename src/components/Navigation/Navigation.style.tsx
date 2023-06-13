@@ -18,21 +18,15 @@ interface NavigationLinkProps {
 export const NavigationBase = styled.div<NavigationModeProps>`
   position: fixed;
   right: 3%;
-  top: 10%;
-  width: 10%;
-  padding: 0.5rem;
-  border-radius: 10px;
-  background-color: ${(props) => getBackgroundColor(props)};
-  box-shadow: 0px 7px 0px ${(props) => getBoxShadowColor(props)};
+  top: 30%;
 `;
 export const NavigationLink = styled.a<NavigationLinkProps>`
   display: block;
-  color: #ffffff;
-  font-size: 1.2rem;
-  padding: 1rem;
+  color: ${(props) => (props.mode === "dark" ? "#ffffff" : "#000000")};
   text-decoration: none;
-  background-color: ${(props) =>
-    props.active ? getBoxShadowColor(props) : "inherit"};
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  background-color: ${(props) => (props.active ? "silver" : "inherit")};
   &:hover {
     color: ${(props) => getHoverColor(props)};
   }

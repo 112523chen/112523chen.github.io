@@ -40,7 +40,7 @@ const Navigation: React.FC<NavigationProps> = ({ mode }) => {
   }, []);
 
   return (
-    <NavigationBase mode={mode} hidden={sidebarTop < window.screen.height}>
+    <NavigationBase mode={mode}>
       {navData.map((nav) => (
         <NavigationLink
           key={nav.id}
