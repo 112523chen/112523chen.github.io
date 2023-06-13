@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavigationBase, NavigationLink } from "./Navigation.style";
 import { LightState } from "../model";
 import { navData } from "../../assets/data/navData.json";
-import { isBottomOfPage } from "../../functions/helper";
+import { isBottomOfPage, isTopOfPage } from "../../functions/helper";
 
 interface NavigationProps {
   mode: LightState;
@@ -29,7 +29,15 @@ const Navigation: React.FC<NavigationProps> = ({ mode }) => {
         }
       }
 
-      setActiveSection(isBottomOfPage() ? "links" : currentActiveSection);
+      setActiveSection((): string => {
+        if (isTopOfPage()) {
+          return "";
+        } else if (isBottomOfPage()) {
+          return "contact-section";
+        } else {
+          return currentActiveSection;
+        }
+      });
       setSidebarTop(scrollTop);
     };
 

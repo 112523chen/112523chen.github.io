@@ -9,7 +9,7 @@ interface Props {
 export const ContactBase = styled.div`
   min-width: 21rem;
   padding: 0 20%;
-  margin-block-end: 15rem;
+  margin-block-end: 30rem;
   @media only screen and (max-width: 24rem) {
     padding: 0 min(5rem, 1rem);
   }

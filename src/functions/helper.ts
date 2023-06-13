@@ -23,6 +23,11 @@ export const isBottomOfPage = (): boolean => {
   return window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
 };
 
+//* Helper function to check if viewport is at top of page
+export const isTopOfPage = (): boolean => {
+  return window.scrollY === 0;
+};
+
 // Project Component Helper Functions
 
 //* Helper function to get hover text for the links for each project
