@@ -7,6 +7,7 @@ import { LightState, ProjectType } from "../model";
 import Professional from "../Professional/Professional";
 import Navigation from "../Navigation/Navigation";
 import Roadmap from "../Roadmap/Roadmap";
+import Contact from "../Contact/Contact";
 
 interface Props {
   projectData: ProjectType[];
@@ -28,6 +29,7 @@ const Main: React.FC<Props> = ({ projectData, mode, isMobileDevice }) => {
         <Projects projectData={projectData} mode={mode} />
       )}
       {isMobileDevice ? <></> : <Roadmap mode={mode} />}
+      {isMobileDevice ? <></> : <Contact mode={mode} />}
     </>
   );
 };
