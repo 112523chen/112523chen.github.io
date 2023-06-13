@@ -18,7 +18,7 @@ describe("Main Component", () => {
       </ThemeProvider>
     );
 
-    expect(container.childElementCount).toEqual(7);
+    expect(container.childElementCount).toEqual(8);
   });
 
   test("Coursework component is not rendered when device is mobile", () => {
