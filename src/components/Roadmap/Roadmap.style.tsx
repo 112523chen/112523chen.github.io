@@ -6,7 +6,7 @@ interface DisplayModeProps {
   mode: LightState;
 }
 
-export const WIDNBase = styled.div`
+export const RoadMapBase = styled.div`
   min-width: 21rem;
   padding: 0 20%;
   margin-block-end: 15rem;
@@ -15,7 +15,7 @@ export const WIDNBase = styled.div`
   }
 `;
 
-export const WIDNP = styled.p`
+export const RoadMapP = styled.p`
   line-height: 2;
   max-width: 80%;
 `;

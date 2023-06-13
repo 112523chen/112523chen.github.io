@@ -3,9 +3,9 @@ import {
   Bullet,
   BulletContainer,
   Keywords,
-  WIDNBase,
-  WIDNP,
-} from "./WIDNSection.style";
+  RoadMapBase,
+  RoadMapP,
+} from "./Roadmap.style";
 import Heading from "../Heading/Heading";
 import { LightState } from "../model";
 
@@ -13,16 +13,16 @@ interface Props {
   mode: LightState;
 }
 
-const WIDNSection: React.FC<Props> = ({ mode }) => (
-  <WIDNBase id="what-im-doing-now-section" className="section">
+const RoadMap: React.FC<Props> = ({ mode }) => (
+  <RoadMapBase id="road-map" className="section">
     <Heading>What I'm Doing Now</Heading>
-    <WIDNP>
+    <RoadMapP>
       I'm trying dive deeper into{" "}
       <Keywords mode={mode}>software development</Keywords> specifically
       targeting <Keywords mode={mode}>cloud service</Keywords> and{" "}
       <Keywords mode={mode}>data engineering</Keywords>.
-    </WIDNP>
-    <WIDNP>This is what I spend my time doing:</WIDNP>
+    </RoadMapP>
+    <RoadMapP>This is what I spend my time doing:</RoadMapP>
     <BulletContainer>
       <Bullet>
         Working with a team of engineers to{" "}
@@ -36,7 +36,7 @@ const WIDNSection: React.FC<Props> = ({ mode }) => (
         </Keywords>
       </Bullet>
     </BulletContainer>
-    <WIDNP>These are some of my goals for the next 3 months:</WIDNP>
+    <RoadMapP>These are some of my goals for the next 3 months:</RoadMapP>
     <BulletContainer>
       <Bullet>
         Learn more about <Keywords mode={mode}>Google Cloud Provider</Keywords>{" "}
@@ -47,10 +47,10 @@ const WIDNSection: React.FC<Props> = ({ mode }) => (
         volunteer and internship experience this summer
       </Bullet>
     </BulletContainer>
-    <WIDNP>
+    <RoadMapP>
       Last update was <b>June 10, 2023</b>.
-    </WIDNP>
-  </WIDNBase>
+    </RoadMapP>
+  </RoadMapBase>
 );
 
-export default WIDNSection;
+export default RoadMap;
