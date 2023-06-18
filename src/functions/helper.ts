@@ -52,6 +52,25 @@ export const getLinkText = (isRepo: boolean, isWebApp: boolean): string => {
   }
 };
 
+export const getFilterLabel = (topic: string): string => {
+  switch (topic) {
+    case "software_engineering":
+      return "Software Engineering";
+    case "web_development":
+      return "Web Development";
+    case "machine_learning":
+      return "Machine Learning";
+    case "data_science":
+      return "Data Science";
+    case "data_engineering":
+      return "Data Engineering";
+    case "all":
+      return "All";
+    default:
+      return "";
+  }
+};
+
 // Style Helper Functions
 
 //* get accent color

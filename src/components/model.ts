@@ -7,6 +7,7 @@ export interface ProjectType {
   isRepo: boolean;
   isWebApp: boolean;
   link: string;
+  topics: string[];
 }
 
 //* Definition of a theme state
@@ -21,4 +22,14 @@ export interface RoleType {
   end: string;
   skills: string[];
   summary: string;
+}
+
+//* Definition of a topic object
+export enum TopicType {
+  "all",
+  "software_engineering",
+  "web_development",
+  "data_engineering",
+  "machine_learning",
+  "data_science",
 }

@@ -3,6 +3,8 @@ import { LightState, ProjectType } from "../model";
 import Project from "../Project/Project";
 import Heading from "../Heading/Heading";
 import { ProjectsBase, Frame } from "./Projects.style";
+import ProjectCatalogButton from "../ProjectCatalogButton/ProjectCatalogButton";
+import { ProjectH3 } from "../Project/Project.style";
 
 interface Props {
   projectData: ProjectType[];
@@ -15,10 +17,12 @@ const Projects: React.FC<Props> = ({ projectData, mode, className }) => {
     <ProjectsBase id="projects" className="section">
       <Heading>Projects</Heading>
       <Frame>
-        {projectData.map((project) => (
+        {projectData.slice(0, 3).map((project) => (
           <Project project={project} key={project.id} mode={mode} />
         ))}
       </Frame>
+      <ProjectH3>Click To See More Project</ProjectH3>
+      <ProjectCatalogButton mode={mode} />
     </ProjectsBase>
   );
 };

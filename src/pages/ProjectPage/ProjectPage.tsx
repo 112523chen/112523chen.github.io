@@ -1,0 +1,70 @@
+import React, { useEffect } from "react";
+import { LightState, ProjectType, TopicType } from "../../components/model";
+import ProjectAlt from "../../components/ProjectsAlt/ProjectsAlt";
+import {
+  FilterLink,
+  FrameAlt,
+  HomeLink,
+  Title,
+  TopicFrame,
+} from "./ProjectPage.style";
+import DisplayButton from "../../components/DisplayButton/DisplayButton";
+import { useLocation, useParams } from "react-router-dom";
+import { getFilterLabel } from "../../functions/helper";
+
+interface Props {
+  projectData: ProjectType[];
+  mode: LightState;
+  setMode: React.Dispatch<React.SetStateAction<LightState>>;
+}
+
+const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
+  const [projects, setProjects] = React.useState<ProjectType[]>(projectData);
+
+  const params = useParams();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (params.hasOwnProperty("type")) {
+      setProjects(
+        projectData.filter((project) =>
+          project.topics.includes(params.type as string)
+        )
+      );
+    } else {
+      setProjects(projectData);
+    }
+
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return (
+    <div style={{ backgroundColor: mode === "light" ? "#fcfcfc" : "#111827" }}>
+      <HomeLink mode={mode} className="link" to="/">
+        Go Back
+      </HomeLink>
+      <DisplayButton mode={mode} setMode={setMode} />
+      <Title id="title">Project Page</Title>
+      <TopicFrame>
+        {Object.values(TopicType)
+          .filter((v) => isNaN(Number(v)))
+          .map((topic) => (
+            <FilterLink
+              mode={mode}
+              key={topic}
+              to={`/projects/${topic !== "all" ? topic : ""}`}
+            >
+              {getFilterLabel(topic as string)}
+            </FilterLink>
+          ))}
+      </TopicFrame>
+      <FrameAlt>
+        {projects.map((project) => (
+          <ProjectAlt project={project} key={project.id} mode={mode} />
+        ))}
+      </FrameAlt>
+    </div>
+  );
+};
+
+export default ProjectPage;
