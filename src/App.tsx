@@ -1,8 +1,6 @@
 import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
-import DisplayButton from "./components/DisplayButton/DisplayButton";
-import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { projectData } from "./assets/data/projectData.json";
 import { theme } from "./styles/theme";
 import { LightState } from "./components/model";
@@ -10,6 +8,8 @@ import {
   checkForMobileDevice,
   getUserPreferredTheme,
 } from "./functions/helper";
+import MainPage from "./pages/MainPage";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
 
 interface AppProps {
   mode: LightState;
@@ -32,13 +32,42 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <AppBase mode={mode} data-testid="app">
-        <DisplayButton mode={mode} setMode={setMode} />
-        <Main
-          projectData={projectData}
-          mode={mode}
-          isMobileDevice={isMobileDevice}
-        />
-        <Footer mode={mode} />
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <MainPage
+                  mode={mode}
+                  setMode={setMode}
+                  projectData={projectData}
+                  isMobileDevice={isMobileDevice}
+                />
+              }
+            />
+            <Route
+              path="/projects"
+              element={
+                <ProjectPage
+                  mode={mode}
+                  setMode={setMode}
+                  projectData={projectData}
+                />
+              }
+            >
+              <Route
+                path=":type"
+                element={
+                  <ProjectPage
+                    mode={mode}
+                    setMode={setMode}
+                    projectData={projectData}
+                  />
+                }
+              />
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </AppBase>
     </ThemeProvider>
   );
