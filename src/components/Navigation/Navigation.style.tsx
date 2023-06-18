@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { LightState } from "../model";
-import {
-  getBackgroundColor,
-  getBoxShadowColor,
-  getHoverColor,
-} from "../../functions/helper";
+import { getHoverColor } from "../../functions/helper";
 
 interface NavigationModeProps {
   mode: LightState;
@@ -18,7 +14,7 @@ interface NavigationLinkProps {
 export const NavigationBase = styled.div<NavigationModeProps>`
   position: fixed;
   right: 3%;
-  top: 30%;
+  top: 36%;
 `;
 export const NavigationLink = styled.a<NavigationLinkProps>`
   display: block;
