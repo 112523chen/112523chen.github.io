@@ -65,10 +65,7 @@ export const ProjectAltLI = styled.li<ProjectModeProps>`
 export const ProjectAltLinkButton = styled.div<ProjectModeProps>`
   flex: 50%;
   background-color: ${(props) => getBackgroundColor(props)};
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: 10%;
   padding: 0.5rem;
   border-radius: 5px;
   box-shadow: 0 5px 0 ${(props) => getBoxShadowColor(props)};
