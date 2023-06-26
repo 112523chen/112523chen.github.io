@@ -39,7 +39,7 @@ const RoadMap: React.FC<Props> = ({ mode }) => (
     <RoadMapP>These are some of my goals for the next 3 months:</RoadMapP>
     <BulletContainer>
       <Bullet>
-        Learn more about <Keywords mode={mode}>Google Cloud Provider</Keywords>{" "}
+        Learn more about <Keywords mode={mode}>Amazon Web Services</Keywords>{" "}
         ecosystem and apply my learnings to my data engineering projects
       </Bullet>
       <Bullet>
@@ -48,7 +48,7 @@ const RoadMap: React.FC<Props> = ({ mode }) => (
       </Bullet>
     </BulletContainer>
     <RoadMapP>
-      Last update was <b>June 10, 2023</b>.
+      Last update was <b>June 26, 2023</b>.
     </RoadMapP>
   </RoadMapBase>
 );

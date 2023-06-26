@@ -14,7 +14,8 @@
         "React Router",
         "Recharts",
         "SQL",
-        "Github Actions"
+        "Github Actions",
+        "Docker"
       ],
       "topics": ["software_engineering", "web_development"],
       "isRepo": true,
