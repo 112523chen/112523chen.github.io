@@ -13,6 +13,7 @@ interface ProjectModeProps {
 
 export const ProjectBase = styled.div`
   padding-block-end: 5rem;
+  width: 80%;
 `;
 
 export const ProjectTitle = styled.div`
@@ -23,9 +24,7 @@ export const ProjectTitle = styled.div`
 
 export const ProjectH3 = styled.h3``;
 
-export const ProjectDetails = styled.div`
-  max-width: 80%;
-`;
+export const ProjectDetails = styled.div``;
 
 export const Projectp = styled.p``;
 
