@@ -25,15 +25,21 @@ const RoadMap: React.FC<Props> = ({ mode }) => (
     <RoadMapP>This is what I spend my time doing:</RoadMapP>
     <BulletContainer>
       <Bullet>
-        Working with a team of engineers to{" "}
-        <Keywords mode={mode}>expand a nonprofit's data pipelines</Keywords> to
-        support data driven decision making
+        Working on my <Keywords mode={mode}>personal projects</Keywords> to
+        improve my skills in{" "}
+        <Keywords mode={mode}>software development</Keywords> and{" "}
+        <Keywords mode={mode}>data engineering</Keywords>
       </Bullet>
       <Bullet>
         Interning at MTA to support data driven decision{" "}
         <Keywords mode={mode}>
           making by maintaining databases and data pipelines
         </Keywords>
+      </Bullet>
+      <Bullet>
+        Learning more about <Keywords mode={mode}>Rust</Keywords> and how it
+        it's used in different domains (e.g. web development, data engineering,
+        systems programming, etc.)
       </Bullet>
     </BulletContainer>
     <RoadMapP>These are some of my goals for the next 3 months:</RoadMapP>
@@ -42,13 +48,9 @@ const RoadMap: React.FC<Props> = ({ mode }) => (
         Learn more about <Keywords mode={mode}>Amazon Web Services</Keywords>{" "}
         ecosystem and apply my learnings to my data engineering projects
       </Bullet>
-      <Bullet>
-        Develop my soft-skills and collaborate more with engineers for my
-        volunteer and internship experience this summer
-      </Bullet>
     </BulletContainer>
     <RoadMapP>
-      Last update was <b>June 26, 2023</b>.
+      Last update was <b>September 14, 2023</b>.
     </RoadMapP>
   </RoadMapBase>
 );
