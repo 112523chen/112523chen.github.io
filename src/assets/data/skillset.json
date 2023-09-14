@@ -11,6 +11,8 @@
         "HTML",
         "CSS",
         "Sass",
+        "Golang",
+        "Rust",
         "Java",
         "Bash"
       ]
@@ -41,13 +43,14 @@
       "id": "framework",
       "text": "Frameworks:",
       "values": [
-        "Streamlit",
         "React",
         "Bootstrap",
+        "Streamlit",
         "Node",
         "Mocha",
         "Jest",
-        "Express"
+        "Express",
+        "Flask"
       ]
     },
     {
@@ -66,6 +69,7 @@
         "Data Studio",
         "Tableau",
         "Docker",
+        "Apache Airflow",
         "Apache Spark"
       ]
     }
