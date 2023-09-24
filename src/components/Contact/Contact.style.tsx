@@ -26,3 +26,13 @@ export const EmailLink = styled.a<Props>`
     text-decoration-thickness: 3px;
   }
 `;
+
+export const LinkedInLink = styled.a<Props>`
+  text-decoration: none;
+  font-weight: 600;
+  color: ${(props) => getAccentColor(props)};
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+`;
