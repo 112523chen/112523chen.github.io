@@ -13,6 +13,7 @@ import {
   Story,
   Keywords,
 } from "./Display.style";
+import { mobileTextData } from "../../assets/data/mobileDisplayData.json";
 
 interface Props {
   mode: LightState;
@@ -26,9 +27,7 @@ const Display: React.FC<Props> = ({ mode, isMobileDevice }) => {
       <DisplayHeadline>
         <DisplayMobileHeadline>
           {isMobileDevice ? (
-            <DisplayMobileWord>
-              Aspiring Data Engineer | SWE @ Develop for Good
-            </DisplayMobileWord>
+            <DisplayMobileWord>{mobileTextData}</DisplayMobileWord>
           ) : (
             <TypeWriterContainer mode={mode}>
               <Typewriter words={phrases} loop={0} cursor={true} />

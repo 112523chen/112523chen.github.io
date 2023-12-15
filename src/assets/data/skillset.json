@@ -50,6 +50,7 @@
         "Mocha",
         "Jest",
         "Express",
+        "FastAPI",
         "Flask"
       ]
     },
@@ -61,15 +62,17 @@
         "Git",
         "Jupyter Notebooks",
         "Postgres",
+        "dbt",
+        "Docker",
+        "Apache Airflow",
         "MongoDB",
         "Redis",
+        "Amazon Web Services",
         "Figma",
         "Neo4j",
         "Excel",
         "Data Studio",
         "Tableau",
-        "Docker",
-        "Apache Airflow",
         "Apache Spark"
       ]
     }

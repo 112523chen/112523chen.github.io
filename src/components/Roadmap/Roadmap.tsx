@@ -31,12 +31,6 @@ const RoadMap: React.FC<Props> = ({ mode }) => (
         <Keywords mode={mode}>data engineering</Keywords>
       </Bullet>
       <Bullet>
-        Interning at MTA to support data driven decision{" "}
-        <Keywords mode={mode}>
-          making by maintaining databases and data pipelines
-        </Keywords>
-      </Bullet>
-      <Bullet>
         Learning more about <Keywords mode={mode}>Rust</Keywords> and how it
         it's used in different domains (e.g. web development, data engineering,
         systems programming, etc.)
@@ -48,9 +42,13 @@ const RoadMap: React.FC<Props> = ({ mode }) => (
         Learn more about <Keywords mode={mode}>Amazon Web Services</Keywords>{" "}
         ecosystem and apply my learnings to my data engineering projects
       </Bullet>
+      <Bullet>
+        Learn more about <Keywords mode={mode}>Rust</Keywords> and how it can be
+        used in different domains (e.g. web development, data engineering, etc.)
+      </Bullet>
     </BulletContainer>
     <RoadMapP>
-      Last update was <b>September 14, 2023</b>.
+      Last update was <b>December 14, 2023</b>.
     </RoadMapP>
   </RoadMapBase>
 );
