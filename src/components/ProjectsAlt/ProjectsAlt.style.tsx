@@ -17,7 +17,10 @@ export const ProjectAltBase = styled.div<ProjectModeProps>`
   margin: 1rem;
   padding: 2rem;
   border-radius: 5px;
-  box-shadow: 0 5px 0 0 #0000001a, 0 4px 6px -2px #0000000d;
+  box-shadow: ${(props) =>
+    props.mode === "light"
+      ? "0 5px 0 0 #0000001a, 0 4px 6px -2px #0000000d;"
+      : "0 5px 0 0 #ffffff1a, 0 4px 6px -2px #ffffff0d;"};
   color: ${(props) => (props.mode === "light" ? "#000000" : "#ffffff")};
 `;
 
@@ -50,7 +53,7 @@ export const ProjectAltLI = styled.li<ProjectModeProps>`
   border-radius: 3px;
   color: white;
   font-size: 0.8rem;
-  padding: 3px 7px 1px 7px;
+  padding: 3px 7px 3px 7px;
   box-shadow: inset 0 0 0 0 ${(props) => getAccentColor(props)};
   transition: color 0.2s linear, box-shadow 0.5s linear;
   -webkit-margin-after: 0.5rem;
@@ -58,7 +61,7 @@ export const ProjectAltLI = styled.li<ProjectModeProps>`
   background-color: ${(props) => getBackgroundColor(props)};
   &:hover {
     box-shadow: inset 200px 0 0 0 ${(props) => getAccentColor(props)};
-    /* color: #fff; */
+    color: #fff;
   }
 `;
 

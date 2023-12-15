@@ -9,13 +9,17 @@
       "skills": [
         "Python",
         "SQL",
+        "Docker",
         "Apache Airflow",
+        "dbt",
         "Oracle",
         "Postgres",
         "Flask",
-        "Github Actions"
+        "React",
+        "Github Actions",
+        "Terraform"
       ],
-      "summary": "Connected people with data by creating data pipelines, web applications, and APIs to support data-driven decisions"
+      "summary": "Connecting people with data by creating data pipelines, web applications, and APIs that lead to data-driven decisions and business value"
     },
     {
       "id": 2,

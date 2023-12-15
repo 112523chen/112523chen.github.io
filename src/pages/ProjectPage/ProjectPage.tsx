@@ -39,7 +39,12 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
   }, [location.pathname]);
 
   return (
-    <div style={{ backgroundColor: mode === "light" ? "#fcfcfc" : "#111827" }}>
+    <div
+      style={{
+        backgroundColor: mode === "light" ? "#fcfcfc" : "#111827",
+        minHeight: "100vh",
+      }}
+    >
       <HomeLink mode={mode} className="link" to="/">
         Go Back
       </HomeLink>
@@ -59,9 +64,13 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
           ))}
       </TopicFrame>
       <FrameAlt>
-        {projects.map((project) => (
-          <ProjectAlt project={project} key={project.id} mode={mode} />
-        ))}
+        {projects.length > 0 ? (
+          projects.map((project) => (
+            <ProjectAlt project={project} key={project.id} mode={mode} />
+          ))
+        ) : (
+          <h1>No projects found</h1>
+        )}
       </FrameAlt>
     </div>
   );

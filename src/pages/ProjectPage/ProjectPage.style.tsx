@@ -78,4 +78,5 @@ export const FilterLink = styled(Link)<ProjectModeProps>`
     box-shadow: none;
     transform: translateY(5px);
   }
+  min-width: 6.2rem;
 `;

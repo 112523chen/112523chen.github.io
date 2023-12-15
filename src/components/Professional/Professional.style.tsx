@@ -12,4 +12,6 @@ export const ProfessionalBase = styled.div`
   }
 `;
 
-export const Frame = styled.div``;
+export const Frame = styled.div`
+  width: 85%;
+`;
