@@ -65,4 +65,8 @@ export const Link = styled.a<LinkModeProps>`
   &:active {
     color: ${(props) => getActiveColor(props)};
   }
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;

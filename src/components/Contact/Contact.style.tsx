@@ -20,19 +20,25 @@ export const ContactParaph = styled.p``;
 export const EmailLink = styled.a<Props>`
   text-decoration: none;
   font-weight: 600;
-  color: ${(props) => getAccentColor(props)};
+  text-decoration: underline;
+  text-decoration-color: ${(props) => getAccentColor(props)};
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  color: ${(props) => (props.mode === "light" ? "black" : "#e7e7e7")};
   &:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+    color: ${(props) => getAccentColor(props)};
   }
 `;
 
 export const LinkedInLink = styled.a<Props>`
   text-decoration: none;
   font-weight: 600;
-  color: ${(props) => getAccentColor(props)};
+  text-decoration: underline;
+  text-decoration-color: ${(props) => getAccentColor(props)};
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  color: ${(props) => (props.mode === "light" ? "black" : "#e7e7e7")};
   &:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+    color: ${(props) => getAccentColor(props)};
   }
 `;
