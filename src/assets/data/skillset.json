@@ -11,10 +11,11 @@
         "HTML",
         "CSS",
         "Sass",
-        "Golang",
         "Rust",
+        "Golang",
         "Java",
-        "Bash"
+        "Bash",
+        "PHP"
       ]
     },
     {
@@ -51,7 +52,8 @@
         "Jest",
         "Express",
         "FastAPI",
-        "Flask"
+        "Flask",
+        "Rocket.rs"
       ]
     },
     {
@@ -71,6 +73,9 @@
         "Figma",
         "Neo4j",
         "Excel",
+        "Shuttle.rs",
+        "Debezium",
+        "MySQL",
         "Data Studio",
         "Tableau",
         "Apache Spark"

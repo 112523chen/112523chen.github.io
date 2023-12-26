@@ -1,6 +1,16 @@
 {
   "projectData": [
     {
+      "id": 14,
+      "title": "About Me API",
+      "details": "Developed a API so others can learn about who I am and what I'm currently doing using Rust, Rocket, and MySQL",
+      "skills": ["Rust", "Rocket.rs", "MySQL", "Shuttle.rs", "SQL"],
+      "topics": ["software_engineering"],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "#"
+    },
+    {
       "id": 13,
       "title": "Job Tracker App",
       "details": "Develop a full-stack web app using TypeScript React, Express, Node, and Postgres database that allows users to create, view, update, and delete items in their job tracker",
