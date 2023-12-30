@@ -6,6 +6,7 @@ import {
   Content,
   ProjectPageBase,
   NavBar,
+  ContentWrapper,
 } from "./ProjectPage.style";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -61,7 +62,7 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
         </HomeLink>
         <DisplayButton mode={mode} setMode={setMode} useInMainPage={false} />
       </NavBar>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <ContentWrapper mode={mode}>
         <Content>
           <Markdown
             remarkPlugins={[remarkGfm, remarkToc]}
@@ -70,7 +71,7 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
             {markdownFile}
           </Markdown>
         </Content>
-      </div>
+      </ContentWrapper>
     </ProjectPageBase>
   );
 };

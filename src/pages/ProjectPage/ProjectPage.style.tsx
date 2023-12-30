@@ -27,9 +27,6 @@ export const NavBar = styled.div<ProjectModeProps>`
 `;
 
 export const HomeLink = styled(Link)<ProjectModeProps>`
-  /* position: absolute;
-  top: 6%;
-  left: 3%; */
   background-color: ${(props) => getBackgroundColor(props)};
   padding: 0.5rem;
   border-radius: 5px;
@@ -49,14 +46,30 @@ export const HomeLink = styled(Link)<ProjectModeProps>`
   }
 `;
 
+export const ContentWrapper = styled.div<ProjectModeProps>`
+  /* background-color: ${(props) =>
+    props.mode === "light" ? "#fcfcfc" : "#111827"};
+  color: ${(props) => (props.mode === "light" ? "#000000" : "#ffffff")}; */
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+`;
+
 export const Content = styled.div`
   padding-top: 3%;
   padding-left: 6%;
   padding-right: 6%;
 
+  max-width: 80%;
+  min-width: 60%;
+
+  p {
+    overflow-wrap: break-word;
+  }
+
   a {
     background-color: transparent;
-    color: #58a6ff;
+    color: #0366d6;
     text-decoration: none;
   }
 
@@ -154,6 +167,50 @@ export const Content = styled.div`
 
   input[type="checkbox"]:dir(rtl) {
     margin: 0 -1.6em 0.25em 0.2em;
+  }
+
+  code,
+  tt {
+    margin: 0 2px;
+    padding: 0 5px;
+    white-space: nowrap;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+  }
+
+  pre code {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    border: none;
+    background: transparent;
+  }
+
+  .highlight pre {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+
+  pre {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+
+  pre code,
+  pre tt {
+    /* background-color: transparent;
+    border: none; */
   }
 `;
 
