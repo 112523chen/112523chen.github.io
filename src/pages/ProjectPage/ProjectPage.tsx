@@ -28,7 +28,7 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
   )[0];
 
   useEffect(() => {
-    import(`../../assets/markdown/projects/project_${project.id}.md`)
+    import(`../../assets/markdown/projects/project_${params.id}.md`)
       .then((module) => {
         setMarkdownFile(module.default);
       })
@@ -36,6 +36,22 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
         console.log(`Failed to load markdown file:\n${error}`);
       });
   });
+
+  if (!project) {
+    return (
+      <ProjectPageBase mode={mode}>
+        <NavBar mode={mode}>
+          <HomeLink mode={mode} className="link" to="/projects">
+            Go Back
+          </HomeLink>
+          <DisplayButton mode={mode} setMode={setMode} useInMainPage={false} />
+        </NavBar>
+        <div style={{ textAlign: "center" }}>
+          <h1>404: Page Not Found</h1>
+        </div>
+      </ProjectPageBase>
+    );
+  }
 
   return (
     <ProjectPageBase mode={mode}>

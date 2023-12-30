@@ -6,8 +6,6 @@ import {
 } from "../../functions/helper";
 import { LightState } from "../../components/model";
 import { Link } from "react-router-dom";
-import Display from "../../components/Display/Display";
-import DisplayButton from "../../components/DisplayButton/DisplayButton";
 
 interface ProjectModeProps {
   mode: LightState;
@@ -55,11 +53,6 @@ export const Content = styled.div`
   padding-top: 3%;
   padding-left: 6%;
   padding-right: 6%;
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%; */
 
   a {
     background-color: transparent;
