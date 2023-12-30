@@ -6,33 +6,57 @@ import {
   getBoxShadowColor,
   getHoverColor,
 } from "../../functions/helper";
+import { Link } from "react-router-dom";
 
 interface ProjectModeProps {
   mode: LightState;
 }
 
-export const ProjectAltBase = styled.div<ProjectModeProps>`
+export const ProjectAltBase = styled(Link)<ProjectModeProps>`
   background-color: ${(props) => (props.mode === "light" ? "white" : "silver")};
-  width: 50rem;
-  margin: 1rem;
+  min-height: 15rem;
+  max-height: 20rem;
+  width: 30rem;
+  margin: 2rem;
   padding: 2rem;
   border-radius: 5px;
+  text-decoration: none;
   box-shadow: ${(props) =>
     props.mode === "light"
       ? "0 5px 0 0 #0000001a, 0 4px 6px -2px #0000000d;"
       : "0 5px 0 0 #ffffff1a, 0 4px 6px -2px #ffffff0d;"};
   color: ${(props) => (props.mode === "light" ? "#000000" : "#ffffff")};
+  &:hover {
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.025);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    transition: transform 0.3s ease-in-out; // Add a smooth transition for a better effect
+    animation: pulse 1s infinite; // Infinite loop for continuous pulsing
+    cursor: pointer;
+  }
 `;
 
 export const ProjectAltTitle = styled.div`
   font-weight: bolder;
   font-style: italic;
   font-size: 2rem;
+  max-height: 33%;
 `;
 
 export const ProjectAltH3 = styled.h3``;
 
-export const ProjectAltDetails = styled.div``;
+export const ProjectAltDetails = styled.div`
+  height: 33%;
+`;
 
 export const ProjectAltText = styled.p``;
 
@@ -61,7 +85,7 @@ export const ProjectAltLI = styled.li<ProjectModeProps>`
   background-color: ${(props) => getBackgroundColor(props)};
   &:hover {
     box-shadow: inset 200px 0 0 0 ${(props) => getAccentColor(props)};
-    color: #fff;
+    /* color: #fff; */
   }
 `;
 

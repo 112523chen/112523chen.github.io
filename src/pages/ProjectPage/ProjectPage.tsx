@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
-import { LightState, ProjectType, TopicType } from "../../components/model";
-import ProjectAlt from "../../components/ProjectsAlt/ProjectsAlt";
+import { LightState, ProjectType } from "../../components/model";
+import { useParams } from "react-router-dom";
 import {
-  FilterLink,
-  FrameAlt,
   HomeLink,
-  Title,
-  TopicFrame,
+  Content,
+  ProjectPageBase,
+  NavBar,
 } from "./ProjectPage.style";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeHighlight from "rehype-highlight";
+import remarkToc from "remark-toc";
 import DisplayButton from "../../components/DisplayButton/DisplayButton";
-import { useLocation, useParams } from "react-router-dom";
-import { getFilterLabel } from "../../functions/helper";
 
 interface Props {
   projectData: ProjectType[];
@@ -19,60 +20,42 @@ interface Props {
 }
 
 const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
-  const [projects, setProjects] = React.useState<ProjectType[]>(projectData);
+  const params = useParams() as { id: string };
+  const [markdownFile, setMarkdownFile] = React.useState<string>("");
 
-  const params = useParams();
-  const location = useLocation();
+  const project: ProjectType = projectData.filter(
+    (project) => project.id === Number(params.id)
+  )[0];
 
   useEffect(() => {
-    if (params.hasOwnProperty("type")) {
-      setProjects(
-        projectData.filter((project) =>
-          project.topics.includes(params.type as string)
-        )
-      );
-    } else {
-      setProjects(projectData);
-    }
-
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+    import(`../../assets/markdown/projects/project_${project.id}.md`)
+      .then((module) => {
+        setMarkdownFile(module.default);
+      })
+      .catch((error) => {
+        console.log(`Failed to load markdown file:\n${error}`);
+      });
+  });
 
   return (
-    <div
-      style={{
-        backgroundColor: mode === "light" ? "#fcfcfc" : "#111827",
-        minHeight: "100vh",
-      }}
-    >
-      <HomeLink mode={mode} className="link" to="/">
-        Go Back
-      </HomeLink>
-      <DisplayButton mode={mode} setMode={setMode} />
-      <Title id="title">Project Page</Title>
-      <TopicFrame>
-        {Object.values(TopicType)
-          .filter((v) => isNaN(Number(v)))
-          .map((topic) => (
-            <FilterLink
-              mode={mode}
-              key={topic}
-              to={`/projects/${topic !== "all" ? topic : ""}`}
-            >
-              {getFilterLabel(topic as string)}
-            </FilterLink>
-          ))}
-      </TopicFrame>
-      <FrameAlt>
-        {projects.length > 0 ? (
-          projects.map((project) => (
-            <ProjectAlt project={project} key={project.id} mode={mode} />
-          ))
-        ) : (
-          <h1>No projects found</h1>
-        )}
-      </FrameAlt>
-    </div>
+    <ProjectPageBase mode={mode}>
+      <NavBar mode={mode}>
+        <HomeLink mode={mode} className="link" to="/projects">
+          Go Back
+        </HomeLink>
+        <DisplayButton mode={mode} setMode={setMode} useInMainPage={false} />
+      </NavBar>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Content>
+          <Markdown
+            remarkPlugins={[remarkGfm, remarkToc]}
+            rehypePlugins={[rehypeHighlight]}
+          >
+            {markdownFile}
+          </Markdown>
+        </Content>
+      </div>
+    </ProjectPageBase>
   );
 };
 
