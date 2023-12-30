@@ -5,10 +5,9 @@ import { ModeDisplay, Button } from "./DisplayButton.style";
 interface Props {
   mode: LightState;
   setMode: React.Dispatch<React.SetStateAction<LightState>>;
-  useInMainPage?: boolean;
 }
 
-const DisplayButton: React.FC<Props> = ({ mode, setMode, useInMainPage }) => {
+const DisplayButton: React.FC<Props> = ({ mode, setMode }) => {
   const initialState = mode === "light" ? "rgba(0,0,0,.06)" : "#b3b3b3";
 
   // Reference to if user is hovering over button
@@ -34,7 +33,7 @@ const DisplayButton: React.FC<Props> = ({ mode, setMode, useInMainPage }) => {
   }, [mode]);
 
   return (
-    <ModeDisplay useInMainPage={useInMainPage}>
+    <ModeDisplay>
       {mode === "light" ? (
         <Button
           mode={mode}
