@@ -7,13 +7,18 @@ interface ButtonProps {
   hoverColor: string;
 }
 
-export const ModeDisplay = styled.div`
-  position: absolute;
-  right: 6%;
-  top: 6%;
-  @media only screen and (max-width: 24rem) {
-    right: 10%;
-  }
+interface ModeDisplayProps {
+  useInMainPage?: boolean;
+}
+
+export const ModeDisplay = styled.div<ModeDisplayProps>`
+  ${(props) => (props.useInMainPage ? "position: absolute;" : "")}
+  ${(props) => (props.useInMainPage ? "top: 6%;" : "")}
+  ${(props) => (props.useInMainPage ? "right: 6%;" : "")} 
+  ${(props) =>
+    props.useInMainPage
+      ? "@media only screen and (max-width: 24rem) {right: 10%;}"
+      : ""}
 `;
 
 export const Button = styled.button<ButtonProps>`

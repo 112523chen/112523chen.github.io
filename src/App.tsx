@@ -9,7 +9,9 @@ import {
   getUserPreferredTheme,
 } from "./functions/helper";
 import MainPage from "./pages/MainPage";
+import ProjectPages from "./pages/ProjectPages/ProjectPages";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 interface AppProps {
   mode: LightState;
@@ -45,18 +47,9 @@ const App: React.FC = () => {
                 />
               }
             />
-            <Route
-              path="/projects"
-              element={
-                <ProjectPage
-                  mode={mode}
-                  setMode={setMode}
-                  projectData={projectData}
-                />
-              }
-            >
+            <Route path="/project/">
               <Route
-                path=":type"
+                path=":id"
                 element={
                   <ProjectPage
                     mode={mode}
@@ -66,6 +59,29 @@ const App: React.FC = () => {
                 }
               />
             </Route>
+
+            <Route
+              path="/projects"
+              element={
+                <ProjectPages
+                  mode={mode}
+                  setMode={setMode}
+                  projectData={projectData}
+                />
+              }
+            >
+              <Route
+                path=":type"
+                element={
+                  <ProjectPages
+                    mode={mode}
+                    setMode={setMode}
+                    projectData={projectData}
+                  />
+                }
+              />
+            </Route>
+            <Route path="*" element={<NotFoundPage mode={mode} />} />
           </Routes>
         </BrowserRouter>
       </AppBase>
