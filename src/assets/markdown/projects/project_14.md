@@ -2,6 +2,8 @@
 
 A web application that allows users to search for Wikipedia articles and retrieve relevant information.
 
+## Table of Contents
+
 ## Introduction
 
 ## Installation
