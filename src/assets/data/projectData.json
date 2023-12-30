@@ -1,14 +1,31 @@
 {
   "projectData": [
     {
-      "id": 14,
+      "id": 15,
       "title": "About Me API",
       "details": "Developed a API so others can learn about who I am and what I'm currently doing using Rust, Rocket, and MySQL",
       "skills": ["Rust", "Rocket.rs", "MySQL", "Shuttle.rs", "SQL"],
       "topics": ["software_engineering"],
       "isRepo": true,
       "isWebApp": false,
-      "link": "#"
+      "link": ""
+    },
+    {
+      "id": 14,
+      "title": "Wikipedia Information Retrieval System",
+      "details": "Developed a information retrieval system that uses the vector space model to rank Wikipedia documents based on a query",
+      "skills": [
+        "Python",
+        "Numpy",
+        "Pandas",
+        "NLTK",
+        "Scikit-Learn",
+        "Streamlit"
+      ],
+      "topics": ["data_science"],
+      "isRepo": false,
+      "isWebApp": true,
+      "link": ""
     },
     {
       "id": 13,
@@ -22,8 +39,7 @@
         "TypeScript",
         "Styled-Components",
         "SQL",
-        "Github Actions",
-        "Docker"
+        "Github Actions"
       ],
       "topics": ["software_engineering", "web_development"],
       "isRepo": true,
@@ -44,8 +60,7 @@
       "topics": ["software_engineering", "web_development"],
       "isRepo": false,
       "isWebApp": true,
-      "link": "https://112523chen.github.io/PortfolioWebsite3.1/",
-      "markdown": "../../assets/markdown/project_12.md"
+      "link": "https://112523chen.github.io/PortfolioWebsite3.1/"
     },
     {
       "id": 11,
