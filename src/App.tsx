@@ -51,7 +51,7 @@ const App: React.FC = () => {
               <Route
                 path=":id"
                 element={
-                  <ProjectPage
+                  <ProjectPages
                     mode={mode}
                     setMode={setMode}
                     projectData={projectData}
