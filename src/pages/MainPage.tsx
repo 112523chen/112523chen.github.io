@@ -19,7 +19,7 @@ const MainPage: React.FC<Props> = ({
 }) => {
   return (
     <div>
-      <DisplayButton mode={mode} setMode={setMode} />
+      <DisplayButton mode={mode} setMode={setMode} useInMainPage={true} />
       <Main
         projectData={projectData}
         mode={mode}

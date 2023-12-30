@@ -10,6 +10,7 @@ import {
 } from "./functions/helper";
 import MainPage from "./pages/MainPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 interface AppProps {
   mode: LightState;
@@ -66,6 +67,7 @@ const App: React.FC = () => {
                 }
               />
             </Route>
+            <Route path="*" element={<NotFoundPage mode={mode} />} />
           </Routes>
         </BrowserRouter>
       </AppBase>

@@ -14,12 +14,22 @@ interface ProjectModeProps {
 export const ProjectPageBase = styled.div<ProjectModeProps>`
   background-color: ${(props) =>
     props.mode === "light" ? "#fcfcfc" : "#111827"};
+  min-height: 100vh;
 `;
 
 export const Title = styled.h1`
   text-align: center;
   margin: 0 0 3rem 0;
   padding: 3rem 0 0 0;
+`;
+
+export const NavBar = styled.div<ProjectModeProps>`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 6% 0 6%;
+  background-color: ${(props) =>
+    props.mode === "light" ? "#fcfcfc" : "#111827"};
 `;
 
 export const HomeLink = styled(Link)<ProjectModeProps>`

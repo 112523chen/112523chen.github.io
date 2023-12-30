@@ -5,8 +5,10 @@ import {
   FilterLink,
   FrameAlt,
   HomeLink,
+  ProjectPageBase,
   Title,
   TopicFrame,
+  NavBar,
 } from "./ProjectPage.style";
 import DisplayButton from "../../components/DisplayButton/DisplayButton";
 import { useLocation, useParams } from "react-router-dom";
@@ -20,6 +22,14 @@ interface Props {
 
 const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
   const [projects, setProjects] = React.useState<ProjectType[]>(projectData);
+
+  const allowedTopics = [
+    "software_engineering",
+    "web_development",
+    "machine_learning",
+    "data_science",
+    "data_engineering",
+  ];
 
   const params = useParams();
   const location = useLocation();
@@ -39,16 +49,13 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
   }, [location.pathname]);
 
   return (
-    <div
-      style={{
-        backgroundColor: mode === "light" ? "#fcfcfc" : "#111827",
-        minHeight: "100vh",
-      }}
-    >
-      <HomeLink mode={mode} className="link" to="/">
-        Go Back
-      </HomeLink>
-      <DisplayButton mode={mode} setMode={setMode} />
+    <ProjectPageBase mode={mode}>
+      <NavBar mode={mode}>
+        <HomeLink mode={mode} className="link" to="/">
+          Go Back
+        </HomeLink>
+        <DisplayButton mode={mode} setMode={setMode} useInMainPage={true} />
+      </NavBar>
       <Title id="title">Project Page</Title>
       <TopicFrame>
         {Object.values(TopicType)
@@ -72,7 +79,7 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
           <h1>No projects found</h1>
         )}
       </FrameAlt>
-    </div>
+    </ProjectPageBase>
   );
 };
 

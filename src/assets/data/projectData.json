@@ -1,14 +1,31 @@
 {
   "projectData": [
     {
-      "id": 14,
+      "id": 15,
       "title": "About Me API",
       "details": "Developed a API so others can learn about who I am and what I'm currently doing using Rust, Rocket, and MySQL",
       "skills": ["Rust", "Rocket.rs", "MySQL", "Shuttle.rs", "SQL"],
       "topics": ["software_engineering"],
       "isRepo": true,
       "isWebApp": false,
-      "link": "#"
+      "link": ""
+    },
+    {
+      "id": 14,
+      "title": "Wikipedia Information Retrieval System",
+      "details": "Developed a information retrieval system that uses the vector space model to rank Wikipedia documents based on a query",
+      "skills": [
+        "Python",
+        "Numpy",
+        "Pandas",
+        "NLTK",
+        "Scikit-Learn",
+        "Streamlit"
+      ],
+      "topics": ["data_science"],
+      "isRepo": false,
+      "isWebApp": true,
+      "link": ""
     },
     {
       "id": 13,
@@ -21,11 +38,8 @@
         "Node",
         "TypeScript",
         "Styled-Components",
-        "React Router",
-        "Recharts",
         "SQL",
-        "Github Actions",
-        "Docker"
+        "Github Actions"
       ],
       "topics": ["software_engineering", "web_development"],
       "isRepo": true,
@@ -35,7 +49,7 @@
     {
       "id": 12,
       "title": "Portfolio Website",
-      "details": "Created a web application/page to highlight projects and person brand with React, TypeScript, and Styled-Components",
+      "details": "Created a website to highlight projects and person brand with React, TypeScript, and Styled-Components",
       "skills": [
         "React",
         "TypeScript",
@@ -50,7 +64,7 @@
     },
     {
       "id": 11,
-      "title": "Finding Features About New Galaxies with Machine Learning",
+      "title": "Finding Features About New Galaxies with ML",
       "details": "Trained and tested 4 supervised machine learning models to predict 4 features of galaxy from a spectra of the same galaxy: the total amount of mass in stars with a galaxy, the amount of cosmic dust in a galaxy, how long ago did the galaxy form its first stars, and the speed of the process of star formation",
       "skills": ["Python", "Numpy", "Matplotlib", "Seaborn", "Scikit-Learn"],
       "topics": ["machine_learning", "data_science"],
