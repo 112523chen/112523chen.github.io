@@ -28,7 +28,7 @@ const ProjectPage: React.FC<Props> = ({ projectData, mode, setMode }) => {
   )[0];
 
   useEffect(() => {
-    import(`../../assets/markdown/projects/project_${project.id}.md`)
+    import(`../../assets/markdown/projects/project_${params.id}.md`)
       .then((module) => {
         setMarkdownFile(module.default);
       })
