@@ -8,6 +8,7 @@ export interface ProjectType {
   isWebApp: boolean;
   link: string;
   topics: string[];
+  markdown?: string;
 }
 
 //* Definition of a theme state
